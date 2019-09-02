@@ -8,10 +8,10 @@ const AboutPage = () => {
   return (
     <Layout>
       <Head  title="About me" description="Who I am, what I do." />
-      <h1>### Frontend Web Developer - Open-Source addicted</h1>
+      <h1>### Frontend Web Developer - Open source enthusiast</h1>
       
       <article>
-          <h2>Experience</h2>
+          <h2>Skills</h2>
           +----------+-------+------------+<br />
           | <u>Skill</u> &nbsp; &nbsp;| <u>Level</u> | <u>Experience</u> |<br />
           +----------+-------+------------+<br />
@@ -35,6 +35,13 @@ const AboutPage = () => {
           <i>I</i> Intermediate<br />
           <i>C</i> Certificate<br />
           <i>J</i> Junior
+        </article>
+        <article>
+        <h2>Experience</h2>
+        <h3>Titanka! S.p.A</h3>
+        <p><em>2011 - Today</em></p>
+        <p>HTML, CSS, jQuery, JavaScript, 
+          Fireworks, Google PageSpeed, propietary CMS and Backoffice</p>
         </article>
       <p>
         <Link to="/contact">Go to contact page</Link>

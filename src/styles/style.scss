@@ -276,12 +276,12 @@ blockquote {
   padding:1rem 0 3rem;
 }
 
-.active-nav-item {
+.activeNavItem {
   color: #cfe180;
 }
 
 .title,
-.title.active-nav-item  {
+.title.activeNavItem  {
   text-decoration:none;
   font-size:3rem;
   box-shadow:none;
@@ -296,13 +296,13 @@ blockquote {
   color:#999999;
 }
 
-.nav-list {
+.navList {
   display:flex;
   list-style-type: none;
   margin:0;
 }
 
-.nav-item {
+.navItem {
   &:link,
   &:visited,
   &:active {
@@ -316,7 +316,7 @@ blockquote {
   }
 }
 
-.nav-item:hover {
+.navItem:hover {
   color:#6a6a6a;
 }
 

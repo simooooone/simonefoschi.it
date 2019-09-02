@@ -27,10 +27,10 @@ const BlogPage = () => {
     <Layout>
       <Head  title="Blog di tecnologia open source di Simcko" description="Tutti gli articoli su Raspberry Pi e Linux sul mio nuovo blog sviluppato con tecnologia Gatsbyjs." />
       <h1>Blog</h1>
-      <ol className={blogStyles.posts}>
+      <ol className="posts">
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
-            <li className={blogStyles.post}>
+            <li className="post">
               <Link to={`/${edge.node.fields.slug}`}>
               <h2>{edge.node.frontmatter.title}</h2>
               <p>{edge.node.frontmatter.date}</p>

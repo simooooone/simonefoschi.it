@@ -25,7 +25,7 @@ const IndexPage = () => {
           <p>+++++ CSS</p>
           <p>+++++ HTML</p>
           <p>++++ jQuery</p>
-          <p>++++ Javascript</p>
+          <p>+++ Javascript</p>
           <p>+++ Raspberry Pi</p>
           <p>+++ ASP.NET</p>
           <p>+++ Linux</p>

@@ -17,14 +17,14 @@ const AboutPage = () => {
           +----------+-------+------------+<br />
           | CSS  &nbsp; &nbsp; &nbsp;| &nbsp; E &nbsp; | &nbsp;  &nbsp;11y &nbsp; &nbsp; |<br />
           | HTML &nbsp; &nbsp; | &nbsp; E &nbsp; | &nbsp;  &nbsp;11y &nbsp; &nbsp; |<br />
-          | JQuery &nbsp; | &nbsp; E &nbsp; | &nbsp; &nbsp; 8y &nbsp; &nbsp; |<br />
+          | jQuery &nbsp; | &nbsp; E &nbsp; | &nbsp; &nbsp; 8y &nbsp; &nbsp; |<br />
           | JS &nbsp; &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp;  &nbsp; 5y &nbsp; &nbsp; |<br />
-          | Linux &nbsp; &nbsp;| &nbsp; I &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />
-          | WP &nbsp; &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; 1,5y &nbsp; &nbsp; |<br />
+          | Linux &nbsp; &nbsp;| &nbsp; I &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />          
           | Bash &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |<br />
           | ASP.NET &nbsp;| &nbsp; C &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />
           | .NET &nbsp; &nbsp; | &nbsp; C &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />
           | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />
+          | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; 1,5y &nbsp; &nbsp; |<br />
           | Nodejs &nbsp; | &nbsp; J &nbsp; | &nbsp;  &nbsp; 4m &nbsp; &nbsp; |<br />
           | Reactjs &nbsp;| &nbsp; J &nbsp; | &nbsp;  &nbsp; 4m &nbsp; &nbsp; |<br />
           | Gatsbyjs | &nbsp; J &nbsp; | &nbsp;  &nbsp; 2m &nbsp; &nbsp; |<br />

@@ -32,7 +32,7 @@ const AboutPage = () => {
         |<br />
         | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp;
         |<br />
-        | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; 1y &nbsp; &nbsp; |
+        | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |
         <br />
         | Bash &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp;
         |<br />

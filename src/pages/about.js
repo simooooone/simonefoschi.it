@@ -90,18 +90,21 @@ const AboutPage = () => {
           <h3>Microsoft Certificated Technology Specialist Sql Server 2005</h3>
           <p>apr 2008</p>
           <p>Exam 070/431</p>
-        </article><br>
+        </article><br />
         <article>
           <h2>Courses</h2>
-          <h3>Javascript</h3>
-          <p>Circolo Ratataplan</p>
-          <p><em>2017</em></p>
-          <h3>jQuery</h3>
-          <p>Circolo Ratataplan</p>
-          <p><em>2017</em></p>
+
           <h3>Nodejs, Reactjs, Linux LPI</h3>
           <p>Udemy</p>
           <p><em>2018/2019</em></p>
+
+          <h3>Javascript</h3>
+          <p>Circolo Ratataplan</p>
+          <p><em>2017</em></p>
+          
+          <h3>jQuery</h3>
+          <p>Circolo Ratataplan</p>
+          <p><em>2017</em></p>
         </article>
       <p>
         <Link to="/contact">Go to contact page</Link>

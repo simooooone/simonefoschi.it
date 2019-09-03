@@ -20,14 +20,14 @@ const AboutPage = () => {
           | jQuery &nbsp; | &nbsp; E &nbsp; | &nbsp; &nbsp; 8y &nbsp; &nbsp; |<br />
           | JS &nbsp; &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp;  &nbsp; 5y &nbsp; &nbsp; |<br />
           | Linux &nbsp; &nbsp;| &nbsp; I &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />          
-          | Bash &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |<br />
           | ASP.NET &nbsp;| &nbsp; C &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />
           | .NET &nbsp; &nbsp; | &nbsp; C &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />
           | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; | &nbsp;  &nbsp; 4y &nbsp; &nbsp; |<br />
-          | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; 1,5y &nbsp; &nbsp; |<br />
-          | Nodejs &nbsp; | &nbsp; J &nbsp; | &nbsp;  &nbsp; 4m &nbsp; &nbsp; |<br />
+          | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; 1y &nbsp; &nbsp; |<br />
+          | Bash &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |<br />
           | Reactjs &nbsp;| &nbsp; J &nbsp; | &nbsp;  &nbsp; 4m &nbsp; &nbsp; |<br />
-          | Gatsbyjs | &nbsp; J &nbsp; | &nbsp;  &nbsp; 2m &nbsp; &nbsp; |<br />
+          | Nodejs &nbsp; | &nbsp; J &nbsp; | &nbsp;  &nbsp; 3m &nbsp; &nbsp; |<br />
+          | Gatsbyjs | &nbsp; J &nbsp; | &nbsp;  &nbsp; 3m &nbsp; &nbsp; |<br />
           +----------+-------+------------+<br />
           <br />
           <h3>Legend</h3>
@@ -35,13 +35,73 @@ const AboutPage = () => {
           <i>I</i> Intermediate<br />
           <i>C</i> Certificate<br />
           <i>J</i> Junior
-        </article>
+        </article><br />
         <article>
-        <h2>Experience</h2>
-        <h3>Titanka! S.p.A</h3>
-        <p><em>2011 - Today</em></p>
-        <p>HTML, CSS, jQuery, JavaScript, 
-          Fireworks, Google PageSpeed, propietary CMS and Backoffice</p>
+          <h2>Experience</h2>
+          <h3>Titanka! S.p.A.</h3>
+          <p><em>2011 - Today</em></p>
+          <p>HTML, CSS, jQuery, JavaScript, 
+            Fireworks, Google PageSpeed Optimization, 
+            propietary CMS and Backoffice</p>
+            <p><em>More than 300 websites developed</em></p>
+            
+          <h3>www.okgrazie.it</h3>
+          <p><em>2011 - 2013</em></p>
+          <p>HTML, CSS, jQuery, 
+            SQL Server 2008/2004, ASP.NET, 
+            Visual Basic.NET, C#, Windows Server</p>
+  
+          <h3>www.amicimici.com</h3>
+          <p><em>2016 - 2017</em></p>
+          <p>HTML, CSS, jQuery, WordPress, 
+            Facebook pages, Facebook Ads, 
+            Linux server</p>
+
+          <h3>MCE! S.r.l.</h3>
+          <p><em>2007 - 2009</em></p>
+          <p>HTML, CSS, jQuery, JavaScript, 
+            VB 6, ASP 3.0, Visual Basic.NET, 
+            SQL Server, Windows Server</p>
+          <p><em>More than 60 websites developed</em></p>
+
+          <h3>Ascentive S.r.l.</h3>
+          <p><em>2004 - 2006</em></p>
+          <p>JavaScript, VB 6, ASP 3.0, 
+            Visual Basic.NET, SQL Server, Oracle,
+            Windows Server</p>
+          <p><em>More than 60 websites developed</em></p>
+        </article><br />
+        <article>
+          <h2>Certifications</h2>
+          
+          <h3>Microsoft Certified Professional</h3>
+          <p>apr 2012</p>
+        </article><br />
+        <article>
+          <h2>Exams</h2>
+          <h3>Microsoft Certificated Technology Specialist Microsoft .NET Framework 3.5, ASP.NET Applications</h3>
+          <p>oct 2009</p>
+          <p>Exam 070/562</p>
+          
+          <h3>Microsoft Certificated Technology Specialist Microsoft .NET Framework 2.0 Web Applications</h3>
+          <p>jan 2009</p>
+          <p>Exam 070/536 + Exam 070/528</p>
+          
+          <h3>Microsoft Certificated Technology Specialist Sql Server 2005</h3>
+          <p>apr 2008</p>
+          <p>Exam 070/431</p>
+        </article><br>
+        <article>
+          <h2>Courses</h2>
+          <h3>Javascript</h3>
+          <p>Circolo Ratataplan</p>
+          <p><em>2017</em></p>
+          <h3>jQuery</h3>
+          <p>Circolo Ratataplan</p>
+          <p><em>2017</em></p>
+          <h3>Nodejs, Reactjs, Linux LPI</h3>
+          <p>Udemy</p>
+          <p><em>2018/2019</em></p>
         </article>
       <p>
         <Link to="/contact">Go to contact page</Link>

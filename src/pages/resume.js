@@ -57,7 +57,7 @@ const AboutPage = () => {
       <br />
       <article>
         <h2>Experience</h2>
-        <h3>Titanka! S.p.A.</h3>
+        <h4>Titanka! S.p.A.</h4>
         <p>
           <em>2011 - Today</em>
         </p>
@@ -69,7 +69,7 @@ const AboutPage = () => {
           <em>More than 300 websites developed</em>
         </p>
 
-        <h3>www.okgrazie.it</h3>
+        <h4>www.okgrazie.it</h4>
         <p>
           <em>2011 - 2013</em>
         </p>
@@ -78,7 +78,7 @@ const AboutPage = () => {
           C#, Windows Server
         </p>
 
-        <h3>www.amicimici.com</h3>
+        <h4>www.amicimici.com</h4>
         <p>
           <em>2016 - 2017</em>
         </p>
@@ -87,7 +87,7 @@ const AboutPage = () => {
           server
         </p>
 
-        <h3>MCE! S.r.l.</h3>
+        <h4>MCE! S.r.l.</h4>
         <p>
           <em>2007 - 2009</em>
         </p>
@@ -99,7 +99,7 @@ const AboutPage = () => {
           <em>More than 60 websites developed</em>
         </p>
 
-        <h3>Ascentive S.r.l.</h3>
+        <h4>Ascentive S.r.l.</h4>
         <p>
           <em>2004 - 2006</em>
         </p>
@@ -115,11 +115,11 @@ const AboutPage = () => {
       <article>
         <h2>Certifications</h2>
 
-        <h3>Microsoft Certified Professional</h3>
+        <h4>Microsoft Certified Professional</h4>
         <p>
           <em>apr 2012</em>
         </p>
-        <h3>Transcript</h3>
+        <h4>Transcript</h4>
         <p>
           <a
             target="_blank"
@@ -136,25 +136,25 @@ const AboutPage = () => {
       <br />
       <article>
         <h2>Exams</h2>
-        <h3>
+        <h4>
           Microsoft Certificated Technology Specialist Microsoft .NET Framework
           3.5, ASP.NET Applications
-        </h3>
+        </h4>
         <p>
           <em>oct 2009</em>
         </p>
         <p>Exam 070/562</p>
 
-        <h3>
+        <h4>
           Microsoft Certificated Technology Specialist Microsoft .NET Framework
           2.0 Web Applications
-        </h3>
+        </h4>
         <p>
           <em>jan 2009</em>
         </p>
         <p>Exam 070/536 + Exam 070/528</p>
 
-        <h3>Microsoft Certificated Technology Specialist Sql Server 2005</h3>
+        <h4>Microsoft Certificated Technology Specialist Sql Server 2005</h4>
         <p>
           <em>apr 2008</em>
         </p>
@@ -165,19 +165,19 @@ const AboutPage = () => {
       <article>
         <h2>Courses</h2>
 
-        <h3>Nodejs, Reactjs, Linux LPI</h3>
+        <h4>Nodejs, Reactjs, Linux LPI</h4>
         <p>Udemy</p>
         <p>
           <em>2018/2019</em>
         </p>
 
-        <h3>Javascript</h3>
+        <h4>Javascript</h4>
         <p>Circolo Ratataplan</p>
         <p>
           <em>2017</em>
         </p>
 
-        <h3>jQuery</h3>
+        <h4>jQuery</h4>
         <p>Circolo Ratataplan</p>
         <p>
           <em>2017</em>
@@ -187,7 +187,7 @@ const AboutPage = () => {
       <br />
       <article>
         <h2>Websites deveolped I am proud of</h2>
-        <h3>
+        <h4>
           <a
             target="_blank"
             rel="noopener nofollow"
@@ -195,9 +195,9 @@ const AboutPage = () => {
           >
             Camping Capalonga Bibione
           </a>
-        </h3>
+        </h4>
         <p>HTML, CSS, jQuery</p>
-        <h3>
+        <h4>
           <a
             target="_blank"
             rel="noopener nofollow"
@@ -205,9 +205,9 @@ const AboutPage = () => {
           >
             Miramare Camping Sottomarina
           </a>
-        </h3>
+        </h4>
         <p>HTML, CSS, jQuery</p>
-        <h3>
+        <h4>
           <a
             target="_blank"
             rel="noopener nofollow"
@@ -215,9 +215,9 @@ const AboutPage = () => {
           >
             Hotel Ulisse Ischia
           </a>
-        </h3>
+        </h4>
         <p>HTML, CSS, jQuery</p>
-        <h3>
+        <h4>
           <a
             target="_blank"
             rel="noopener nofollow"
@@ -225,9 +225,9 @@ const AboutPage = () => {
           >
             Arnika Dolomiti Move Hotel
           </a>
-        </h3>
+        </h4>
         <p>HTML, CSS, jQuery</p>
-        <h3>
+        <h4>
           <a
             target="_blank"
             rel="noopener nofollow"
@@ -235,9 +235,9 @@ const AboutPage = () => {
           >
             Camping Village Santin
           </a>
-        </h3>
+        </h4>
         <p>HTML, CSS, jQuery</p>
-        <h3>
+        <h4>
           <a
             target="_blank"
             rel="noopener nofollow"
@@ -245,7 +245,7 @@ const AboutPage = () => {
           >
             Camping Verona Village
           </a>
-        </h3>
+        </h4>
         <p>HTML, CSS, jQuery</p>
       </article><br /><br />
       <p>

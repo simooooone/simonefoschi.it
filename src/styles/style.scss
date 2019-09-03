@@ -1,7 +1,7 @@
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
-$font-code: 'Inconsolata', monospace;
+$font-code: "Inconsolata", monospace;
 /*$font-heading: 'Playfair Display', cursive;*/
-$font-text: 'Inconsolata', monospace;
+$font-text: "Inconsolata", monospace;
 $title-color: #cfe180;
 $text-color: #fafafa;
 $link-color: #cfe180;
@@ -20,7 +20,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#3a3a3a;
+  background-color: #3a3a3a;
   color: $text-color;
   font-family: $font-text;
   font-weight: normal;
@@ -69,12 +69,12 @@ audio:not([controls]) {
 }
 
 img {
-  border:0 none;
-  margin-bottom:0;
+  border: 0 none;
+  margin-bottom: 0;
 }
 
 .fullWidth {
-  max-width:100%;
+  max-width: 100%;
 }
 h1,
 h2,
@@ -82,54 +82,54 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0 0 1.45rem;
+  padding: 0;
+  margin: 0 0 1.45rem;
   font-family: $font-text;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
-  color:$title-color;
+  color: $title-color;
 }
 
 h1 {
   font-size: 1.25rem;
-  position:relative;
-  overflow:hidden;
-  padding-bottom:0.75em;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0.75em;
 
   &:after {
-    content:'------------------------------------------------------';
-    color:$title-color;
-    position:absolute;
-    left:0;
-    bottom:-15px;
+    content: "------------------------------------------------------";
+    color: $title-color;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
   }
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 a {
   &:link,
   &:visited,
   &:active {
-    color:$link-color;
+    color: $link-color;
   }
 }
 
@@ -144,7 +144,8 @@ pre {
   padding: 1.45rem;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -158,8 +159,8 @@ code {
   border-radius: 3px;
   font-family: $font-code;
   padding: 15px;
-  margin:15px 0;
-  display:block;
+  margin: 15px 0;
+  display: block;
 }
 
 .title-color {
@@ -173,8 +174,8 @@ code:after {
 }
 
 ul {
-  margin:0 0 1.45rem;
-  padding:0;
+  margin: 0 0 1.45rem;
+  padding: 0;
   list-style-position: inside;
   list-style-image: none;
 }
@@ -214,36 +215,36 @@ li > p {
 }
 
 blockquote {
-  font-style:italic;
+  font-style: italic;
   background-color: #4f4f4f;
   padding: 15px;
   margin: 0;
 
   p {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .flex {
-  display:flex;
-  display:-ms-flexbox;
-  justify-content:flex-start;
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: flex-start;
   align-items: center;
-  width:100%;
+  width: 100%;
 }
 
 .flex-left {
-  flex:1 1 50%;
+  flex: 1 1 50%;
 }
 
 .flex-right {
-  padding:10px 20px;
-  flex:1 1 50%;
+  padding: 10px 20px;
+  flex: 1 1 50%;
 }
 
 .fullWidth img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 .container {
@@ -256,118 +257,170 @@ blockquote {
 }
 
 .content {
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 .lista-v {
-  margin:0;
-  padding:0;
-  list-style:none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   list-style-position: inside;
 
   li {
     &:before {
-      content:'-'
-
+      content: "-";
     }
   }
 }
 .header {
-  padding:1rem 0 3rem;
-}
-
-.activeNavItem {
-  color: #cfe180;
-}
-
-.title,
-.title.activeNavItem  {
-  text-decoration:none;
-  font-size:3rem;
-  box-shadow:none;
-  transition: margin-left .7s;
-  &:hover {
-      color:#999;
-      margin-left:9px;
-  }
+  padding: 1rem 0 1.5rem;
 }
 
 .link {
-  color:#999999;
+  color: #999999;
+}
+
+.cont-flex-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  .myimg-top {
+    flex-grow: 0;
+    flex-shrink: 0;
+    img {
+      border-radius: 50%;
+      max-width: 130px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .myname-top {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: 1em;
+
+    h3 {
+      margin-bottom:0.45rem;
+      
+      .title,
+      .title.activeNavItem {
+        text-decoration: none;
+        font-size: 3rem;
+        box-shadow: none;
+        transition: margin-left 0.7s;
+
+        &:hover {
+          color: #999;
+          margin-left: 9px;
+        }
+      }
+
+      .activeNavItem {
+        color: #cfe180;
+      }
+    }
+
+    @media (max-width: 767px) {
+      text-align: center;
+      margin-top: 1rem;
+
+      h3 {
+        .title,
+        .title.activeNavItem {
+          font-size: 1.55rem;
+        }
+      }
+    }
+  }
 }
 
 .navList {
-  display:flex;
+  display: flex;
   list-style-type: none;
-  margin:0;
-}
+  margin: 0;
 
-.navItem {
-  &:link,
-  &:visited,
-  &:active {
-      color:#999;
-      font-size:.9rem;
-      margin-right:1.3rem;
-      text-decoration:none;
-      box-shadow: inset 0 -3px 0 #d78516;
-      
+  li {
+    a {
+      &:link,
+      &:visited,
+      &:active {
+        color: #999;
+        font-size: 0.9rem;
+        margin-right: 1.3rem;
+        text-decoration: none;
+        box-shadow: inset 0 -3px 0 #d78516;
+        white-space: nowrap;
+      }
 
+      &:hover {
+        color: #6a6a6a;
+      }
+    }
   }
-}
-
-.navItem:hover {
-  color:#6a6a6a;
+  @media (max-width: 480px) {
+    display:block;
+    li {
+      text-align: left;
+      display: block;
+    }
+  }
 }
 
 .footer {
-  margin-top:3rem;
+  margin-top: 3rem;
 }
 .posts {
   list-style-type: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .post {
-  margin:1rem 0;
+  margin: 1rem 0;
 
   a {
-      background-color:#444343;
-      color: #000;
-      display:block;
-      padding:1rem;
-      text-decoration:none;
-      box-shadow:none;
+    background-color: #444343;
+    color: #000;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    box-shadow: none;
   }
 
   a:hover {
-      background-color: #595858;
+    background-color: #595858;
   }
 
   h2 {
-      margin-bottom:0;
+    margin-bottom: 0;
   }
-  
+
   p {
-      color: #777;
-      font-size: .8rem;
-      font-style:italic;
+    color: #777;
+    font-size: 0.8rem;
+    font-style: italic;
   }
 }
-@media (max-width:$screen-xs-max) {
+
+@media (max-width: $screen-xs-max) {
   .flex {
-    display:block;
-    width:100%;
-    padding:0 10px;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
   }
 
   .flex-left {
-    order:1;
+    order: 1;
   }
 
   .flex-right {
-    padding:10px 0;
-    order:2;
+    padding: 10px 0;
+    order: 2;
   }
 }

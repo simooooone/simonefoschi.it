@@ -12,7 +12,7 @@ import immagine4 from "./img/img-home-4.jpg"
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout myimg="1">
       <Head
         title="Simone Foschi aka Simo, Senior Frontend Developer"
         description="Frontend developer working on HTML, CSS and Javascript. Trying to learn open source and new methodologies to learn how to do things and to become powerful."

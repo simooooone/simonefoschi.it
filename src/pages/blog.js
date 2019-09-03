@@ -24,7 +24,7 @@ const BlogPage = () => {
     }
   `)
   return (
-    <Layout>
+    <Layout myimg="5">
       <Head  title="Blog di tecnologia open source di Simo" description="Tutti gli articoli su Raspberry Pi e Linux sul mio nuovo blog sviluppato con tecnologia Gatsbyjs." />
       <h1>Blog</h1>
       <ol className="posts">
@@ -32,7 +32,7 @@ const BlogPage = () => {
           return (
             <li className="post">
               <Link to={`/${edge.node.fields.slug}`}>
-              <h2>{edge.node.frontmatter.title}</h2>
+              <h3>{edge.node.frontmatter.title}</h3>
               <p>{edge.node.frontmatter.date}</p>
               </Link>
             </li>

@@ -6,7 +6,7 @@ import Head from '../components/head'
 
 const NotFound = () => {
     return (
-        <Layout>
+        <Layout myimg="1">
 
             <Head  title="Pagina non trovata" />
             <h1>Page not found</h1>

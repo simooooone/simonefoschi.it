@@ -1,8 +1,7 @@
 import React from "react"
-
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-const Header = () => {
+const Header = props => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -12,25 +11,55 @@ const Header = () => {
       }
     }
   `)
+
   return (
     <header className="header">
-      <h3>
-        <Link className="title" activeClassName="activeNavItem" to="/">
-          {data.site.siteMetadata.title}
-        </Link></h3>
+      <div className="cont-flex-top">
+        <div className="myimg-top flex-1 fullWidth">
+          <img src={require("../pages/img/simo-"+props.myimg+'.jpg')} />
+        </div>
+        <div class="myname-top flex-2">
+          <h3>
+            <Link className="title" activeClassName="activeNavItem" to="/">
+              {data.site.siteMetadata.title}
+            </Link>
+          </h3>
+          <h4>Frontend Developer</h4>
+        </div>
+      </div>
       <nav>
         <ul className="navList">
           <li>
-            <Link className="navItem" activeClassName="activeNavItem" to="/">Home page</Link>
+            <Link className="navItem" activeClassName="activeNavItem" to="/">
+              Home page
+            </Link>
           </li>
           <li>
-            <Link className="navItem" activeClassName="activeNavItem" to="/resume">Resume</Link>
+            <Link
+              className="navItem"
+              activeClassName="activeNavItem"
+              to="/resume"
+            >
+              Resume
+            </Link>
           </li>
           <li>
-            <Link className="navItem" activeClassName="activeNavItem" to="/blog">Blog</Link>
+            <Link
+              className="navItem"
+              activeClassName="activeNavItem"
+              to="/blog"
+            >
+              Blog
+            </Link>
           </li>
           <li>
-            <Link className="navItem" activeClassName="activeNavItem" to="/contact">Contacts</Link>
+            <Link
+              className="navItem"
+              activeClassName="activeNavItem"
+              to="/contact"
+            >
+              Contacts
+            </Link>
           </li>
         </ul>
       </nav>

@@ -7,7 +7,7 @@ const Layout = props => {
   return (
     <div className="container">
       <div className="content">
-        <Header />
+        <Header myimg={props.myimg} />
         <div className="barra-sx"></div>
         <div className="content">{props.children}</div>
       </div>

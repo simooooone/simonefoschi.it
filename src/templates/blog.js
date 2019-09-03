@@ -17,7 +17,7 @@ export const query = graphql`
 `
 const Blog = props => {
   return (
-    <Layout>
+    <Layout myimg="3">
       <Head title={props.data.markdownRemark.frontmatter.title}  
         description={props.data.markdownRemark.frontmatter.description} />
       <p><Link to='/blog'>&lsaquo; Back to Blog index</Link></p>

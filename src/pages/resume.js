@@ -5,7 +5,7 @@ import Head from "../components/head"
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <Layout myimg="2">
       <Head title="About me" description="Who I am, what I do." />
       <h1>### Frontend Web Developer - Open source enthusiast</h1>
 

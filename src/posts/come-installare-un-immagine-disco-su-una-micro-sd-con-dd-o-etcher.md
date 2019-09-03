@@ -2,7 +2,7 @@
 title: "Come installare un’immagine disco su una microSD con Linux"
 description: "Guida per creare una chiavetta USB o un microSD con un sistema operativo avviabile e pronto all'installazione su Raspberrry o sul computer di casa."
 date: "16/12/2018"
-author: "Simcko"
+author: "Simo"
 ---
 
 > Premetto che in questa guida si utilizza Linux e Raspberry PI 3 B+ per fare queste cose.

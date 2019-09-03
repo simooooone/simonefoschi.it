@@ -14,29 +14,29 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head
-        title="Simcko aka Simo, Senior Frontend Developer"
+        title="Simone Foschi aka Simo, Senior Frontend Developer"
         description="Frontend developer working on HTML, CSS and Javascript. Trying to learn open source and new methodologies to learn how to do things and to become powerful."
       />
       <section>
         <header>
-          <h1>Hi, I'm Simcko aka Simo</h1>
+          <h1>Hi, I'm Simone aka Simo</h1>
         </header>
         <article>
           <p>+++++ CSS</p>
           <p>+++++ HTML</p>
           <p>++++ jQuery</p>
           <p>+++ Javascript</p>
-          <p>+++ Raspberry Pi</p>
-          <p>+++ ASP.NET</p>
-          <p>+++ Linux</p>
-          <p>+++ MSSql Server</p>
+          <p>++ ASP.NET</p>
+          <p>++ MS Sql Server</p>
+          <p>++ Linux</p>
+          <p>++ Raspberry Pi</p>
           <p>++ WordPress</p>
           <p>++ Reactjs</p>
           <p>++ Gatsbyjs</p>
         </article><br />
         <footer>
           <p>
-            <Link to="/about">-> storybook</Link>
+            <Link to="/about">Full curriculum &rsaquo;</Link>
           </p>
         </footer>
       </section>

@@ -2,6 +2,7 @@
 title: "Come installare un’immagine disco su una microSD con Linux"
 description: "Guida per creare una chiavetta USB o un microSD con un sistema operativo avviabile e pronto all'installazione su Raspberrry o sul computer di casa."
 date: "16/12/2018"
+last_update: "4/9/2019"
 author: "Simo"
 ---
 
@@ -52,7 +53,7 @@ Un altro modo per trovarlo è tramite la mitica riga di comando:
 
 nella prima colonna sono segnati i percorsi di tutti i file system e ad occhio, tramite la dimensione in Giga, riconosciamo la nostra schedina microSD
 
-## Creare l’immagine dulla microSD con dd
+### Creare l’immagine dulla microSD con dd
 
 > ATTENZIONE: la procedura descritta in seguito è molto delicata ed io non mi prendo alcuna responsabilità se copiate l’immagine sul drive sbagliato.
 
@@ -68,7 +69,7 @@ avendo cura di sostiutuire la X di /dev/sdX con la lettera della nostra microSD 
 
 Aspettiamo con pazienza che esegua il comando e la nostra microSD una volta smontata è pronta per essere inserita nel nostro Raspberry spento.
 
-## Creare l’immagine disco con Etcher
+## 2. creando l’immagine disco con Etcher
 
 un altro metodo, più user friendly, per scrivere le immagini dico su una microSD è Etcher, scaricabile qui, che è un programma multipiattaforma con interfaccia grafica.
 
@@ -76,6 +77,17 @@ Nella sua versione Linux è un file AppImage eseguibile tramite doppio click.
 
 Semplicemente si apre il programma, si sceglie l’immagine .img del sistema operativo, si seleziona la nostra microSD e si flasha.
 
+## 3. Fedora Media Writer
+
+Se usate Fedora esiste l'utility grafica **Fedora Media Writer**
+
+## 4. Gnome Disks
+
+Se usate Gnome si possono scrivere le immagini ISO con **Gnome Disks**
+
+## Conclusioni
+
 Ora è tutto pronto per installare la microSD sul Raspberry e iniziare ad esplorare le meraviglie di questo piccolo computer.
+
 
 --Buona vita--

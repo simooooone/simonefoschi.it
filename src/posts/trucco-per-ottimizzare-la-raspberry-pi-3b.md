@@ -2,6 +2,7 @@
 title: "Trucco per aumentare la RAM su di un Raspberry PI 3B+"
 description: "Raspberry PI 3B+ a volte ha bisogno di un po' più di RAM, con questo post voglio mostrarvi come fare."
 date: "10/2/2019"
+last_update: "4/9/2019"
 author: "Simcko"
 ---
 

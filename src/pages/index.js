@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
     <Layout myimg="1">
       <Head
-        title="Simone Foschi aka Simo, Senior Frontend Developer"
+        title="Simone Foschi aka Simo, Frontend Developer"
         description="Frontend developer working on HTML, CSS and Javascript. Trying to learn open source and new methodologies to learn how to do things and to become powerful."
       />
       <section>

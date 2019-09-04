@@ -16,7 +16,9 @@ const Header = props => {
     <header className="header">
       <div className="cont-flex-top">
         <div className="myimg-top flex-1 fullWidth">
-          <img src={require("../pages/img/simo-"+props.myimg+'.jpg')} />
+          <Link className="navItem" activeClassName="activeNavItem" to="/">
+            <img src={require("../pages/img/simo-"+props.myimg+'.jpg')} />
+          </Link>
         </div>
         <div class="myname-top flex-2">
           <h3>
@@ -29,11 +31,6 @@ const Header = props => {
       </div>
       <nav>
         <ul className="navList">
-          <li>
-            <Link className="navItem" activeClassName="activeNavItem" to="/">
-              Home page
-            </Link>
-          </li>
           <li>
             <Link
               className="navItem"

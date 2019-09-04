@@ -1,6 +1,4 @@
-/* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 $font-code: "Inconsolata", monospace;
-/*$font-heading: 'Playfair Display', cursive;*/
 $font-text: "Inconsolata", monospace;
 $title-color: #cfe180;
 $text-color: #fafafa;
@@ -9,6 +7,7 @@ $hover-color: #666;
 $screen-sm-max: 992px;
 $screen-sm-min: 768px;
 $screen-xs-max: 767px;
+$screen-xs:480px;
 
 html {
   font-family: $font-text;
@@ -178,24 +177,21 @@ ul {
   padding: 0;
   list-style-position: inside;
   list-style-image: none;
-}
 
-li {
-  margin-bottom: calc(1.45rem / 2);
-}
-
-ul li {
-  padding-left: 0;
-}
-li > ol {
-  margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
-}
-li > ul {
-  margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
+  li {
+    margin-bottom: calc(1.45rem / 2);
+    padding-left: 0;
+    > ol {
+      margin-left: 1.45rem;
+      margin-bottom: calc(1.45rem / 2);
+      margin-top: calc(1.45rem / 2);
+    }
+    > ul {
+      margin-left: 1.45rem;
+      margin-bottom: calc(1.45rem / 2);
+      margin-top: calc(1.45rem / 2);
+    }
+  }
 }
 
 blockquote *:last-child {
@@ -294,7 +290,7 @@ blockquote {
       border-radius: 50%;
       max-width: 130px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: $screen-xs-max) {
       width: 100%;
       text-align: center;
     }
@@ -326,7 +322,7 @@ blockquote {
       }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: $screen-xs-max) {
       text-align: center;
       margin-top: 1rem;
 
@@ -363,7 +359,7 @@ blockquote {
       }
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: $screen-xs) {
     display:block;
     li {
       text-align: left;
@@ -405,6 +401,35 @@ blockquote {
     color: #777;
     font-size: 0.8rem;
     font-style: italic;
+  }
+}
+
+.canavas-container {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:200px;
+  z-index:-1;
+
+  @media (max-width: $screen-xs-max) {
+    height:260px;
+  }
+
+  @media (max-width: $screen-xs) {
+    height:360px;
+  }
+}
+
+.canavas-content {
+  height:200px;
+
+  @media (max-width: $screen-xs-max) {
+    height:260px;
+  }
+
+  @media (max-width: $screen-xs) {
+    height:360px;
   }
 }
 

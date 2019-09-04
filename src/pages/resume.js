@@ -32,7 +32,8 @@ const AboutPage = () => {
         |<br />
         | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp;
         |<br />
-        | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |
+        | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp;
+        &nbsp; |
         <br />
         | Bash &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp;
         |<br />
@@ -69,15 +70,6 @@ const AboutPage = () => {
           <em>More than 300 websites developed</em>
         </p>
 
-        <h4>www.okgrazie.it</h4>
-        <p>
-          <em>2011 - 2013</em>
-        </p>
-        <p>
-          HTML, CSS, jQuery, SQL Server 2008/2004, ASP.NET, Visual Basic.NET,
-          C#, Windows Server
-        </p>
-
         <h4>www.amicimici.com</h4>
         <p>
           <em>2016 - 2017</em>
@@ -85,6 +77,15 @@ const AboutPage = () => {
         <p>
           HTML, CSS, jQuery, WordPress, Facebook pages, Facebook Ads, Linux
           server
+        </p>
+
+        <h4>www.okgrazie.it</h4>
+        <p>
+          <em>2011 - 2013</em>
+        </p>
+        <p>
+          HTML, CSS, jQuery, SQL Server 2008/2004, ASP.NET, Visual Basic.NET,
+          C#, Windows Server
         </p>
 
         <h4>MCE! S.r.l.</h4>
@@ -247,7 +248,9 @@ const AboutPage = () => {
           </a>
         </h4>
         <p>HTML, CSS, jQuery</p>
-      </article><br /><br />
+      </article>
+      <br />
+      <br />
       <p>
         <Link to="/contact">Go to contact page &rsaquo;</Link>
       </p>

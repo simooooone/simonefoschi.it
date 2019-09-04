@@ -37,7 +37,7 @@ const IndexPage = () => {
         </article><br />
         <footer>
           <p>
-            <Link to="/about">Full curriculum &rsaquo;</Link>
+            <Link to="/resume">Full resume &rsaquo;</Link>
           </p>
         </footer>
       </section>

@@ -41,7 +41,7 @@ La selezioniamo e al centro della schermata ci compariranno le partizioni della 
 
 La selezioniamo e con un click col tasto destro su ognuna delle partizioni dell’hard disk andremo prima a smontarle con unmount, poi ad eliminarle ad una ad una e infine clicchiamo la spunta verde per applicare le modifiche.
 
-A questo punto abbiamo la schedina microSD completamente vuota e smontata
+A questo punto abbiamo la schedina microSD completamente vuota e smontata.
 Trovare il percorso del file system
 
 Prima di chiudere gparted segnamoci il percorso del file system della periferica, ad esempio /dev/sdc.
@@ -58,7 +58,7 @@ nella prima colonna sono segnati i percorsi di tutti i file system e ad occhio, 
 
 Quindi ponete attenzione a quel che fate.
 
-Per una guida sul comando dd fare riferimento a questo link o digitate da terminale man dd
+Per una guida sul comando dd fare riferimento a questo link o digitate da terminale man dd.
 
 A questo punto se abbiamo già scaricato l’immagine dell’OS che vogliamo caricare sulla microSD, la procedura è abbastanza semplice…via terminale scrivere:
 

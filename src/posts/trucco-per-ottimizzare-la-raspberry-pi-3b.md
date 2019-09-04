@@ -13,7 +13,7 @@ Premetto che avevo già alcuni container Docker funzionanti su di un’installaz
 
 ## Soluzione
 
-Seguendo il corso LPI di primo livello di Morrolinux su Udemy, uno dei primi video è quello inerente alla swap e c’è anche la spiegazione di come abilitare la swap su file e ne ho fatto tesoro
+Seguendo il corso LPI di primo livello di Morrolinux su Udemy, uno dei primi video è quello inerente alla swap e c’è anche la spiegazione di come abilitare la swap su file e ne ho fatto tesoro.
 
 In prima battuta ho pensato di ripartizionare, ma sarebbe stato un casino e poi mi sono vagamente ricordato che era possibile formattare un file ed abilitarlo da /etc/fstab.
 

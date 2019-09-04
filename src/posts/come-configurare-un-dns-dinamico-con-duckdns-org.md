@@ -6,7 +6,8 @@ author: "Simo"
 ---
 
 Tra i tanti servizi che ho trovato per configurare un dns dinamico gratuito, sono incappato in [duckdns.org](https://duckdns.org), che fino ad ora si è dimostrato affidabile e facile da configurare con la mia Rasperry Pi 3 B+.
-Cos’è e a cosa serve un DNS Dinamico
+
+## Cos’è e a cosa serve un DNS Dinamico
 
 *A riguardo dei DNS Dinamici o DDNS o Dynamic DNS, Wikipedia a questa pagina dice:*
 
@@ -28,8 +29,9 @@ Ne scegliete uno e vi verrà presentata una schermata simile alla seguente:
 
 A volte bisognerà avere un po’ di pazienza e ritentare alcune volte, in quanto il sito web non è proprio perfetto e come nel mio caso ho fatto 5 o 6 tentativi con la seguente schermata:
 
-A questo punto aggiungiamo il nome del sotto dominio e clicchiamo su add domain e abbiamo bello pronto il nostro indirizzo DNS Dinamico
-Configurare l’aggiornamento del DNS Dinamico
+A questo punto aggiungiamo il nome del sotto dominio e clicchiamo su add domain e abbiamo bello pronto il nostro indirizzo DNS Dinamico.
+
+## Configurare l’aggiornamento del DNS Dinamico
 
 A questo punto dobbiamo fare in modo che il nostro IP sia sincronizzato con il nostro terzo livello su duckdns.
 
@@ -51,8 +53,9 @@ Per farlo bisogna accedere all’amministrazione del router e fare il port forwa
 
 Per vedere guide dettagliate per vari router -> [portforward.com](https://portforward.com/)
 
-Se abbiamo impostato un indirizzo statico al computer, tanto meglio, se no molti router riconoscono l’ip del port forwarding in automatico tramite il MAC address
-Conclusione
+Se abbiamo impostato un indirizzo statico al computer, tanto meglio, se no molti router riconoscono l’ip del port forwarding in automatico tramite il MAC address.
+
+## Conclusione
 
 Alla fine magari, mi sono dilungato anche troppo in spiegazioni per una procedura così semplice.
 

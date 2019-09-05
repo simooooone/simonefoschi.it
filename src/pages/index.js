@@ -14,12 +14,12 @@ const IndexPage = () => {
   return (
     <Layout myimg="1">
       <Head
-        title="Simone Foschi aka Simo, Frontend Developer"
-        description="Frontend developer working on HTML, CSS and Javascript. Trying to learn open source and new methodologies to learn how to do things and to become powerful."
+        title="Simone Foschi, Frontend Developer"
+        description="Frontend developer working on HTML, CSS and jQuery. Trying to learn open source frameworks and tools to become powerful."
       />
       <section>
         <header>
-          <h1>Hi, I'm Simone aka Simo</h1>
+          <h1>### Hi, I'm Simo</h1>
         </header>
         <article>
           <p>+++++ CSS</p>

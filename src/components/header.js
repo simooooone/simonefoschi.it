@@ -16,7 +16,7 @@ const Header = props => {
     <header className="header">
       <div className="cont-flex-top">
         <div className="myimg-top flex-1 fullWidth">
-          <Link className="navItem" activeClassName="activeNavItem" to="/">
+          <Link to="/">
             <img src={require("../pages/img/simo-"+props.myimg+'.jpg')} />
           </Link>
         </div>

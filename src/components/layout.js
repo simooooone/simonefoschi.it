@@ -1,12 +1,14 @@
 import React from "react"
 import Footer from "./footer"
 import Header from "./header"
+import BarraBloccata from './barraBloccata'
 import "../styles/style.scss"
 import Particles from "react-particles-js"
 
 const Layout = props => {
   return (
     <div>
+      <BarraBloccata myimg={props.myimg} />
       {/* 
         width 	string 	The width of the canvas.
         height 	string 	The height of the canvas.
@@ -87,8 +89,10 @@ const Layout = props => {
           <div className="content">{props.children}</div>
         </div>
         <Footer />
+        
       </div>
     </div>
+    
   )
 }
 

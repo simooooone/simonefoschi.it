@@ -7,8 +7,8 @@ $hover-color: #666;
 $screen-sm-max: 992px;
 $screen-sm-min: 768px;
 $screen-xs-max: 767px;
-$screen-xs:480px;
-
+$screen-xs: 480px;
+$bg-site: #3a3a3a;
 html {
   font-family: $font-text;
   -ms-text-size-adjust: 100%;
@@ -19,7 +19,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #3a3a3a;
+  background-color: $bg-site;
   color: $text-color;
   font-family: $font-text;
   font-weight: normal;
@@ -302,8 +302,8 @@ blockquote {
     padding-left: 1em;
 
     h3 {
-      margin-bottom:0.45rem;
-      
+      margin-bottom: 0.45rem;
+
       .title,
       .title.activeNavItem {
         text-decoration: none;
@@ -360,7 +360,7 @@ blockquote {
     }
   }
   @media (max-width: $screen-xs) {
-    display:block;
+    display: block;
     li {
       text-align: left;
       display: block;
@@ -405,31 +405,83 @@ blockquote {
 }
 
 .canavas-container {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  height:200px;
-  z-index:-1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  z-index: -1;
 
   @media (max-width: $screen-xs-max) {
-    height:260px;
+    height: 260px;
   }
 
   @media (max-width: $screen-xs) {
-    height:360px;
+    height: 360px;
   }
 }
 
 .canavas-content {
-  height:200px;
+  height: 200px;
 
   @media (max-width: $screen-xs-max) {
-    height:260px;
+    height: 260px;
   }
 
   @media (max-width: $screen-xs) {
-    height:360px;
+    height: 360px;
+  }
+}
+
+.blkBB {
+  background-color: $bg-site;
+  border-bottom: 1px solid #202020;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index:100;
+
+  .container-nocol {
+    margin: 0 auto;
+    max-width: 750px;
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .contSx {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .imgBB {
+          padding: 0.6rem;
+
+          img {
+            border-radius: 50%;
+            max-width: 65px;
+          }
+        }
+
+        .nomeBB {
+          .title {
+            &:link,
+            &:visited,
+            &:active {
+              text-decoration: none !important;
+            }
+          }
+        }
+      }
+
+      .menuBB {
+        text-align: right;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
   }
 }
 

@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <Layout myimg="2">
       <Head title="About me" description="Who I am, what I do." />
-      <h1>### Frontend Web Developer - Open source enthusiast</h1>
+      <h1>### Resume</h1>
 
       <article>
         <h2>Skills</h2>

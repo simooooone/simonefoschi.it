@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <Layout myimg="4">
       <Head title="Ways to contact me" description="At your service" />
-      <h1>Contact me</h1>
+      <h1>### Contact me</h1>
       <p>The best way to reach me is via</p>
       <ul className="lista-v">
         <li>

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
-
+// TODO: inserire link all'articolo su twitter
 import Head from '../components/head'
 export const query = graphql`
     query ($slug: String!) {

@@ -3,12 +3,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-/*
-import immagine1 from "./img/img-home-1.jpg"
-import immagine2 from "./img/img-home-2.jpg"
-import immagine3 from "./img/img-home-3.jpg"
-import immagine4 from "./img/img-home-4.jpg"
-*/
+// TODO: inserire link al repository su github
+// TODO: aggiornare immagine della pagina contatti con l'ultima che ha spedito l'Irina
 
 const IndexPage = () => {
   return (
@@ -22,18 +18,7 @@ const IndexPage = () => {
           <h1>### Hi, I'm Simo</h1>
         </header>
         <article>
-          <p>+++++ CSS</p>
-          <p>+++++ HTML</p>
-          <p>++++ jQuery</p>
-          <p>+++ Javascript</p>
-          <p>++ ASP.NET</p>
-          <p>++ Viaual Basic.NET</p>
-          <p>++ MS Sql Server</p>
-          <p>++ Linux</p>
-          <p>++ Raspberry Pi</p>
-          <p>++ WordPress</p>
-          <p>++ Reactjs</p>
-          <p>++ Gatsbyjs</p>
+          Born in Italy, living in Republic of San Marino
         </article><br />
         <footer>
           <p>

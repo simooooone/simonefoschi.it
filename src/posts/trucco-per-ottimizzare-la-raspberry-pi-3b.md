@@ -8,15 +8,17 @@ author: "Simo"
 
 ## Problema
 
-Ho tentato di avviare un container NextCloud su Docker.
+Ho tentato di avviare un container Docker di NextCloud su di una Raspberry Pi B3+.
 
 Premetto che avevo già alcuni container Docker funzionanti su di un’installazione Raspbian, come ad esempio OpenVPN, Pi-Hole e MotionEye e aggiungendo i container di MariaDB e di NextCloud mi sono trovato con solo 44 mega di Ram liberi.
+
+LA soluzione sarebbe stata poter aggiungere della RAM fisica, ma siccome il Raspberry non lo permette, ho dovuto trovare un'altra soluzione che vi vado a spiegare.
 
 ## Soluzione
 
 Seguendo il corso LPI di primo livello di Morrolinux su Udemy, uno dei primi video è quello inerente alla swap e c’è anche la spiegazione di come abilitare la swap su file e ne ho fatto tesoro.
 
-In prima battuta ho pensato di ripartizionare, ma sarebbe stato un casino e poi mi sono vagamente ricordato che era possibile formattare un file ed abilitarlo da /etc/fstab.
+In prima battuta, per abilitare la Swap ho pensato di ripartizionare, ma sarebbe stato un casino e poi mi sono vagamente ricordato che era possibile formattare un file ed abilitarlo da /etc/fstab.
 
 Ho preso la mia tastierina, cambiato il canale della mia televisione sulla porta HDMI e ho pensato di aprire per prima cosa il file /etc/fstab sul mio Raspberry Pi 3B+.
 

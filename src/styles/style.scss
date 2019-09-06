@@ -379,10 +379,13 @@ blockquote {
 
 .post {
   margin: 1rem 0;
+  
+  p {
+    color:$text-color;
+  }
 
   a {
     background-color: #444343;
-    color: #000;
     display: block;
     padding: 1rem;
     text-decoration: none;
@@ -397,7 +400,7 @@ blockquote {
     margin-bottom: 0;
   }
 
-  p {
+  em {
     color: #777;
     font-size: 0.8rem;
     font-style: italic;

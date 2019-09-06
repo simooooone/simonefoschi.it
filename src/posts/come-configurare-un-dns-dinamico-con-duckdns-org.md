@@ -2,7 +2,7 @@
 title: "Come configurare un dns dinamico con duckdns.org"
 description: "Procedura per configurare un proprio dominio internet casalingo. Utile se avete un server in casa con servizi come ad esempio Nextcloud o un sito web ospitato in casa."
 date: "16/12/2018"
-last_update: "4/9/2019"
+update: "4/9/2019"
 author: "Simo"
 ---
 

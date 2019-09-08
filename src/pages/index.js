@@ -18,7 +18,12 @@ const IndexPage = () => {
           <h1>### Hi, I'm Simo</h1>
         </header>
         <article>
-          Born in Italy, living in Republic of San Marino
+          <p>Born in Italy, living in Republic of San Marino</p>
+          <p>Enjoy working on JavaScript, Reactjs, Gatsbyjs, GraphQL, Git, Fedora.</p>
+          <p>Love learing and to practice programming and admin things.</p>
+          <p>Committed to became able.</p><br /><br />
+          <h3>Quoted from Socrates:</h3>
+          <blockquote>I now that I know nothing</blockquote>
         </article><br />
         <footer>
           <p>

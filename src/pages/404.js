@@ -8,8 +8,8 @@ const NotFound = () => {
     return (
         <Layout myimg="1">
 
-            <Head  title="Pagina non trovata" />
-            <h1>Page not found</h1>
+            <Head  title="404 | Page not found" description="" />
+            <h1>Page not found :-(</h1>
             <p><Link to="/">Head home</Link></p>
         </Layout>
     )

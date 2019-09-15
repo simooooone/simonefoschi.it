@@ -36,7 +36,6 @@ const Blog = props => {
       <p>
         updated <em>{props.data.markdownRemark.frontmatter.update}</em>
       </p>
-
       <p
         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
       ></p>

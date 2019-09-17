@@ -32,10 +32,13 @@ const AboutPage = () => {
         |<br />
         | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp;
         |<br />
+        | TSQL &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 2y &nbsp;
+        &nbsp; |
+        <br />
         | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp;
         &nbsp; |
         <br />
-        | Bash &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp;
+        | Bash &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp;
         |<br />
         | Reactjs &nbsp;| &nbsp; J &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; |
         <br />
@@ -51,6 +54,8 @@ const AboutPage = () => {
         <i>I</i> Intermediate
         <br />
         <i>C</i> Certificate
+        <br />
+        <i>J/I</i> Junior/Intermediate
         <br />
         <i>J</i> Junior
       </article>
@@ -107,9 +112,6 @@ const AboutPage = () => {
         <p>
           JavaScript, VB 6, ASP 3.0, Visual Basic.NET, SQL Server, Oracle,
           Windows Server
-        </p>
-        <p>
-          <em>More than 60 websites developed</em>
         </p>
       </article>
       <br />

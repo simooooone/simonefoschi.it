@@ -15,22 +15,8 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/pages/img/'`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
+       resolve: 'gatsby-plugin-purgecss',
+       options: {
          printRejected: true, // Print removed selectors and processed file names
          // develop: true, // Enable while using `gatsby develop`
          // tailwind: true, // Enable tailwindcss support
@@ -41,7 +27,19 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-transformer-remark'
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth:750,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
     }
   ]
 }

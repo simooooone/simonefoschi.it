@@ -11,10 +11,9 @@ const BlogPage = () => {
         edges {
           node {
             frontmatter {
-              author
-              date
               title
               description
+              date
             }
             fields {
               slug

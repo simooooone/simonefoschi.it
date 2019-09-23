@@ -9,9 +9,10 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+        description
         date
-        author
         update
+        author
       }
       html
     }

@@ -24,3 +24,4 @@ const Head = ({ title, description }) => {
 }
 
 export default Head
+

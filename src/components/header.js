@@ -21,37 +21,6 @@ const Header = props => {
           </Link>
         </div>
         <div class="myname-top flex-2">
-      <nav>
-        <ul className="navList">
-          <li>
-            <Link
-              className="navItem"
-              activeClassName="activeNavItem"
-              to="/resume"
-            >
-              Resume
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navItem"
-              activeClassName="activeNavItem"
-              to="/blog"
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navItem"
-              activeClassName="activeNavItem"
-              to="/contact"
-            >
-              Contacts
-            </Link>
-          </li>
-        </ul>
-      </nav>
           <h3>
             <Link className="title" activeClassName="activeNavItem" to="/">
               {data.site.siteMetadata.title}

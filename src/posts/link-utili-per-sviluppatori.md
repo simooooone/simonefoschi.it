@@ -1,8 +1,8 @@
 ---
-title: "Lista di link di programmazione e informatica in generale."
-description: "Iniziare da zero può spaventare e molti si chiedono da dove cominciare e quale percorso seguire. In questo post voglio mostrarvi la mia lista dei preferiti secondo la mia esperienza."
+title: "Lista di link chiccosi."
+description: "In questo post voglio mostrarvi la mia lista dei preferiti che al momento trovo i più interessanti."
 date: "2/11/2019"
-update: "2/11/2019"
+update: "11/11/2019"
 author: "Simo"
 ---
 

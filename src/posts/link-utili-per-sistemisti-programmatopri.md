@@ -6,7 +6,7 @@ update: "11/11/2019"
 author: "Simo"
 ---
 
-# le chicche di Simo
+# Link utili per sistemisti e programmatori alle prime armi
 
 In questa lista condivido i link che mi piacciono riguardo i vari aspetti della programmazione e della sistemistica che di mano in mano seguo per imparare, risparmiare, creare, tenere in piedi.
 

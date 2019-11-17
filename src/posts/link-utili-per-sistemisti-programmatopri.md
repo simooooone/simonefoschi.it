@@ -16,11 +16,9 @@ partiamo dalle basi:
 
 [vscodium.com](https://vscodium.com/): VS Codium, VS Code reso Libre software.
 
-[code.visualstudio.com/docs/](https://code.visualstudio.com/docs/): Documentazione di VS Code
+[confluence.atlassian.com](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html): Guida alla sintassi del formato Markdown ovvero i famosi files .md su github.
 
-[confluence.atlassian.com](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html): Guida alla sintassi del formato Markdown ovvero i famosi files .md su [github.com](https://github.com)
-
-[digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute a prezzi sostenibili
+[digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute con moltissime funzionalità al top a prezzi sostenibili.
 
 [allsync.com/](https://allsync.com/aff.php?aff=289): poca spesa, massima resa: 50 GB di spazio nextcloud (il rivale open source e sicurissmo di Dropbox) per le tue foto, documenti e qualsiasi altra cosa digitale tu voglia per 0.99 all'anno. 
 
@@ -28,16 +26,17 @@ partiamo dalle basi:
 
 [dietpi.com](https://dietpi.com): un SO con cui installare facilmente software e facile da configurare per Raspberry PI 4. &egrave; basato su Raspbian, quindi si va sul sicuro.
 
-[news.ycombinator.com](https://news.ycombinator.com): che altro dire, ecco Hacker News, the original. 
-> *chicca*
-> Quando vedete in commenti in giro sul web che è stato pubblicato su HN, si riferiscono a questo sito.
+[news.ycombinator.com](https://news.ycombinator.com): news dell'era digitale.
+(Quando vedete in commenti in giro sul web che è stato pubblicato su HN, si riferiscono a questo sito)
 
 [hackerrank.com](https://www.hackerrank.com):
 programmazione competitiva, impara le basi e anche di più del tuo linguaggio preferito.
 
-[jamstack.org](https://jamstack.org/): info e best practices per JAM stack
+[jamstack.org](https://jamstack.org/): info e best practices per JAM stack.
 
-[staticgen.com/](https://www.staticgen.com/): lunga lista di generatori di siti statici (JAM stack)
+[staticgen.com/](https://www.staticgen.com/): lunga lista di generatori di siti statici (JAM stack).
+
+[da github](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): il meglio delle risorse per programmatori o aspiranti tali sul web.
 
 Sentitevi liberi di creare PR su github per questo articolo. Le cose nuove mi piacciono un sacco e mi fanno anche imparare molto.
 

@@ -30,8 +30,15 @@ partiamo dalle basi:
 
 [news.ycombinator.com](https://news.ycombinator.com): che altro dire, ecco Hacker News, the original. 
 > *chicca*
-> Quando vedete in commenti in giro sul web che è stato pubblicato su HN, è questo.
+> Quando vedete in commenti in giro sul web che è stato pubblicato su HN, si riferiscono a questo sito.
 
-Sentitevi liberi di creare PR su github per questo articolo. Le cose nuove mi piacciono un sacco.
+[hackerrank.com](https://www.hackerrank.com):
+programmazione competitiva, impara le basi e anche di più del tuo linguaggio preferito.
+
+[jamstack.org](https://jamstack.org/): info e best practices per JAM stack
+
+[staticgen.com/](https://www.staticgen.com/): lunga lista di generatori di siti statici (JAM stack)
+
+Sentitevi liberi di creare PR su github per questo articolo. Le cose nuove mi piacciono un sacco e mi fanno anche imparare molto.
 
 --Buona vita--

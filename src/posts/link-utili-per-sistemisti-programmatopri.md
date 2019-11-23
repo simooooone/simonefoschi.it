@@ -36,7 +36,7 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [staticgen.com/](https://www.staticgen.com/): lunga lista di generatori di siti statici (JAM stack).
 
-[da github](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): il meglio delle risorse per programmatori o aspiranti tali sul web.
+[github.com](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): il meglio delle risorse per programmatori o aspiranti tali sul web.
 
 Sentitevi liberi di creare PR su github per questo articolo. Le cose nuove mi piacciono un sacco e mi fanno anche imparare molto.
 

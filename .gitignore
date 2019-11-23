@@ -70,3 +70,6 @@ yarn-error.log
 
 # VS Code settings
 .vscode/
+
+# Simo custom ignores
+temp/

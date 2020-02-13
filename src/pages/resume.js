@@ -75,7 +75,16 @@ const AboutPage = () => {
           <em>More than 300 websites developed</em>
         </p>
 
-        <h4>www.amicimici.com</h4>
+        <h4>simonefoschi.it</h4>
+        <p>
+          <em>2019</em>
+        </p>
+
+        <p>
+          Reactjs, Gatsbyjs, HTML, CSS, Netlify
+        </p>
+
+        <h4>amicimici.com</h4>
         <p>
           <em>2016 - 2017</em>
         </p>
@@ -83,8 +92,10 @@ const AboutPage = () => {
           HTML, CSS, jQuery, WordPress, Facebook pages, Facebook Ads, Linux
           server
         </p>
-
-        <h4>www.okgrazie.it</h4>
+        <p>
+          <a href="https://www.amicimici.com" target="_blank" rel="noopener">link</a>
+        </p>
+        <h4>okgrazie.it</h4>
         <p>
           <em>2011 - 2013</em>
         </p>

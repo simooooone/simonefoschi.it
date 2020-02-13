@@ -40,7 +40,7 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [jamstack.org](https://jamstack.org/): info e best practices per JAM stack.
 
-[staticgen.com/](https://www.staticgen.com/): lunga lista di generatori di siti statici (JAM stack).
+[staticgen.com](https://www.staticgen.com/): lunga lista di generatori di siti statici (JAM stack).
 
 [github.com](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): il meglio delle risorse per programmatori o aspiranti tali sul web.
 

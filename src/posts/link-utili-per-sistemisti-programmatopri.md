@@ -18,8 +18,6 @@ partiamo dalle basi:
 
 [confluence.atlassian.com](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html): Guida alla sintassi del formato Markdown ovvero i famosi files .md su github.
 
-[digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute con moltissime funzionalità al top a prezzi sostenibili.
-
 [allsync.com/](https://allsync.com/aff.php?aff=289): poca spesa, massima resa: 50 GB di spazio nextcloud (il rivale open source e sicurissmo di Dropbox) per le tue foto, documenti e qualsiasi altra cosa digitale tu voglia per 0.99 all'anno. 
 
 [alternativeto.net](https://alternativeto.net): cerchi delle alternative ai tuoi software?

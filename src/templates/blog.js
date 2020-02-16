@@ -41,7 +41,7 @@ const Blog = props => {
         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
       </p>
       <br />
-      <p>Commenta questo post <a href="https://www.twitter.com/simooo">su twitter</a></p>
+      <p>Commenta questo post <a href="https://www.twitter.com/simooooone/" target="_blank" rel="noopener nofollow">su twitter</a></p>
       <br />
       
       <p>

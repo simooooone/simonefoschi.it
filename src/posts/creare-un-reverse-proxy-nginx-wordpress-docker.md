@@ -6,32 +6,37 @@ update: "13/02/2020"
 author: "Simo"
 ---
 
+<!--
 Devo dire che è stato un parto abbastanza complicato.
 
-Capire docker e mettere in piedi un server in produzione è un lavoro che mi ha sdrenato ma mi ha insegnato tantissimo e soprattutto mi ha fatto risparmiare sull'hosting VPS gestito che avevo prima.
+Capire docker e mettere in piedi un server in produzione è un lavoro che mi ha sdrenato ma mi ha insegnato tantissimo e soprattutto mi ha fatto risparmiare sull'hosting VPS su [digitalocean](https://m.do.co/c/b8caeaf651c4) gestito da [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che avevo prima.
 
 Innanzitutto non sapevo cosa fosse un reverse proxy.
-Secondo non sapevo configurare correttamente un server nginx a mano con tutte le direttive che in molti casi non sapevo a cosa servissero sul serio.
-Terzo docker è un aggeggio utile utile, ma finché non ci ho preso confidenza era solo un aggeggio bello bello ma inutile.
+Secondo non sapevo configurare correttamente un server nginx e non sapevo a cosa servissero sul serio tutte le direttive che servono per mettere un server in produzione.
+Terzo docker è un aggeggio utile utile, ma finché non ci ho preso confidenza era solo un aggeggio bello bello ma non sapevo che farmene.
+-->
 
 ## Come ho iniziato a pensarci
 
-Era un pezzetto che seguivo delle guide su docker, ser ne parla molto in giro per il web e nell'azssociazione che frequento e così ho pensato che un server con dei servizi gestiti da docker fosse veramente una cosa molto utile.
+Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'associazione Rimini LUG che frequento e siccome Docker è un ottimo tool per eseguire vari servizi su un singolo VPS, ho pensato che fosse veramente una cosa veramente molto utile.
 
-Solo per il fatto di non dover sporcare la macchina sul quale si esegue docker è una cosa veramente al top.
+Il fatto di non dover sporcare la macchina sul quale si esegue docker è una cosa che me l'ha fatto preferire all'installare i servizi direttamente sul sistema operativo.
 
-Ho fatto questa considerazione dopo gli n tentativi di creare una macchina e dover reinstallare il sistema operativo per avere un sistema pulito.
+Dopo vari tentativi ho scoperto che mi sarebbe servito un reverse proxy e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/) dove si parla di come eseguire un server web e caricare automaticamente la configurazione di nginx.
 
-Durante i vari tentativi ho scoperto che mi sarebbe servito un reverse proxy e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/).
-
-Prova che ti riprova non sono riuscito a metterlo in piedi - forse perché il post è abbastanza datato -, quindi ho chiesto aiuto al presidente dell'associazione che mi ha trovato [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose).
+Prova che ti riprova non sono riuscito a metterlo in piedi - forse perché il post è abbastanza datato -, quindi ho chiesto aiuto al presidente dell'associazione che mi ha trovato [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
 
 Chiara chiara.
 
-In quel momento sono riuscito a mettere in piedi il sistema, ma senza i certificati, in seguito, durante un fine settimana che mi sonmo preso libero, sono riuscito a mettere in piedi il tutto.
+In quel momento sono riuscito a mettere in piedi il sistema, ma senza i certificati, in seguito, durante un fine settimana, sono riuscito a mettere in piedi il tutto.
 
-Il problema inizialmente era la quantità di RAM c he richiedeva questo tipo di sistema ed essendo su un VPS base di Digital Ocean, disponevo solo di 1 Gb di RAM.
+Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, ne richiedeva una quantità maggiore e che mi sarebbe costato troppo l'hosting.
 
-Sempre il Presidente mi ha ricordato [contabo.com](https://contabo.com), mi aveva consigliato precedentemente anche un altro socio dell'associazione, ma a causa di [runcloud.io](https://runcloud.io) che funziona solo su determinati hosting, non avevo considerato per il mio server.
+Matteo, il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato per il mio server.
 
-Quindi 
+Quindi ora ho 4 Gb di RAM e 300 Gb di hard disk SSD Boosted per la modica cifra di 3,99 euro al mese al posto dei 13 euro e passa dell'hosting di prima.
+
+Questa la parte decisionale, passiamo quindi alla parte pratica.
+
+## Come configurare il reverse proxy con docker
+

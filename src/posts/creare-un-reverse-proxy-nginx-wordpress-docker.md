@@ -6,41 +6,37 @@ update: "13/02/2020"
 author: "Simo"
 ---
 
-<!--
 Devo dire che è stato un parto abbastanza complicato.
 
 Capire docker e mettere in piedi un server in produzione è un lavoro che mi ha sdrenato ma mi ha insegnato tantissimo e soprattutto mi ha fatto risparmiare sull'hosting VPS su [digitalocean](https://m.do.co/c/b8caeaf651c4) gestito da [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che avevo prima.
 
-Innanzitutto non sapevo cosa fosse un reverse proxy.
-Secondo non sapevo configurare correttamente un server nginx e non sapevo a cosa servissero sul serio tutte le direttive che servono per mettere un server in produzione.
-Terzo docker è un aggeggio utile utile, ma finché non ci ho preso confidenza era solo un aggeggio bello bello ma non sapevo che farmene.
--->
+- Innanzitutto non sapevo cosa fosse un reverse proxy.
+- Secondo non sapevo configurare correttamente un server nginx e non sapevo a cosa servissero sul serio tutte le direttive che servono per mettere un server in produzione.
+- Terzo docker è un aggeggio bello bello, ma finché non qualcosa per cui mi servisse realmente era solo un aggeggio di cui non sapevo che farmene, una cosa in più.
 
 ## Come ho iniziato a pensarci
 
-Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'associazione Rimini LUG che frequento e siccome Docker è un ottimo tool per eseguire vari servizi su un singolo VPS, ho pensato che fosse veramente una cosa veramente molto utile.
+Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'associazione Rimini LUG che frequento e siccome Docker è un ottimo tool per eseguire vari servizi su una singola macchina, ho pensato che mi sarebbe tornato utile per il mio server.
 
-Il fatto di non dover sporcare la macchina sul quale si esegue docker è una cosa che me l'ha fatto preferire all'installare i servizi direttamente sul sistema operativo.
+Docker ha il pregio di sporcare minimamente la macchina sul quale si eseguono i container ed è facilmente trasportabile da una macchina ad un'altra ed estendibile per lavorare su più macchine quando il carico di lavoro aumenta.
 
 Dopo vari tentativi ho scoperto che mi sarebbe servito un reverse proxy e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/) dove si parla di come eseguire un server web e caricare automaticamente la configurazione di nginx.
 
-Prova che ti riprova non sono riuscito a metterlo in piedi - forse perché il post è abbastanza datato -, quindi ho chiesto aiuto al presidente dell'associazione che mi ha trovato [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
+Prova che ti riprova non sono riuscito a metterlo in piedi, quindi trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
 
-Chiara chiara.
+Chiara chiara, pulita ed ha funzionato subito.
 
-In quel momento sono riuscito a mettere in piedi il sistema, ma senza i certificati, in seguito, durante un fine settimana, sono riuscito a mettere in piedi il tutto.
+Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, ne richiedeva una quantità maggiore e che mi sarebbe costato troppo l'hosting presso loro.
 
-Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, ne richiedeva una quantità maggiore e che mi sarebbe costato troppo l'hosting.
+Il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato per il mio server gestito.
 
-Matteo, il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato per il mio server.
+Quindi ora ho 4 Gb di RAM e 300 Gb di hard disk SSD Boosted per la cifra di 3,99 euro al mese al posto dei 13 euro e passa che spendevo su digitalocean.
 
-Quindi ora ho 4 Gb di RAM e 300 Gb di hard disk SSD Boosted per la modica cifra di 3,99 euro al mese al posto dei 13 euro e passa dell'hosting di prima.
+Questa la parte decisionale, ora passiamo alla parte pratica.
 
-Questa la parte decisionale, ora passiamo quindi alla parte pratica.
+## Come configurare il server per e installare docker
 
-## Come configurare il server per e instare docker
-
-Come sistema operativo ho deciso di usare Ubuntu 10.04 LTS e come sistema di protezione fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che contabo ha un suo firewall ed apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per la mia installazione.
+Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che contabo ha un suo firewall ed apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza di base per la mia installazione.
 
 `adduser TUO-USERNAME`
 `usermod -aG sudo TUO-USERNAME`
@@ -54,9 +50,10 @@ Come sistema operativo ho deciso di usare Ubuntu 10.04 LTS e come sistema di pro
 `usermod -aG docker TUO-USERNAME`
 `apt install docker-compose -y`
 
-Per quanto riguyarda il login ssh avevo già generato sul mio computer di sviluppo le chiavi private e quindi con filezilla non ho fatto altro che caricarle nella cartella /home/TUO-USERNAME/.ssh con i permessi corretti.
+Per quanto riguarda il login ssh avevo già generato sul mio computer di sviluppo le chiavi private e quindi con filezilla non ho fatto altro che caricarle nella cartella /home/TUO-USERNAME/.ssh con i permessi corretti.
 
-Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li ho configurati tutti per puntare al mio server:
+Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li ho configurati tutti per puntare al mio server.
+Per ogni dominio di test ho fatto così:
 
 `mkdir duckdns`
 `cd duckdns`
@@ -71,9 +68,7 @@ Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li
 `# CTRL-X INVIO`
 `./TUO-DOMINIO.sh`
 
-Per il server di produzione bisogna che fate puntare i dns dei vostri domini all'IP della macchina di produzione.
-
-Infatti la configurazione sopra serve per la macchina in fase di test.
+Per il server di produzione bisogna che fate puntare i dns dei vostri domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in fase di test.
 
 ## Configurare la network, i container ed i volumi Docker
 
@@ -89,7 +84,6 @@ Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle dire
     - nginx-proxy
         1. wordpress1
         2. wordpress2
-        3. altri wordpress...
 
 Questo per creare una struttura ordinata nella quale compilare i nostri *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
 
@@ -183,7 +177,6 @@ e un docker-compose.yml in ogni cartella con questo contenuto:
 `  default:`
 `    external:`
 `      name: nginx-proxy`
-
 `      MYSQL_PASSWORD: MY-SECRET-PASSWORD`
 
 Cambiando rispettivamente "example" con il nome del mio sito, "MY-SECRET-PASSWOWRD" con due password sicure, una per root e una per l'utente di mariadb associato al sito e l'email per richiedere il certificato https.
@@ -194,5 +187,15 @@ si salvano le due configurazioni e nelle tre cartelle ove abbiamo creato i file 
 
 > aggiungendo il parametro -d si indicherà a docker-compose di eseguire i container come demoni
 
+## Il lieto fine
+
+Dopo aver messo in produzione il tutto ho dovuto fare alcune sistemazioni, tutte correttamente riportate negli snippet di questo articolo.
+
+Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento dell'engine di docker, bisogna riavviare i container con un:
+
+`docker-compose stop`
+`docker-compose up -d`
+
+nelle rispettive cartelle dei file docker-compose.yml
 
 -- buona vita --

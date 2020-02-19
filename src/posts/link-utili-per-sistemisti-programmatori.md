@@ -18,9 +18,7 @@ partiamo dalle basi:
 
 [confluence.atlassian.com](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html): Guida alla sintassi del formato Markdown ovvero i famosi files .md su github.
 
-[digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute con moltissime funzionalità al top a prezzi sostenibili.
-
-[allsync.com](https://allsync.com/aff.php?aff=289): poca spesa, massima resa: 50 GB di spazio nextcloud (il rivale open source e sicurissmo di Dropbox) per le tue foto, documenti e qualsiasi altra cosa digitale tu voglia per 0.99 all'anno. 
+[allsync.com/](https://allsync.com/aff.php?aff=289): poca spesa, massima resa: 50 GB di spazio nextcloud (il rivale open source e sicurissmo di Dropbox) per le tue foto, documenti e qualsiasi altra cosa digitale tu voglia per 0.99 all'anno. 
 
 [alternativeto.net](https://alternativeto.net): cerchi delle alternative ai tuoi software?
 
@@ -44,6 +42,8 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [github.com](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): il meglio delle risorse per programmatori o aspiranti tali sul web.
 
-[contabo.com](https://contabo.com): hosting VPS con 4 giga di RAM e 300 Gb di hard disk a soli 3 euro e 99 al mese. Me l'hanno consigliato alcuni sistemisti del LUG di Rimini, finora è il più conveniente che ho trovato. Consigliatissimo.
+[digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute con moltissime funzionalità al top a prezzi sostenibili.
+
+[contabo.com](https://contabo.com): Hosting VPS con sito scrauso ma veramente ottimo a livello di servizio. 4 giga di RAM e 300 giga di HD a soli 3 euro e 99 al mese.
 
 --Buona vita--

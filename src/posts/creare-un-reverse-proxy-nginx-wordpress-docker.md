@@ -198,6 +198,6 @@ Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento d
 
 nelle rispettive cartelle dei file docker-compose.yml
 
-Finito tutto per il meglio dopo qualche mese di studio domande nelle chat e nei forum e di sbattimenti di testa.
+Finito tutto per il meglio dopo qualche mese di studio, domande nelle chat, nei forum e di sbattimenti di testa. Morale, so anche fare il sistemista quando mi impegno.
 
 -- Buona vita --

@@ -8,6 +8,7 @@ author: "Simo"
 
 Devo dire che è stato un parto abbastanza complicato.
 
+
 ## Come ho iniziato a pensarci
 
 Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'associazione Rimini LUG che frequento e siccome Docker è un ottimo tool per eseguire vari servizi su una singola macchina, ho pensato che mi sarebbe tornato utile per il mio server.
@@ -27,6 +28,7 @@ Il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com)
 Quindi, comprato il VPS basico basico su contabo, ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola al confronto di prima.
 
 Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
+
 
 ## Come configurare il server per e installare docker
 
@@ -89,6 +91,7 @@ Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle dire
 Questo per creare una struttura ordinata nella quale compilare i nostri *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
 
 > In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu o di un altro sistema operativo *nix, basterà caricare le cartelle e i files che creeremo, fare una configurazione come sopra e lanciare docker-compose su ogni cartella ove ci sia un docker-compose.yml, girare i dns verso il nuovo server per i nostri siti funzionanti come sul vecchio VPS.
+
 
 ## Creare i files docker-compose.yml
 
@@ -186,6 +189,7 @@ si salvano le due configurazioni e nelle tre cartelle ove abbiamo creato i file 
 `docker-compose up`
 
 > aggiungendo il parametro -d si indicherà a docker-compose di eseguire i container come demoni, quindi in fase di produzione bisognerà dare quel paramentro.
+
 
 ## Il lieto fine
 

@@ -22,6 +22,8 @@ Quindi per rendere raggiungibile alcuni servizi della nostra rete dall’esterno
 
 I siti che offrono Dynamic DNS gratuito, sono parecchi ad esempio [no-ip.com](https://www.no-ip.com) ed io ho scelto [duckdns.org](https://duckdns.org), iniziando per provare, poi adottato in pianta stabile vista la sua affidabilità.
 
+
+
 ## Procedura di registrazione a duckdns.org
 
 Una volta su [duckdns.org](https://duckdns.org) ci si presenta la pagina principale, dove in alto ci sono vari tipi di login.

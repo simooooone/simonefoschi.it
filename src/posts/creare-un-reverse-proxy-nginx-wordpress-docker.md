@@ -8,6 +8,7 @@ author: "Simo"
 
 Devo dire che è stato un parto abbastanza complicato.
 
+<br>
 
 ## Come ho iniziato a pensarci
 
@@ -29,6 +30,7 @@ Quindi, comprato il VPS basico basico su contabo, ora ho 4 Gb di RAM e 300 Gb di
 
 Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
+<br>
 
 ## Come configurare il server per e installare docker
 
@@ -66,6 +68,8 @@ Per ogni dominio di test ho fatto così:
 
 Per il server di produzione bisogna che fate puntare i dns dei vostri domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in fase di test.
 
+<br>
+
 ## Configurare la network, i container ed i volumi Docker
 
 Per creare il network sotto il quale gireranno i vostri container, bisogna dare questo comando:
@@ -92,7 +96,7 @@ Questo per creare una struttura ordinata nella quale compilare i nostri *docker-
 
 > In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu o di un altro sistema operativo *nix, basterà caricare le cartelle e i files che creeremo, fare una configurazione come sopra e lanciare docker-compose su ogni cartella ove ci sia un docker-compose.yml, girare i dns verso il nuovo server per i nostri siti funzionanti come sul vecchio VPS.
 
-<br><br>
+<br>
 
 ## Creare i files docker-compose.yml
 
@@ -191,7 +195,7 @@ si salvano le due configurazioni e nelle tre cartelle ove abbiamo creato i file 
 
 > aggiungendo il parametro -d si indicherà a docker-compose di eseguire i container come demoni, quindi in fase di produzione bisognerà dare quel paramentro.
 
-<br><br>
+<br>
 
 ## Il lieto fine
 

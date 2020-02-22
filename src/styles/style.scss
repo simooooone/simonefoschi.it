@@ -162,6 +162,11 @@ code {
   display: block;
 }
 
+ul > ul {
+  padding-left:15px;
+}
+
+
 .title-color {
   color: $title-color;
 }

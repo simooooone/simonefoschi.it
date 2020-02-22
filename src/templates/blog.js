@@ -37,8 +37,8 @@ const Blog = props => {
         updated <em>{props.data.markdownRemark.frontmatter.update}</em>
       </p>
 
-      <p dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
-      </p>
+      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
+      </div>
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>

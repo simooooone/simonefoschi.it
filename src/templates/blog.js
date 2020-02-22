@@ -37,13 +37,8 @@ const Blog = props => {
         updated <em>{props.data.markdownRemark.frontmatter.update}</em>
       </p>
 
-      <p>
-        dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+      <p dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </p>
-      <br />
-      <p>Commenta questo post <a href="https://www.twitter.com/simooooone/" target="_blank" rel="noopener nofollow">su twitter</a></p>
-      <br />
-      
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>

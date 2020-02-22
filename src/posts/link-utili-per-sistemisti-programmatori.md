@@ -46,4 +46,4 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [contabo.com](https://contabo.com): Hosting VPS con sito scrauso ma veramente ottimo a livello di servizio. 4 giga di RAM e 300 giga di HD a soli 3 euro e 99 al mese.
 
---Buona vita--
+-- Buona vita --

@@ -36,4 +36,4 @@ Un check veloce con “free -m” e adesso la mia installazione di Nexcloud è m
 >Inoltre la RAM così ottenuta è più lenta della normale RAM fisica.
 
 
---Alla prossima--
+-- Buona vita--

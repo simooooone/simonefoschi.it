@@ -197,4 +197,4 @@ Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento d
 
 nelle rispettive cartelle dei file docker-compose.yml
 
--- buona vita --
+-- Buona vita --

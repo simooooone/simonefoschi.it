@@ -90,4 +90,4 @@ Se usate Gnome si possono scrivere le immagini ISO con **Gnome Disks**
 Ora è tutto pronto per installare la microSD sul Raspberry e iniziare ad esplorare le meraviglie di questo piccolo computer.
 
 
---Buona vita--
+-- Buona vita --

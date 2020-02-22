@@ -19,7 +19,7 @@ const BarraBloccata = props => {
             <div className="imgBB fullWidth">
               <Link to="/">
                 <img
-                  src={require("../pages/img/simo-" + props.myimg + ".jpg")}
+                  src={require("../img/simo-" + props.myimg + ".jpg")}
                 />
               </Link>
             </div>

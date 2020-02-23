@@ -68,17 +68,17 @@ Per ogni dominio di test ho fatto così:
 `# CTRL-X INVIO`
 `./TUO-DOMINIO.sh`
 
-Per il server di produzione bisogna  puntare i dns dei domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in test.
+Per il server di produzione bisogna puntare i dns dei domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in test.
 
 <br>
 
 ## Configurare la network, i container ed i volumi Docker
 
-Per creare il docker network sotto il quale gireranno i vostri container, bisogna dare questo comando:
+Per creare il docker network sotto il quale gireranno i container, bisogna dare questo comando:
 
 `docker network create nginx-proxy`
 
-Da ora in poi assegneremo i nostri container alla rete *nginx-proxy* appena creata.
+Da ora in poi assegneremo i container alla rete *nginx-proxy* appena creata.
 
 Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle directory:
 
@@ -101,7 +101,7 @@ Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle dire
 </ul>
 
 
-Questo per creare una struttura ordinata nella quale compilare i nostri *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
+Questo per creare una struttura ordinata nella quale compilare i *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
 
 > In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu esattamente come sopra, basterà caricare le cartelle e i files che creeremo e lanciare docker-compose su ogni cartella ove ci sia un docker-compose.yml, girare i dns verso il nuovo server per avere i  siti funzionanti come sul vecchio VPS.
 

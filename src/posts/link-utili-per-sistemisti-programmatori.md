@@ -40,7 +40,7 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [staticgen.com](https://www.staticgen.com/): lunga lista di generatori di siti statici (JAM stack).
 
-[github.com](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): il meglio delle risorse per programmatori o aspiranti tali sul web.
+[github.com](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): il meglio delle risorse per programmatori, curiosi, studenti, aziende piccole, medie, grandi, immense.
 
 [digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute con moltissime funzionalità al top a prezzi sostenibili.
 

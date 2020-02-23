@@ -24,9 +24,9 @@ Chiara chiara, pulita ed ha funzionato subito.
 
 Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, richiedeva una quantità di risorse maggiore e che mi sarebbe costato troppo l'hosting presso di loro per due sitarelli come i miei.
 
-Il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato l'ozione di spostare il mio server.
+Il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato l'opzione di spostare il mio server.
 
-Quindi, comprato il VPS basico basico su contabo, ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola al confronto di prima.
+Quindi, comprato il VPS basico basico su contabo ed ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola confronto a prima.
 
 Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
@@ -34,7 +34,7 @@ Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
 ## Come configurare il server per e installare docker
 
-Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che contabo ha un suo firewall ed apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
+Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che contabo ha un suo firewall per i VPS ed apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
 
 `adduser TUO-USERNAME`
 `usermod -aG sudo TUO-USERNAME`
@@ -66,17 +66,17 @@ Per ogni dominio di test ho fatto così:
 `# CTRL-X INVIO`
 `./TUO-DOMINIO.sh`
 
-Per il server di produzione bisogna che fate puntare i dns dei vostri domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in fase di test.
+Per il server di produzione bisogna  puntare i dns dei domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in test.
 
 <br>
 
 ## Configurare la network, i container ed i volumi Docker
 
-Per creare il network sotto il quale gireranno i vostri container, bisogna dare questo comando:
+Per creare il docker network sotto il quale gireranno i vostri container, bisogna dare questo comando:
 
 `docker network create nginx-proxy`
 
-Da ora in poi assegneremo i nostri container alla rete *nginx-proxy*
+Da ora in poi assegneremo i nostri container alla rete *nginx-proxy* appena creata.
 
 Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle directory:
 
@@ -86,7 +86,14 @@ Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle dire
             <li>nginx-proxy</li>
                 <ul>
                     <li>wordpress1</li>
-                    <li>wordpress2</li>
+                        <ul>
+                            <li>wp-content</li>
+                        </ul>
+                    <li>wordpress2
+                        <ul>
+                            <li>wp-content</li>
+                        </ul>
+                    </li>
                 </ul>
         </ul>
 </ul>
@@ -94,7 +101,7 @@ Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle dire
 
 Questo per creare una struttura ordinata nella quale compilare i nostri *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
 
-> In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu o di un altro sistema operativo *nix, basterà caricare le cartelle e i files che creeremo, fare una configurazione come sopra e lanciare docker-compose su ogni cartella ove ci sia un docker-compose.yml, girare i dns verso il nuovo server per i nostri siti funzionanti come sul vecchio VPS.
+> In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu esattamente come sopra, basterà caricare le cartelle e i files che creeremo e lanciare docker-compose su ogni cartella ove ci sia un docker-compose.yml, girare i dns verso il nuovo server per avere i  siti funzionanti come sul vecchio VPS.
 
 <br>
 
@@ -189,7 +196,7 @@ e un docker-compose.yml in ogni cartella con questo contenuto:
 
 Cambiando rispettivamente "example" con il nome del mio sito, "MY-SECRET-PASSWOWRD" con due password sicure, una per root e una per l'utente di mariadb associato al sito e l'email per richiedere il certificato https.
 
-si salvano le due configurazioni e nelle tre cartelle ove abbiamo creato i file docker-compose.yml si esegue:
+si salvano le due configurazioni e rispettivamente in ogni cartella ove abbiamo creato i file docker-compose.yml si esegue:
 
 `docker-compose up`
 

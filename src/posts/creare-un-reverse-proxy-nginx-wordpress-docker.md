@@ -8,7 +8,7 @@ author: "Simo"
 
 Devo dire che è stato tutto abbastanza complicato, ma alla fine una volta che il lavoro è fatto... cosa vuoi che sia?
 
-semi-cit. - Primo (e mi ba)
+semi-cit. - Primo Foschi
 
 <br>
 
@@ -82,24 +82,28 @@ Per il server di produzione bisogna puntare i dns dei domini all'IP della macchi
 
 Per creare il docker network sotto il quale gireranno i container, bisogna dare questo comando:
 
+```
+
 docker network create nginx-proxy
+```
 
 Da ora in poi assegneremo i container alla rete *nginx-proxy* appena creata.
 
 Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle directory:
 
 <ul>
-    <li>&tilde;</li>
+    <li>/home/TUO-USERNAME/</li>
         <ul>
-            <li>nginx-proxy</li>
+            <li>nginx-proxy/</li>
                 <ul>
-                    <li>wordpress1</li>
+                    <li>wordpress1/
                         <ul>
-                            <li>wp-content</li>
+                            <li>wp-content/</li>
                         </ul>
-                    <li>wordpress2
+                    </li>
+                    <li>wordpress2/
                         <ul>
-                            <li>wp-content</li>
+                            <li>wp-content/</li>
                         </ul>
                     </li>
                 </ul>
@@ -109,7 +113,7 @@ Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle dire
 
 Questo per creare una struttura ordinata nella quale compilare i *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
 
-> In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu esattamente come sopra, basterà caricare le cartelle e i files che creeremo e lanciare docker-compose su ogni cartella ove ci sia un docker-compose.yml, girare i dns verso il nuovo server per avere i  siti funzionanti come sul vecchio VPS.
+> In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu esattamente come sopra, basterà caricare le cartelle e i files che creeremo e lanciare il comando "docker-compose up -d" su ogni cartella ove ci sia un docker-compose.yml e girare i dns verso il nuovo server per avere i siti funzionanti come sul vecchio VPS.
 
 <br>
 

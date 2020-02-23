@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Simone Foschi <s.foschi@protonmail.com>",
   "dependencies": {
+    "@types/highlight.js": "^9.12.3",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",

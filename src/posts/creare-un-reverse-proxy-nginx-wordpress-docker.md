@@ -14,7 +14,7 @@ semi-cit. - Primo (e mi ba)
 
 ## Come ho iniziato a pensarci
 
-Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'associazione Rimini LUG che frequento e siccome Docker è un ottimo tool per eseguire vari servizi su una singola macchina, ho pensato che mi sarebbe tornato utile per il mio server.
+Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'[associazione RiminiLUG](https://www.riminilug.it/) che frequento e siccome Docker è un ottimo tool per eseguire vari servizi su una singola macchina, ho pensato che mi sarebbe tornato utile per il mio server.
 
 Docker ha il pregio di sporcare minimamente la macchina sul quale si eseguono i container, è facilmente trasportabile da una macchina ad un'altra ed estendibile per distribuire il carico del server su più macchine quando il carico di lavoro aumenta.
 
@@ -26,7 +26,7 @@ Chiara chiara, pulita ed ha funzionato subito.
 
 Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, richiedeva una quantità di risorse maggiore e che mi sarebbe costato troppo l'hosting presso di loro per due sitarelli come i miei.
 
-Il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato l'opzione di spostare il mio server.
+Matteo, il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche Giuseppe, un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato l'opzione di spostare il mio server.
 
 Quindi, comprato il VPS basico basico su contabo ed ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola confronto a prima.
 

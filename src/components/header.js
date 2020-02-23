@@ -20,7 +20,7 @@ const Header = props => {
             <img src={require("../img/simo-"+props.myimg+'.jpg')} />
           </Link>
         </div>
-        <div class="myname-top flex-2">
+        <div className="myname-top flex-2">
           <h3>
             <Link className="title" activeClassName="activeNavItem" to="/">
               {data.site.siteMetadata.title}

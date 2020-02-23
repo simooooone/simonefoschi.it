@@ -15,7 +15,7 @@ const BarraBloccata = props => {
     <div className="blkBB">
       <div className="container-nocol">
         <div className="content">
-          <div class="contSx">
+          <div className="contSx">
             <div className="imgBB fullWidth">
               <Link to="/">
                 <img

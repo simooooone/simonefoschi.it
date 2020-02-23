@@ -20,7 +20,7 @@ Docker ha il pregio di sporcare minimamente la macchina sul quale si eseguono i 
 
 Dopo vari tentativi ho scoperto che mi sarebbe servito un reverse proxy nginx e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/) dove si parla di come eseguire un reverse proxy con docker e caricare automaticamente la configurazione di nginx.
 
-Prova che ti riprova, inizialmente non sono riuscito a metterlo in piedi, finché non trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
+Prova che ti riprova, inizialmente non sono riuscito a metterlo in piedi, finché non ho trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
 
 Chiara chiara, pulita ed ha funzionato subito.
 
@@ -36,7 +36,7 @@ Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
 ## Come configurare il server per e installare docker
 
-Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che contabo ha un suo firewall per i VPS ed apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
+Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che contabo imposta nella loro immagine di Ubuntu un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
 
 `adduser TUO-USERNAME`
 `usermod -aG sudo TUO-USERNAME`
@@ -217,6 +217,6 @@ Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento d
 
 nelle rispettive cartelle dei file docker-compose.yml
 
-Finito tutto per il meglio dopo qualche mese di studio, domande nelle chat, nei forum e di sbattimenti di testa. Morale, so anche fare il sistemista quando mi impegno.
+Finito tutto per il meglio dopo qualche mese di studio, domande nelle chat, nei forum e di sbattimenti di testa. Morale, so anche fare il sistemista quando mi impegno. :-)
 
 -- Buona vita --

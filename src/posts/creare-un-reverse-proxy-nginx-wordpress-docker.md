@@ -6,7 +6,7 @@ update: "13/02/2020"
 author: "Simo"
 ---
 
-Devo dire che è stato un parto abbastanza complicato.
+Devo dire che è stato un parto abbastanza complicato ma alla fine, una volta che il lavoro è fatto... cosa vuoi che sia?
 
 <br>
 

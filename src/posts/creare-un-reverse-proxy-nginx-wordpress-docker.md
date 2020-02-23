@@ -6,9 +6,9 @@ update: "23/02/2020"
 author: "Simo"
 ---
 
-Devo dire che è stato un parto abbastanza complicato ma alla fine, una volta che il lavoro è fatto... cosa vuoi che sia?
+Devo dire che è stato tutto abbastanza complicato, ma alla fine una volta che il lavoro è fatto... cosa vuoi che sia?
 
-cit. Primo (é mi ba)
+semi-cit. - Primo (e mi ba)
 
 <br>
 

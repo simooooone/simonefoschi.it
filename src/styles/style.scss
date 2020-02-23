@@ -133,14 +133,9 @@ a {
 }
 
 pre {
-  margin: 0 0 1.45rem;
-  font-size: 0.85rem;
-  line-height: 1.42;
-  background: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1.45rem;
+  margin: 0;
+  padding: 0;
+  line-height:1;
 }
 
 strong,
@@ -151,15 +146,13 @@ b {
 code {
   font-size: 0.85rem;
   line-height: 1.45rem;
-}
-
-code {
   background-color: #202020;
   border-radius: 3px;
   font-family: $font-code;
   padding: 15px;
   margin: 0;
   display: block;
+  overflow-x:scroll;
 }
 
 ul > ul {

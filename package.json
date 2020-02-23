@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.53",
     "gatsby-transformer-sharp": "^2.3.14",
+    "highlight.js": "^9.18.1",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "particles.js": "^2.0.0",

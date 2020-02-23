@@ -36,7 +36,7 @@ Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
 ## Come configurare il server per e installare docker
 
-Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che nell'immagine di Ubuntu di Contabo è impostato un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
+Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che nell'immagine di Ubuntu 18.04 di Contabo è impostato un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
 
 `adduser TUO-USERNAME`
 `usermod -aG sudo TUO-USERNAME`

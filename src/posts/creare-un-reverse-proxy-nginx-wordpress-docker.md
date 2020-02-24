@@ -8,7 +8,7 @@ author: "Simo"
 
 Devo dire che è stato tutto abbastanza complicato, ma alla fine una volta che il lavoro è fatto... cosa vuoi che sia?
 
-semi-cit. - Primo Foschi
+semicit. Primo Foschi
 
 <br>
 
@@ -20,15 +20,18 @@ Docker ha il pregio di sporcare minimamente la macchina sul quale si eseguono i 
 
 Dopo vari tentativi ho scoperto che mi sarebbe servito un reverse proxy nginx e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/) dove si parla di come eseguire un reverse proxy con docker e caricare automaticamente la configurazione di nginx.
 
-Prova che ti riprova, inizialmente non sono riuscito a metterlo in piedi, finché non ho trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
+Prova che ti riprova, inizialmente non sono riuscito a metterlo in piedi, finché insieme a Matteo dell'associazione non ho trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
 
 Chiara chiara, pulita ed ha funzionato subito.
 
+> Alla fine chiedendo su stackoverflow, ho scoperto che il mio sbaglio consisteva nell'aver editato il codice originale di pattonwebz e stavo eseguendo due istanze di docker-gen. Una era dentro il container nginx-proxy ed un'altra la istanziavo direttamente come container.
+> Quindi in un'installazione con tre container (nginx, docker-gen e docker-letsencrypt-nginx-proxy-companion), non va istanziato un container nginx-proxy.
+
 Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, richiedeva una quantità di risorse maggiore e che mi sarebbe costato troppo l'hosting presso di loro per due sitarelli come i miei.
 
-Matteo, il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche Giuseppe, un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non lo avevo considerato l'opzione di spostare il mio server.
+Matteo, il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche Giuseppe, un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non avevo considerato l'opzione di spostare il mio server.
 
-Quindi, comprato il VPS basico basico su contabo ed ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola confronto a prima.
+Quindi, comprato il VPS basico basico su contabo, ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola confronto a prima.
 
 Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
@@ -38,8 +41,7 @@ Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
 Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che nell'immagine di Ubuntu 18.04 di Contabo è impostato un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
 
-```
-
+<pre><code class=bash>
 adduser TUO-USERNAME
 usermod -aG sudo TUO-USERNAME
 rsync --archive --chown=TUO-USERNAME:TUO-USERNAME ~/.ssh /home/TUO-USERNAME
@@ -51,15 +53,14 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 usermod -aG docker TUO-USERNAME
 apt install docker-compose -y
-```
+</code></pre>
 
 Per quanto riguarda il login ssh avevo già generato sul mio computer di sviluppo le chiavi private e quindi con filezilla non ho fatto altro che caricarle nella cartella ~/.ssh con i permessi corretti.
 
 Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li ho configurati tutti per puntare al mio server.
 Per ogni dominio di test ho fatto così:
 
-```
-
+<pre><code class=bash>
 mkdir duckdns
 cd duckdns
 nano TUO-DOMINIO.sh
@@ -72,7 +73,7 @@ crontab -e
 */5 * * * * ~/duckdns/TUO-DOMINIO.sh >/dev/null 2>&1
 # CTRL-X INVIO
 ./TUO-DOMINIO.sh
-```
+</code></pre>
 
 Per il server di produzione bisogna puntare i dns dei domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in test.
 
@@ -82,10 +83,9 @@ Per il server di produzione bisogna puntare i dns dei domini all'IP della macchi
 
 Per creare il docker network sotto il quale gireranno i container, bisogna dare questo comando:
 
-```
-
+<pre class=bash><code>
 docker network create nginx-proxy
-```
+</code></pre>
 
 Da ora in poi assegneremo i container alla rete *nginx-proxy* appena creata.
 
@@ -121,8 +121,7 @@ Questo per creare una struttura ordinata nella quale compilare i *docker-compose
 
 Seguendo il wiki di [nginx-proxy-letsencrypt-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose), ho creato il three-container setup incollando dentro il docker-compose.yml creato nella directory radice (nginx-proxy):
 
-```
-
+<pre class=yaml><code>
 version: '2'
 services:
 nginx-proxy:
@@ -163,14 +162,13 @@ volumes:
   vhost:
   html:
   certs:
-```
+</code></pre>
 
 A questo punto dentro le cartelle wordpress1 e wordpress2 ho creato la cartella wp-content
 
 e un docker-compose.yml in ogni cartella con questo contenuto:
 
-```
-
+<pre class=yaml><code>
 version: "3"
 services:
   db_node_domain:
@@ -210,16 +208,15 @@ networks:
   default:
     external:
       name: nginx-proxy
-```
+</code></pre>
 
 Cambiando rispettivamente "example" con il nome del mio sito, "MY-SECRET-PASSWOWRD" con due password sicure, una per root e una per l'utente di mariadb associato al sito e l'email per richiedere il certificato https.
 
 si salvano le due configurazioni e rispettivamente in ogni cartella ove abbiamo creato i file docker-compose.yml si esegue:
 
-```
-
+<pre class=bash><code>
 docker-compose up
-```
+</code></pre>
 
 > aggiungendo il parametro -d si indicherà a docker-compose di eseguire i container come demoni, quindi in fase di produzione bisognerà dare quel paramentro.
 
@@ -231,11 +228,10 @@ Dopo aver messo in produzione il tutto ho dovuto fare alcune sistemazioni, tutte
 
 Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento dell'engine di docker, bisogna riavviare i container con un:
 
-```
-
+<pre><code class=bash>
 docker-compose stop
 docker-compose up -d
-```
+</code></pre>
 
 nelle rispettive cartelle dei file docker-compose.yml
 

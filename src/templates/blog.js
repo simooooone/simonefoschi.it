@@ -6,14 +6,11 @@ import Layout from "../components/layout"
 
 import hljs from "highlight.js/lib/highlight";
 import "highlight.js/styles/github.css";
-import javascript from "highlight.js/lib/languages/javascript";
-import bash from "highlight.js/lib/languages/bash";
-import yaml from "highlight.js/lib/languages/yaml";
 
-hljs.initHighlightingOnLoad();
-hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('bash', bash);
-hljs.registerLanguage('yaml', yaml);
+//hljs.initHighlightingOnLoad();
+//hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
+hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
+hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
 // TODO: inserire link all'articolo su twitter
 import Head from "../components/head"

@@ -41,7 +41,7 @@ Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
 Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che nell'immagine di Ubuntu 18.04 di Contabo è impostato un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
 
-<pre><code class=bash>
+<pre class="bash"><code>
 adduser TUO-USERNAME
 usermod -aG sudo TUO-USERNAME
 rsync --archive --chown=TUO-USERNAME:TUO-USERNAME ~/.ssh /home/TUO-USERNAME
@@ -60,7 +60,7 @@ Per quanto riguarda il login ssh avevo già generato sul mio computer di svilupp
 Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li ho configurati tutti per puntare al mio server.
 Per ogni dominio di test ho fatto così:
 
-<pre><code class=bash>
+<pre class=bash><code>
 mkdir duckdns
 cd duckdns
 nano TUO-DOMINIO.sh
@@ -228,7 +228,7 @@ Dopo aver messo in produzione il tutto ho dovuto fare alcune sistemazioni, tutte
 
 Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento dell'engine di docker, bisogna riavviare i container con un:
 
-<pre><code class=bash>
+<pre class=bash><code>
 docker-compose stop
 docker-compose up -d
 </code></pre>

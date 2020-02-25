@@ -36,7 +36,7 @@ module.exports = {
          // develop: true, // Enable while using `gatsby develop`
          // tailwind: true, // Enable tailwindcss support
          whitelist: ['blockquote', 'fullWidth', 'flex-left', 'flex-right', 'flex', 'code', 'pre'], // Don't remove this selector
-         ignore: ['highlight.js/'], // Ignore files/folders
+         ignore: ['highlight.js/', 'react-syntax-highlighter/'], // Ignore files/folders
          // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },

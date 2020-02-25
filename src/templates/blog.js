@@ -3,14 +3,15 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 
-
-import hljs from "highlight.js/lib/highlight";
-import "highlight.js/styles/github.css";
-
+//import hljs from "highlight.js/lib/highlight";
+//import "highlight.js/styles/github.css";
 //hljs.initHighlightingOnLoad();
 //hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
-hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
-hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
+//hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
+//hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
+
+import parse, {domToReact} from 'html-react-parser';
+import PostCode from "../components/postcode";
 
 // TODO: inserire link all'articolo su twitter
 import Head from "../components/head"
@@ -47,13 +48,35 @@ const Blog = props => {
         updated <em>{props.data.markdownRemark.frontmatter.update}</em>
       </p>
 
-      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
-      </div>
+      {/*<div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
+      </div>*/}
+      <div>{parse(props.data.markdownRemark.html, {replace: replaceCode})}</div>
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>
     </Layout>
   )
 }
+
+const replaceCode = node => {
+  if (node.name === 'pre') {
+    return node.children.length > 0 && <PostCode language={getLanguage(node)}>{domToReact(getCode(node))}</PostCode>;
+  }
+};
+
+const getLanguage = node => {
+  if (node.attribs.class != null) {
+    return node.attribs.class;
+  }
+  return null;
+};
+
+const getCode = node => {
+  if (node.children.length > 0 && node.children[0].name === 'code') {
+    return node.children[0].children;
+  } else {
+    return node.children;
+  }
+};
 
 export default Blog

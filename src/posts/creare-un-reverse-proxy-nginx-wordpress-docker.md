@@ -41,8 +41,7 @@ Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
 Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che nell'immagine di Ubuntu 18.04 di Contabo è impostato un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
 
-<pre class="bash"><code>
-adduser TUO-USERNAME
+<pre class="bash"><code>adduser TUO-USERNAME
 usermod -aG sudo TUO-USERNAME
 rsync --archive --chown=TUO-USERNAME:TUO-USERNAME ~/.ssh /home/TUO-USERNAME
 apt update && apt upgrade && apt dist-upgrade && apt autoremove && apt autoclean
@@ -60,8 +59,7 @@ Per quanto riguarda il login ssh avevo già generato sul mio computer di svilupp
 Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li ho configurati tutti per puntare al mio server.
 Per ogni dominio di test ho fatto così:
 
-<pre class=bash><code>
-mkdir duckdns
+<pre class=bash><code>mkdir duckdns
 cd duckdns
 nano TUO-DOMINIO.sh
 # ci ho incollato dentro questa stringa
@@ -83,9 +81,7 @@ Per il server di produzione bisogna puntare i dns dei domini all'IP della macchi
 
 Per creare il docker network sotto il quale gireranno i container, bisogna dare questo comando:
 
-<pre class=bash><code>
-docker network create nginx-proxy
-</code></pre>
+<pre class=bash><code>docker network create nginx-proxy</code></pre>
 
 Da ora in poi assegneremo i container alla rete *nginx-proxy* appena creata.
 
@@ -121,8 +117,7 @@ Questo per creare una struttura ordinata nella quale compilare i *docker-compose
 
 Seguendo il wiki di [nginx-proxy-letsencrypt-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose), ho creato il three-container setup incollando dentro il docker-compose.yml creato nella directory radice (nginx-proxy):
 
-<pre class=yaml><code>
-version: '2'
+<pre class=yaml><code>version: '2'
 services:
 nginx-proxy:
     image: nginx:alpine
@@ -161,15 +156,13 @@ volumes:
   conf:
   vhost:
   html:
-  certs:
-</code></pre>
+  certs:</code></pre>
 
 A questo punto dentro le cartelle wordpress1 e wordpress2 ho creato la cartella wp-content
 
 e un docker-compose.yml in ogni cartella con questo contenuto:
 
-<pre class=yaml><code>
-version: "3"
+<pre class=yaml><code>version: "3"
 services:
   db_node_domain:
     image: mariadb:10.4
@@ -207,16 +200,13 @@ volumes:
 networks:
   default:
     external:
-      name: nginx-proxy
-</code></pre>
+      name: nginx-proxy</code></pre>
 
 Cambiando rispettivamente "example" con il nome del mio sito, "MY-SECRET-PASSWOWRD" con due password sicure, una per root e una per l'utente di mariadb associato al sito e l'email per richiedere il certificato https.
 
 si salvano le due configurazioni e rispettivamente in ogni cartella ove abbiamo creato i file docker-compose.yml si esegue:
 
-<pre class=bash><code>
-docker-compose up
-</code></pre>
+<pre class=bash><code>docker-compose up</code></pre>
 
 > aggiungendo il parametro -d si indicherà a docker-compose di eseguire i container come demoni, quindi in fase di produzione bisognerà dare quel paramentro.
 
@@ -228,10 +218,8 @@ Dopo aver messo in produzione il tutto ho dovuto fare alcune sistemazioni, tutte
 
 Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento dell'engine di docker, bisogna riavviare i container con un:
 
-<pre class=bash><code>
-docker-compose stop
-docker-compose up -d
-</code></pre>
+<pre class=bash><code>docker-compose stop
+docker-compose up -d</code></pre>
 
 nelle rispettive cartelle dei file docker-compose.yml
 

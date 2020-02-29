@@ -214,6 +214,13 @@ blockquote {
   }
 }
 
+article {
+  hr {
+    height:1px;
+    background-color: $text-color;
+  }
+}
+
 .flex {
   display: flex;
   display: -ms-flexbox;
@@ -256,7 +263,7 @@ blockquote {
 
   li {
     &:before {
-      content: "-";
+      content: "- ";
     }
   }
 }

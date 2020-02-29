@@ -74,7 +74,7 @@ const AboutPage = () => {
         <p>
           <em>More than 300 websites developed</em>
         </p>
-
+        <hr />
         <h4>simonefoschi.it</h4>
         <p>
           <em>2019</em>
@@ -83,27 +83,32 @@ const AboutPage = () => {
         <p>
           Reactjs, Gatsbyjs, HTML, CSS, Netlify
         </p>
-
-        <h4>amicimici.com</h4>
+        <hr />
+        <h4><a href="https://www.amicimici.com" target="_blank" rel="noopener">amicimici.com</a></h4>
         <p>
-          <em>2016 - 2017</em>
+          <em>2016</em>
         </p>
         <p>
           HTML, CSS, jQuery, WordPress, Facebook pages, Facebook Ads, Linux
-          server
+          server, Docker
+        </p>
+        <hr />
+        <h4><a href="https://www.facebook.com/inostriamicimici" target="_blank" rel="noopener">Amici Mici Facebook Page</a></h4>
+        <p>
+          <em>2016</em>
         </p>
         <p>
-          <a href="https://www.amicimici.com" target="_blank" rel="noopener">link</a>
+          Facebook and Facebook ads, 79.000 likes
         </p>
+        <hr />
         <h4>okgrazie.it</h4>
         <p>
           <em>2011 - 2013</em>
         </p>
         <p>
-          HTML, CSS, jQuery, SQL Server 2008/2004, ASP.NET, Visual Basic.NET,
-          C#, Windows Server
+          HTML, CSS, jQuery, SQL Server 2008/2005, T-SQL, ASP.NET, Visual Basic.NET, C#, Windows Server
         </p>
-
+        <hr />
         <h4>MCE! S.r.l.</h4>
         <p>
           <em>2007 - 2009</em>
@@ -115,7 +120,7 @@ const AboutPage = () => {
         <p>
           <em>More than 60 websites developed</em>
         </p>
-
+        <hr />
         <h4>Ascentive S.r.l.</h4>
         <p>
           <em>2004 - 2006</em>
@@ -124,6 +129,7 @@ const AboutPage = () => {
           JavaScript, VB 6, ASP 3.0, Visual Basic.NET, SQL Server, Oracle,
           Windows Server
         </p>
+        <hr />
       </article>
       <br />
       <article>
@@ -145,6 +151,7 @@ const AboutPage = () => {
         </p>
         <p>UDER ID: 831302</p>
         <p>Password: foschisimone</p>
+        <hr />
       </article>
       <br />
       <br />
@@ -158,7 +165,7 @@ const AboutPage = () => {
           <em>oct 2009</em>
         </p>
         <p>Exam 070/562</p>
-
+        <hr />
         <h4>
           Microsoft Certificated Technology Specialist Microsoft .NET Framework
           2.0 Web Applications
@@ -167,40 +174,64 @@ const AboutPage = () => {
           <em>jan 2009</em>
         </p>
         <p>Exam 070/536 + Exam 070/528</p>
-
+        <hr />
         <h4>Microsoft Certificated Technology Specialist Sql Server 2005</h4>
         <p>
           <em>apr 2008</em>
         </p>
         <p>Exam 070/431</p>
+        <hr />
       </article>
       <br />
       <br />
       <article>
-        <h2>Courses</h2>
-
-        <h4>Nodejs, Reactjs, Linux LPI</h4>
-        <p>Udemy</p>
         <p>
-          <em>2018/2019</em>
+          <em>2018/2020</em>
         </p>
+        <h2>Udemy Courses</h2>
 
+        <h4>Nodejs, Reactjs, Linux LPI, Docker</h4>
+        <hr />
+        <p>
+          <em>2017</em>
+        </p>
         <h4>Javascript</h4>
         <p>Circolo Ratataplan</p>
+        <hr />
         <p>
           <em>2017</em>
         </p>
-
         <h4>jQuery</h4>
         <p>Circolo Ratataplan</p>
+        <hr />
         <p>
-          <em>2017</em>
+          <em>2000</em>
         </p>
+        <h4>Visual Basic, SQL, Basics</h4>
+        <p>Enaip Forlì</p>
+        <hr />
+        <p>
+          <em>1999</em>
+        </p>
+        <h4>HTML, AutoCAD</h4>
+        <p>Enaip Cesena</p>
+        <hr />
       </article>
       <br />
       <br />
       <article>
-        <h2>Websites deveolped I am proud of</h2>
+        <h2>Websites I am proud of:</h2>
+        <h4>
+          <a
+            target="_blank"
+            rel="noopener nofollow"
+            href="https://www.bibionemare.com/"
+          >
+            Bibione Mare
+          </a>
+        </h4>
+        <p>HTML, CSS, JS</p>
+        <hr />
         <h4>
           <a
             target="_blank"
@@ -210,7 +241,8 @@ const AboutPage = () => {
             Camping Capalonga Bibione
           </a>
         </h4>
-        <p>HTML, CSS, jQuery</p>
+        <p>HTML, CSS, JS</p>
+        <hr />
         <h4>
           <a
             target="_blank"
@@ -220,7 +252,8 @@ const AboutPage = () => {
             Miramare Camping Sottomarina
           </a>
         </h4>
-        <p>HTML, CSS, jQuery</p>
+        <p>HTML, CSS, JS</p>
+        <hr />
         <h4>
           <a
             target="_blank"
@@ -230,7 +263,8 @@ const AboutPage = () => {
             Hotel Ulisse Ischia
           </a>
         </h4>
-        <p>HTML, CSS, jQuery</p>
+        <p>HTML, CSS, JS</p>
+        <hr />
         <h4>
           <a
             target="_blank"
@@ -240,7 +274,8 @@ const AboutPage = () => {
             Arnika Dolomiti Move Hotel
           </a>
         </h4>
-        <p>HTML, CSS, jQuery</p>
+        <p>HTML, CSS, JS</p>
+        <hr />
         <h4>
           <a
             target="_blank"
@@ -250,7 +285,8 @@ const AboutPage = () => {
             Camping Village Santin
           </a>
         </h4>
-        <p>HTML, CSS, jQuery</p>
+        <p>HTML, CSS, JS</p>
+        <hr />
         <h4>
           <a
             target="_blank"
@@ -260,7 +296,8 @@ const AboutPage = () => {
             Camping Verona Village
           </a>
         </h4>
-        <p>HTML, CSS, jQuery</p>
+        <p>HTML, CSS, JS</p>
+        <hr />
       </article>
       <br />
       <br />

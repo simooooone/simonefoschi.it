@@ -69,7 +69,7 @@ const AboutPage = () => {
         </p>
         <p>
           HTML, CSS, jQuery, JavaScript, Fireworks, Google PageSpeed
-          Optimization, propietary CMS and Backoffice
+          Optimization
         </p>
         <p>
           <em>More than 300 websites developed</em>
@@ -89,7 +89,7 @@ const AboutPage = () => {
           <em>2016</em>
         </p>
         <p>
-          HTML, CSS, jQuery, WordPress, Facebook pages, Facebook Ads, Linux
+          HTML, CSS, jQuery, WordPress, Facebook Ads, Linux
           server, Docker
         </p>
         <hr />
@@ -98,7 +98,7 @@ const AboutPage = () => {
           <em>2016</em>
         </p>
         <p>
-          Facebook and Facebook ads, 79.000 likes
+          Facebook and Facebook Ads, 79.000 likes
         </p>
         <hr />
         <h4>okgrazie.it</h4>

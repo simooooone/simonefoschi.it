@@ -8,7 +8,7 @@ author: "Simo"
 
 # Link utili per sistemisti e programmatori alle prime armi
 
-In questa lista condivido i link che mi piacciono riguardo i vari aspetti della programmazione e della sistemistica che di mano in mano seguo per imparare, risparmiare, creare, tenere in piedi.
+In questa lista condivido i link che mi piacciono riguardo i vari aspetti della programmazione, della sistemistica e dell'informatica che di volta in volta seguo per imparare, risparmiare, creare, tenere in piedi, far girare.
 
 A parte i link scontati di cui tutti dovremmo essere a conoscenza, questa lista inlude quelli un po' più ricercati e circostanziati.
 
@@ -47,5 +47,9 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 [contabo.com](https://contabo.com): Hosting VPS con sito scrauso ma veramente ottimo a livello di servizio. 4 giga di RAM e 300 giga di HD a soli 3 euro e 99 al mese.
 
 [lineageos.org](https://lineageos.org/): una distribuzione di android rispettosa della privacy con o senza app di google. A te la sceta di riprendere il controllo dei tuoi dispositivi elettronici.
+
+[Nextcloud](https://nextcloud.com/): riappropriati del controllo della tua privacy con Nextcloud, un programma server che ti puoi self-hostare, dove tenere tutti i tuoi documenti importanti, foto, files di backup eccc. insomma ti puoi creare il cloud a casa tua senza farti spiare dalla big-tech.
+
+[Raspberry Pi](https://www.raspberrypi.org/): una scheda da poche decine di euro che è un vero e proprio computer, sul quale sviluppare i vostri progetti di conquista del mondo o quelli per riconquistare il controllo della tua casa e delle tue apparecchiature. Ci potete  fare anche un server web per il vostro sito. Basta un po' di impegno.
 
 -- Buona vita --

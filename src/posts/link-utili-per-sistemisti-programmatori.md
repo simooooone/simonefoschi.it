@@ -20,20 +20,20 @@ partiamo dalle basi:
 
 [allsync.com/](https://allsync.com/aff.php?aff=289): poca spesa, massima resa: 50 GB di spazio nextcloud (il rivale open source e sicurissmo di Dropbox) per le tue foto, documenti e qualsiasi altra cosa digitale tu voglia per 0.99 all'anno. 
 
-[alternativeto.net](https://alternativeto.net): cerchi delle alternative ai tuoi software?
+[alternativeto.net](https://alternativeto.net/): cerchi delle alternative ai tuoi software?
 
-[dietpi.com](https://dietpi.com): un SO con cui installare facilmente software e facile da configurare per Raspberry PI 4. &egrave; basato su Raspbian, quindi si va sul sicuro.
+[dietpi.com](https://dietpi.com/): un SO con cui installare facilmente software e facile da configurare per Raspberry PI 4. &egrave; basato su Raspbian, quindi si va sul sicuro.
 
 [news.ycombinator.com](https://news.ycombinator.com): news dell'era digitale.
 (Quando vedete in commenti in giro sul web che è stato pubblicato su HN, si riferiscono a questo sito)
 
 [gambe.ro](https://gambe.ro/): raccolta italiana di cyber links sempre aggiornata.
 
-[lobste.rs](https://lobste.rs): cyberlinks da cyberpunks.
+[lobste.rs](https://lobste.rs/): cyberlinks da cyberpunks.
 
 [OPS lessons](https://www.netmeister.org/blog/ops-lessons.html): lezioni DevOps che si imparano solo tramite esperienza. Interesante tutto il blog.
 
-[hackerrank.com](https://www.hackerrank.com):
+[hackerrank.com](https://www.hackerrank.com/):
 programmazione competitiva, impara le basi e anche di più del tuo linguaggio preferito.
 
 [jamstack.org](https://jamstack.org/): info e best practices per JAM stack.
@@ -44,7 +44,7 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute con moltissime funzionalità al top a prezzi sostenibili.
 
-[contabo.com](https://contabo.com): Hosting VPS con sito scrauso ma veramente ottimo a livello di servizio. 4 giga di RAM e 300 giga di HD a soli 3 euro e 99 al mese.
+[contabo.com](https://contabo.com/): Hosting VPS con sito scrauso ma veramente ottimo a livello di servizio. 4 giga di RAM e 300 giga di HD a soli 3 euro e 99 al mese.
 
 [lineageos.org](https://lineageos.org/): una distribuzione di android rispettosa della privacy con o senza app di google. A te la sceta di riprendere il controllo dei tuoi dispositivi elettronici.
 

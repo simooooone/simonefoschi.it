@@ -15,13 +15,13 @@ const IndexPage = () => {
       />
       <section>
         <header>
-          <h1>### Hi, I'm Simo</h1>
+          <h1>### Who I am</h1>
         </header>
         <article>
-          <p>Born in Italy, living in Republic of San Marino</p>
+          <p>Half Italian, half Sammarinese</p>
           <p>In my spare time I enjoy working on JS, Reactjs, Gatsbyjs, GraphQL, Git, Linux and Docker.</p>
           <p>Love learing and to practice programming and sysadmin things.</p>
-          <p>Love for Open Source and evolution in technology</p>
+          <p>Love Open Source and evolution in technology</p>
         </article><br />
         <footer>
           <p>

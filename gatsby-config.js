@@ -29,7 +29,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    /*
+    
     {
        resolve: 'gatsby-plugin-purgecss',
        options: {
@@ -40,7 +40,7 @@ module.exports = {
          ignore: ['highlight.js/', 'react-syntax-highlighter/'], // Ignore files/folders
          // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
-    },*/
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {

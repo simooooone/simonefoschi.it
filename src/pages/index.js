@@ -19,11 +19,9 @@ const IndexPage = () => {
         </header>
         <article>
           <p>Born in Italy, living in Republic of San Marino</p>
-          <p>Enjoy working on JavaScript, Reactjs, Gatsbyjs, GraphQL, Git, Fedora.</p>
-          <p>Love learing and to practice programming and admin things.</p>
-          <p>Committed to became able.</p><br /><br />
-          <h3>Quoted from Socrates:</h3>
-          <blockquote>I now that I know nothing</blockquote>
+          <p>In my spare time I enjoy working on JS, Reactjs, Gatsbyjs, GraphQL, Git, Linux and Docker.</p>
+          <p>Love learing and to practice programming and sysadmin things.</p>
+          <p>Love for Open Source and evolution in technology</p>
         </article><br />
         <footer>
           <p>

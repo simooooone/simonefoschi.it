@@ -7,8 +7,10 @@ Below the instructions ->
 
 ## 🚀 Quick start
 
-1.  
-    ```git clone https://github.com/simooooone/simonefoschi.it
+1.  Clone the repository and run it
+
+    ```
+    git clone https://github.com/simooooone/simonefoschi.it
     cd simonefoschi.it
     npm install
     npm run develop

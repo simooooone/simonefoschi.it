@@ -42,7 +42,7 @@ programmazione competitiva, impara le basi - e anche di più - del tuo linguaggi
 
 [digitalocean.com](https://m.do.co/c/b8caeaf651c4): VPS evolute con moltissime funzionalità al top e a prezzi sostenibili.
 
-[contabo.com](https://contabo.com/): Hosting VPS con sito scrauso ma veramente ottimo a livello di VPS. 4 giga di RAM e 300 giga di HD a soli 3 euro e 99 al mese.
+[contabo.com](https://contabo.com/): Hosting VPS con sito scrauso ma veramente ottimo a livello di VPS. Il contratto base è di 4 giga di RAM e 300 giga di HD SSD Boosted a soli 3.99€ al mese.
 
 [lineageos.org](https://lineageos.org/): una distribuzione di android rispettosa della privacy con o senza app di google. A te la sceta di riprendere il controllo dei tuoi dispositivi elettronici.
 

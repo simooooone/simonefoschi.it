@@ -238,7 +238,7 @@ const AboutPage = () => {
             rel="noopener nofollow noreferrer"
             href="https://www.titanka.com/portfolio.php"
           >
-            Portfolio of TITANKA! Web Company Spa where I work as a Senior Web Developer, I partly realized or edited a large number of these websites
+            Portfolio of TITANKA! Web Company Spa where I work as a Senior Web Developer, I partly realized, in team with my collegues, or edited a large number of these websites
           </a>
         </h4>
         <p>HTML, CSS, JS</p>

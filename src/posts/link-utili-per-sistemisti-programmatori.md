@@ -10,7 +10,7 @@ author: "Simo"
 
 In questa lista condivido i link che mi piacciono riguardo i vari aspetti della programmazione, della sistemistica e dell'informatica che di volta in volta seguo per imparare, risparmiare, creare, tenere in piedi, far girare.
 
-A parte i link scontati di cui tutti dovremmo essere a conoscenza, questa lista inlude quelli un po' più ricercati e circostanziati.
+A parte i link scontati di cui tutti dovremmo essere a conoscenza, questa lista inlude quelli un po' più ricercati e secondo me interessanti.
 
 partiamo dalle basi:
 

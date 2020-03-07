@@ -22,6 +22,8 @@ const IndexPage = () => {
           <p>In my spare time I enjoy working on JS, Reactjs, Gatsbyjs, GraphQL, Git, Linux and Docker.</p>
           <p>Love learning and to practice english, programming and sysadmin things.</p>
           <p>Love Open Source and evolution in technology</p>
+
+          <blockquote>Seniority is about knowing how to learn, knowing how to apply best practices and having soft skills</blockquote>
         </article><br />
         <footer>
           <p>

@@ -1,6 +1,6 @@
 ---
-title: "Lista di link chiccosi."
-description: "In questo post voglio mostrarvi la mia lista dei preferiti che al momento trovo i più interessanti."
+title: "Lista di link interessanti sul mondo informatico."
+description: "I preferiti che al momento trovo i più interessanti del mondo open source e di informatica in generale."
 date: "2/11/2019"
 update: "11/11/2019"
 author: "Simo"
@@ -52,6 +52,6 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [Raspberry Pi](https://www.raspberrypi.org/): una scheda da poche decine di euro che è un vero e proprio computer, sul quale sviluppare i vostri progetti di conquista del mondo o quelli per riconquistare il controllo della tua casa e delle tue apparecchiature. Ci potete  fare anche un server web per il vostro sito. Basta un po' di impegno.
 
-[e.foundation](https://e.foundation/): sistema operativo per cellulari rispettoso della privacy, fork di Android, unGoogled,  ovvero senza ness8un servizio Google, nemmeno la sincronizzazione della data ed ora passa tramite i server di Google. Qui un bell'intervista del creatore di /e/ dell'iniziativa a riguardo: [https://itsfoss.com/gael-duval-interview/](https://itsfoss.com/gael-duval-interview/)
+[e.foundation](https://e.foundation/): sistema operativo per cellulari rispettoso della privacy, fork di Android, unGoogled,  ovvero senza nessun servizio Google, nemmeno la sincronizzazione della data ed ora passa tramite i server di Google. Qui un bell'intervista del creatore di /e/ dell'iniziativa a riguardo: [https://itsfoss.com/gael-duval-interview/](https://itsfoss.com/gael-duval-interview/)
 
 -- Buona vita --

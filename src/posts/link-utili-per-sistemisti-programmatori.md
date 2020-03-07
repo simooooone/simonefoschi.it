@@ -52,6 +52,6 @@ programmazione competitiva, impara le basi e anche di più del tuo linguaggio pr
 
 [Raspberry Pi](https://www.raspberrypi.org/): una scheda da poche decine di euro che è un vero e proprio computer, sul quale sviluppare i vostri progetti di conquista del mondo o quelli per riconquistare il controllo della tua casa e delle tue apparecchiature. Ci potete  fare anche un server web per il vostro sito. Basta un po' di impegno.
 
-[e.foundation](https://e.foundation/): sistema operativo per cellulari rispettoso della privacy, fork di Android, unGoogled,  ovvero senza nessun servizio Google, nemmeno la sincronizzazione della data ed ora passa tramite i server di Google. Qui un bell'intervista del creatore di /e/ dell'iniziativa a riguardo: [https://itsfoss.com/gael-duval-interview/](https://itsfoss.com/gael-duval-interview/)
+[e.foundation](https://e.foundation/): sistema operativo per cellulari rispettoso della privacy, fork di Android, unGoogled,  ovvero senza nessun servizio Google, per fare un esempio, nemmeno la sincronizzazione della data ed ora passa tramite i server di Google. Qui una bell'intervista del creatore di /e/: [https://itsfoss.com/gael-duval-interview/](https://itsfoss.com/gael-duval-interview/)
 
 -- Buona vita --

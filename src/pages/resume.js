@@ -186,6 +186,7 @@ const AboutPage = () => {
       <br />
       <br />
       <article>
+        <h2>Courses</h2>
         <p>
           <em>2018/2020</em>
         </p>
@@ -206,6 +207,14 @@ const AboutPage = () => {
         <p>Circolo Ratataplan</p>
         <hr />
         <p>
+          <em>2012/2017</em>
+        </p>
+        <h4><a href="https://be-wizard.com"
+            target="_blank"
+            rel="noopener nofollow noreferrer">Be-Wizard</a></h4>
+        <p>Rimini</p>
+        <hr />
+        <p>
           <em>2000</em>
         </p>
         <h4>Visual Basic, SQL, Basics</h4>
@@ -217,6 +226,7 @@ const AboutPage = () => {
         <h4>HTML, AutoCAD</h4>
         <p>Enaip Cesena</p>
         <hr />
+        
       </article>
       <br />
       <br />
@@ -225,7 +235,7 @@ const AboutPage = () => {
         <h4>
           <a
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener nofollow noreferrer"
             href="https://www.bibionemare.com/"
           >
             Bibione Mare
@@ -236,7 +246,7 @@ const AboutPage = () => {
         <h4>
           <a
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener nofollow noreferrer"
             href="https://capalonga.com"
           >
             Camping Capalonga Bibione
@@ -247,7 +257,7 @@ const AboutPage = () => {
         <h4>
           <a
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener nofollow noreferrer"
             href="https://www.miramarecamping.com"
           >
             Miramare Camping Sottomarina
@@ -258,7 +268,7 @@ const AboutPage = () => {
         <h4>
           <a
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener nofollow noreferrer"
             href="https://www.hotelulisse.com"
           >
             Hotel Ulisse Ischia
@@ -269,7 +279,7 @@ const AboutPage = () => {
         <h4>
           <a
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener nofollow noreferrer"
             href="https://www.arnikahotel.it"
           >
             Arnika Dolomiti Move Hotel
@@ -280,7 +290,7 @@ const AboutPage = () => {
         <h4>
           <a
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener nofollow noreferrer"
             href="https://www.campingsantin.it"
           >
             Camping Village Santin
@@ -291,7 +301,7 @@ const AboutPage = () => {
         <h4>
           <a
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener nofollow noreferrer"
             href="https://www.campingverona.com"
           >
             Camping Verona Village

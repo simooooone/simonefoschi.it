@@ -211,7 +211,7 @@ const AboutPage = () => {
         </p>
         <h4><a href="https://be-wizard.com"
             target="_blank"
-            rel="noopener nofollow noreferrer">Be-Wizard</a></h4>
+            rel="noopener nofollow noreferrer">BE-WIZARD</a></h4>
         <p>Rimini</p>
         <hr />
         <p>
@@ -232,6 +232,17 @@ const AboutPage = () => {
       <br />
       <article>
         <h2>Websites I am proud of:</h2>
+        <h4>
+          <a
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            href="https://www.titanka.com/portfolio.php"
+          >
+            Portfolio of TITANKA! Web Company Spa where I work as a Senior Web Developer, I partly realized or edited a large number of these websites
+          </a>
+        </h4>
+        <p>HTML, CSS, JS</p>
+        <hr />
         <h4>
           <a
             target="_blank"

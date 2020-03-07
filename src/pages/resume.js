@@ -186,7 +186,7 @@ const AboutPage = () => {
       <br />
       <br />
       <article>
-        <h2>Courses</h2>
+        <h2>Courses and conferences</h2>
         <p>
           <em>2018/2020</em>
         </p>

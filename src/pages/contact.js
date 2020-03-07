@@ -28,6 +28,16 @@ const ContactPage = () => {
           </a>{" "}
           on Linkedin
         </li>
+        <li>
+          <a
+            rel="noopener noreferrer"
+            href="https://github.com/simooooone"
+            target="_blank"
+          >
+            @simooooone
+          </a>{" "}
+          on Github
+        </li>
         <li><u className="title-color">s dot foschi at protonmail dot com</u> via mail</li>
       </ul>
     </Layout>

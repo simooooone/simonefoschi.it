@@ -23,7 +23,7 @@ const IndexPage = () => {
           <p>Love learning and to practice english, programming and sysadmin things.</p>
           <p>Love Open Source and evolution in technology</p>
 
-          <blockquote>Seniority is the attitude to do things as they should and to understand and be able to explain the limits of tech.</blockquote>
+          <blockquote>Seniority is the attitude to do things as they should and to understand and to be able to explain the limits of tech.</blockquote>
         </article><br />
         <footer>
           <p>

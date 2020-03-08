@@ -16,14 +16,33 @@ const IndexPage = () => {
       <section>
         <header>
           <h1>### Who I am</h1>
+          
+
         </header>
         <article>
           <p>Half Italian, half Sammarinese (from Repubblic of San Marino)</p>
-          <p>In my spare time I enjoy working on JS, Reactjs, Gatsbyjs, GraphQL, Git, Linux and Docker.</p>
+          
+          <p>In my spare time I enjoy working on JS, React, Gatsby, GraphQL, Git, Linux and Docker.</p>
+          
           <p>Love learning and to practice english, programming and sysadmin things.</p>
-          <p>Love Open Source and evolution in technology</p>
+          
+          <p>Love Open Source and evolution in technology.</p>
+          <br />
+          <blockquote>Seniority is the attitude to do things as they should and to be able to explain the limits of tech</blockquote>
+          <br />
+          <br />
+          <h2>### Chi sono</h2>
+          <p>Italo-Sammarinese</p>
 
-          <blockquote>Seniority is the attitude to do things as they should and to understand and to be able to explain the limits of tech.</blockquote>
+          <p>Il tempo libero lo dedico a JS, React, Gatsby, GraphQL, Git, Linux e Docker.</p> 
+
+          <p>Amo imparare e praticare l'inglese, programmazione e amministrazione di sistemi.</p>
+
+          <p>Amo l'open source e l'evoluizione tecnologica.</p>
+          <br />
+          
+
+          <blockquote>L'esperienza è l'attitudine a fare cose come dovrebbero essere realizzate e saper spiegare limiti della tecnologia</blockquote>
         </article><br />
         <footer>
           <p>
@@ -36,3 +55,4 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+

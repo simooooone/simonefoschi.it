@@ -1,26 +1,21 @@
 ---
 title: "Creare un reverse proxy nginx per n siti wordpress con docker"
-description: "Come ho fatto a creare un revese proxy nginx per trasferire i miei siti wordpress da un ambiente LEMP gestito ad un ambiente docker che gestisco io facilmente."
+description: "Come ho fatto a creare un revese proxy nginx per trasferire i miei siti wordpress da un ambiente LEMP gestito da runcloud.io ad un ambiente docker."
 date: "13/02/2020"
 update: "23/02/2020"
 author: "Simo"
 ---
-
-Devo dire che è stato tutto abbastanza complicato, ma alla fine una volta che il lavoro è fatto... cosa vuoi che sia?
-
-semicit. Primo Foschi
-
-<br>
-
 ## Come ho iniziato a pensarci
 
-Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'[associazione RiminiLUG](https://www.riminilug.it/) che frequento e siccome Docker è un ottimo tool per eseguire vari servizi su una singola macchina, ho pensato che mi sarebbe tornato utile per il mio server.
+Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'[associazione RiminiLUG](https://www.riminilug.it/) che frequento.
 
-Docker ha il pregio di sporcare minimamente la macchina sul quale si eseguono i container, è facilmente trasportabile da una macchina ad un'altra ed estendibile per distribuire il carico del server su più macchine quando il carico di lavoro aumenta.
+Siccome Docker è un ottimo tool per eseguire vari servizi su una singola macchina, ho pensato che mi sarebbe tornato utile per il mio server.
 
-Dopo vari tentativi ho scoperto che mi sarebbe servito un reverse proxy nginx e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/) dove si parla di come eseguire un reverse proxy con docker e caricare automaticamente la configurazione di nginx.
+Docker ha il pregio di sporcare minimamente la macchina sul quale si eseguono i suoi container, è facilmente trasportabile da una macchina ad un'altra ed estendibile tramite altri tool, per distribuire il carico del server su più macchine quando il carico di lavoro aumenta.
 
-Prova che ti riprova, inizialmente non sono riuscito a metterlo in piedi, finché insieme a Matteo dell'associazione non ho trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
+Dopo una riflessione e qualche ricerca sul come creare il server con docker ho scoperto che mi sarebbe servito un reverse proxy nginx e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/) dove si parla di come eseguire un reverse proxy con docker e caricare automaticamente la configurazione di nginx.
+
+Inizialmente, per via di un errore nella configurazione del file docker-compose.yml, non sono riuscito a metterlo in piedi, finché insieme a Matteo dell'associazione non ho trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
 
 Chiara chiara, pulita ed ha funzionato subito.
 
@@ -29,9 +24,9 @@ Chiara chiara, pulita ed ha funzionato subito.
 
 Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, richiedeva una quantità di risorse maggiore e che mi sarebbe costato troppo l'hosting presso di loro per due sitarelli come i miei.
 
-Matteo, il Presidente del Rimini LUG, mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche Giuseppe, un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non avevo considerato l'opzione di spostare il mio server.
+Matteo mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche Giuseppe, un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non avevo considerato l'opzione di spostare il mio server.
 
-Quindi, comprato il VPS basico basico su contabo, ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola confronto a prima.
+Quindi, comprato un VPS su contabo ed ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola confronto a prima.
 
 Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
@@ -39,20 +34,24 @@ Questa la parte decisionale e ragioneristica, ora passiamo alla parte pratica.
 
 ## Come configurare il server per e installare docker
 
-Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che nell'immagine di Ubuntu 18.04 di Contabo è impostato un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione come la mia.
+Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di protezione per ssh un classico fail2ban. Il firewall non ho dovuto installarlo in quanto ho trovato che sull'immagine di Ubuntu 18.04 di Contabo è impostato un firewall che apre solamente le porte 22, 80 e 443. Quindi è una situazione perfetta a livello di sicurezza per una installazione basica come la mia.
+
+Quindi ho configurato il server da root così:
 
 <pre class="language-bash"><code>$ adduser TUO-USERNAME
-$ usermod -aG sudo TUO-USERNAME
-$ rsync --archive --chown=TUO-USERNAME:TUO-USERNAME ~/.ssh /home/TUO-USERNAME
-$ apt update && apt upgrade && apt dist-upgrade && apt autoremove && apt autoclean
-$ apt install --install-recommends linux-generic-hwe-18.04
-$ apt install fail2ban
-$ apt update && apt upgrade && apt dist-upgrade && apt autoremove && apt autoclean
-$ curl -fsSL https://get.docker.com -o get-docker.sh
-$ sh get-docker.sh
-$ usermod -aG docker TUO-USERNAME
-$ apt install docker-compose -y
+usermod -aG sudo TUO-USERNAME
+rsync --archive --chown=TUO-USERNAME:TUO-USERNAME ~/.ssh /home/TUO-USERNAME
+apt update && apt upgrade && apt dist-upgrade && apt autoremove && apt autoclean
+apt install --install-recommends linux-generic-hwe-18.04
+apt install fail2ban
+apt update && apt upgrade && apt dist-upgrade && apt autoremove && apt autoclean
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+usermod -aG docker TUO-USERNAME
+apt install docker-compose -y
 </code></pre>
+
+Quindi mi sono loggato col nome utente appena creato.
 
 Per quanto riguarda il login ssh avevo già generato sul mio computer di sviluppo le chiavi private e quindi con filezilla non ho fatto altro che caricarle nella cartella ~/.ssh con i permessi corretti.
 
@@ -60,20 +59,20 @@ Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li
 Per ogni dominio di test ho fatto così:
 
 <pre class="language-bash"><code>$ mkdir duckdns
-$ cd duckdns
-$ nano TUO-DOMINIO.sh
+cd duckdns
+nano TUO-DOMINIO.sh
 # ci ho incollato dentro questa stringa
-$ echo url="https://www.duckdns.org/update?domains=TUO-DOMINIO&token=xxxx-xxxx-xxxx-xxxx&ip=" | curl -k -o ~/duckdns/TUO-DOMINIO.log -K -
+echo url="https://www.duckdns.org/update?domains=TUO-DOMINIO&token=xxxx-xxxx-xxxx-xxxx&ip=" | curl -k -o ~/duckdns/TUO-DOMINIO.log -K -
 # CTRL-X INVIO
-$ chmod 700 TUO-DOMINIO.sh
-$ crontab -e
+chmod 700 TUO-DOMINIO.sh
+crontab -e
 # ci ho incollato dentro questa stringa
-$ */5 * * * * ~/duckdns/TUO-DOMINIO.sh >/dev/null 2>&1
+*/5 * * * * ~/duckdns/TUO-DOMINIO.sh >/dev/null 2>&1
 # CTRL-X INVIO
-$ ./TUO-DOMINIO.sh
+./TUO-DOMINIO.sh
 </code></pre>
 
-Per il server di produzione bisogna puntare i dns dei domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in test.
+Per il server di produzione bisogna puntare i dns dei domini all'IP della macchina di produzione, infatti la configurazione sopra serve per la macchina in test e il dns dei siti di test, con la procedura sopra è già apposto.
 
 <br>
 
@@ -204,7 +203,7 @@ networks:
 
 Cambiando rispettivamente "example" con il nome del mio sito, "MY-SECRET-PASSWOWRD" con due password sicure, una per root e una per l'utente di mariadb associato al sito e l'email per richiedere il certificato https.
 
-si salvano le due configurazioni e rispettivamente in ogni cartella ove abbiamo creato i file docker-compose.yml si esegue:
+Si salvano le due configurazioni e rispettivamente in ogni cartella ove abbiamo creato i file docker-compose.yml si esegue:
 
 <pre class="language-bash"><code>$ docker-compose up</code></pre>
 
@@ -223,7 +222,7 @@ $ docker-compose up -d</code></pre>
 
 nelle rispettive cartelle dei file docker-compose.yml
 
-Finito tutto per il meglio dopo qualche mese di studio, domande nelle chat, nei forum e di sbattimenti di testa. Morale, so anche fare il sistemista quando mi impegno. :-)
+Finito tutto per il meglio dopo qualche mese di standby sul vecchio sistema, domande nelle chat, nei forum e di sbattimenti di testa. Morale, so anche fare il sistemista quando mi impegno. :-)
 
 -- Buona vita --
 

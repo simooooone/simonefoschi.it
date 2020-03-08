@@ -86,25 +86,13 @@ Da ora in poi assegneremo i container alla rete *nginx-proxy* appena creata.
 
 Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle directory:
 
-<ul>
-    <li>/home/TUO-USERNAME/</li>
-        <ul>
-            <li>nginx-proxy/</li>
-                <ul>
-                    <li>wordpress1/
-                        <ul>
-                            <li>wp-content/</li>
-                        </ul>
-                    </li>
-                    <li>wordpress2/
-                        <ul>
-                            <li>wp-content/</li>
-                        </ul>
-                    </li>
-                </ul>
-        </ul>
-</ul>
-
+<pre class="language-yaml"><code>- /home/TUO-USERNAME/
+  - nginx-proxy/
+    - wordpress1/
+      - wp-content/
+    - wordpress2/
+      - wp-content/
+</code></pre>
 
 Questo per creare una struttura ordinata nella quale compilare i *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
 

@@ -3,8 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-// TODO: inserire link al repository su github
-// TODO: aggiornare immagine della pagina contatti con l'ultima che ha spedito l'Irina
+// TODO localization
 
 const IndexPage = () => {
   return (

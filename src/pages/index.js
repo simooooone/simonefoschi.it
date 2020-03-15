@@ -27,7 +27,7 @@ const IndexPage = () => {
           
           <p>Love Open Source and evolution in technology.</p>
           <br />
-          <blockquote>Seniority is the attitude to do things as they should and to be able to explain the limits of tech</blockquote>
+          <blockquote>Seniority is the attitude to do things as they should and to be able to explain them and the limits of the technology adopted</blockquote>
           <br />
           <br />
           <h2>### Chi sono</h2>
@@ -41,7 +41,7 @@ const IndexPage = () => {
           <br />
           
 
-          <blockquote>L'esperienza è l'attitudine a fare cose come dovrebbero essere realizzate e saper spiegare limiti della tecnologia</blockquote>
+          <blockquote>L'esperienza è l'attitudine a fare cose come dovrebbero essere realizzate e saper spiegare la tecnologia usata ed i suoi limiti</blockquote>
         </article><br />
         <footer>
           <p>

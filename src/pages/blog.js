@@ -27,7 +27,7 @@ const BlogPage = () => {
   `)
   return (
     <Layout myimg="5">
-      <Head  title="Blog di tecnologia open source di Simo" description="Tutti gli articoli su Raspberry Pi e Linux sul mio nuovo blog sviluppato con tecnologia Gatsbyjs." />
+      <Head  title="Articoli del mio blog di cultura open source" description="Tutti gli articoli su Raspberry Pi, Linux, programmazione e cultura cyberpunk del mio blog." />
       <h1>### Blog</h1>
       <ol className="posts">
         {data.allMarkdownRemark.edges.map((edge) => {

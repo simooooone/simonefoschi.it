@@ -4,6 +4,7 @@ description: "I preferiti che al momento trovo i più interessanti del mondo ope
 date: "2/11/2019"
 update: "11/11/2019"
 author: "Simo"
+published: true
 ---
 
 # Link utili per sistemisti e programmatori alle prime armi

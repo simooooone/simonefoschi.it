@@ -4,6 +4,7 @@ description: "Guida per creare una chiavetta USB o un microSD con un sistema ope
 date: "16/12/2018"
 update: "6/9/2019"
 author: "Simo"
+published: true
 ---
 
 > Premetto che in questa guida si utilizza Linux e Raspberry PI 3 B+.

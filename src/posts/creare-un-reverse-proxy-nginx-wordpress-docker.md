@@ -4,6 +4,7 @@ description: "Come ho fatto a creare un revese proxy nginx per trasferire i miei
 date: "13/02/2020"
 update: "23/02/2020"
 author: "Simo"
+published: true
 ---
 ## Come ho iniziato a pensarci
 

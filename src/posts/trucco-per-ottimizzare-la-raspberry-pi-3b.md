@@ -4,6 +4,7 @@ description: "Raspberry PI 3B+ a volte ha bisogno di un po' più di RAM, con que
 date: "10/2/2019"
 update: "6/9/2019"
 author: "Simo"
+published: true
 ---
 
 ## Problema

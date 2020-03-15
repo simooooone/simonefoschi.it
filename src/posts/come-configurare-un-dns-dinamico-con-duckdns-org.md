@@ -4,6 +4,7 @@ description: "Procedura per configurare un proprio dominio internet casalingo. U
 date: "16/12/2018"
 update: "4/9/2019"
 author: "Simo"
+published: true
 ---
 
 Tra i tanti servizi che ho trovato per configurare un dns dinamico gratuito, sono incappato in [duckdns.org](https://duckdns.org), che fino ad ora si è dimostrato affidabile e facile da configurare con la mia Rasperry Pi 3 B+.

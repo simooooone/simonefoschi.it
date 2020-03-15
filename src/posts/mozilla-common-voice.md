@@ -15,7 +15,7 @@ L'interesse per gli assistenti vocali Open Source deve tenere in considerazione 
 
 Esso permette di raccogliere le voci donate dalle persone per consentire ai software di intelligenza artificiale di analizzarle e creare dei pattern tramite i quali possano sviluppare l'abilità nel riconoscere un insieme molto grande di voci e di dialetti in forma di comandi vocali.
 
-Voglio fare questo articolo per sponsorizzare a titolo gratuito un iniziativa (tra le tante) lodevole ed anch'essa gratuita da parte di Mozilla Foundation.
+Voglio fare questo articolo per sponsorizzare a titolo gratuito un iniziativa lodevole (tra le tante) Open Source da parte di Mozilla Foundation.
 
 Secondo me la tecnologia che sta alla base del riconoscimento vocale da parte delle macchine, è un ambito che se sviluppato a dovere può avere ricadute importanti sulla tecnologia e sulla vita delle singole persone.
 

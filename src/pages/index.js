@@ -21,7 +21,7 @@ const IndexPage = () => {
         <article>
           <p>Half Italian, half Sammarinese (from Repubblic of San Marino)</p>
           
-          <p>In my spare time I enjoy working on JS, React, Gatsby, GraphQL, Git, Linux and Docker.</p>
+          <p>In my spare time I enjoy working on JS, React, Gatsby, GraphQL, Git, Linux, home automation and Docker.</p>
           
           <p>Love learning and to practice english, programming and sysadmin things.</p>
           
@@ -33,7 +33,7 @@ const IndexPage = () => {
           <h2>### Chi sono</h2>
           <p>Italo-Sammarinese</p>
 
-          <p>Il tempo libero lo dedico a JS, React, Gatsby, GraphQL, Git, Linux e Docker.</p> 
+          <p>Il tempo libero lo dedico a JS, React, Gatsby, GraphQL, Git, Linux, domotica e Docker.</p> 
 
           <p>Amo imparare e praticare l'inglese, programmazione e amministrazione di sistemi.</p>
 

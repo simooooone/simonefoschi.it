@@ -1,8 +1,8 @@
 ---
 title: "Mozilla Common Voice cos'è e i numeri in Italia"
 description: "Guardiamo alle statistiche di Mozilla common voice in italia, la piattaforma che è il futuro open del riconoscimento vocale."
-date: "14/03/2020"
-update: "14/03/2020"
+date: "15/03/2020"
+update: "15/03/2020"
 author: "Simo"
 published: true
 ---

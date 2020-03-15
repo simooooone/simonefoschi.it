@@ -33,11 +33,11 @@ const IndexPage = () => {
           <h2>### Chi sono</h2>
           <p>Italo-Sammarinese</p>
 
-          <p>Il tempo libero lo dedico a JS, React, Gatsby, GraphQL, Git, Linux, domotica e Docker.</p> 
+          <p>Nel tempo libero mi piace lavorare su JS, React, Gatsby, GraphQL, Git, Linux, domotica e Docker.</p> 
 
           <p>Amo imparare e praticare l'inglese, programmazione e amministrazione di sistemi.</p>
 
-          <p>Amo l'open source e l'evoluizione tecnologica.</p>
+          <p>Amo l'Open Source e l'evoluizione tecnologica.</p>
           <br />
           
 

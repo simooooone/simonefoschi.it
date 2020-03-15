@@ -4,7 +4,7 @@ description: "Guardiamo alle statistiche di Mozilla common voice in italia, la p
 date: "14/03/2020"
 update: "14/03/2020"
 author: "Simo"
-published: false
+published: true
 ---
 
 Voglio fare questo articolo per sponsorizzare a titolo gratuito un iniziativa (tra le tante) lodevole ed anch'essa gratuita da parte di Mozilla Foundation.

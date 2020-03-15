@@ -1,4 +1,5 @@
 const path = require("path")
+const createPaginatedPages = require('gatsby-paginate')
 
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions

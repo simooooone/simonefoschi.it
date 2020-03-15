@@ -46,3 +46,15 @@ Collegandosi al sito [https://voice.mozilla.org/](https://voice.mozilla.org/) (c
 [https://github.com/mozilla/tts](https://github.com/mozilla/tts)
 
 [https://github.com/mozilla/voice-web/tree/master/server/data](https://github.com/mozilla/voice-web/tree/master/server/data)
+
+## Un po' di numeri
+
+Facendo il login a [https://voice.mozilla.org/](https://voice.mozilla.org/) si possono vedere anche le statistiche delle voci donate e controllate, oltre che tenere traccia dei propri progressi.
+
+Ad oggi per la lingua italiana siamo piuttosto scarsetti e giornalmente vedo sempre sulle 60 registrazioni inserite, giorno più giorno meno.
+
+Quelle controllate sono un pelino in più, ma è vero che è anche più semplice controllarle, piuttosto che leggere dei testi a volte complicati.
+
+Negli Stati Uniti arrrivano sempre alla soglia delle 2400 registrazioni giornaliere.
+
+Dai ragazzi/e diamoci da fare e aiutiamo questo progetto. È sempli0ce e non ci vogliono attitudini particolari a parte......saper leggere ;)

@@ -70,7 +70,7 @@ const AboutPage = () => {
         </p>
         <p>
           HTML, CSS, jQuery, JavaScript, Fireworks, Google PageSpeed
-          Optimization
+          Optimization, SEO, Web Marketing
         </p>
         <p>
           <em>More than 300 websites developed</em>

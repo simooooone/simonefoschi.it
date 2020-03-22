@@ -6,8 +6,10 @@ import Head from "../components/head"
 const AboutPage = () => {
   return (
     <Layout myimg="2">
-      <Head title="My resume, Simone Foschi Front End Developer," 
-      description="What I have done, where I worked and work, what I achieved in my developer career from 1999 now." />
+      <Head
+        title="My resume, Simone Foschi Front End Developer,"
+        description="What I have done, where I worked and work, what I achieved in my developer career from 1999 now."
+      />
       <h1>### Resume</h1>
 
       <article>
@@ -33,8 +35,8 @@ const AboutPage = () => {
         |<br />
         | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp;
         |<br />
-        | TSQL &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 2y &nbsp;
-        &nbsp; |
+        | TSQL &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 2y &nbsp; &nbsp;
+        |
         <br />
         | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp;
         &nbsp; |
@@ -81,33 +83,39 @@ const AboutPage = () => {
           <em>2019</em>
         </p>
 
-        <p>
-          Reactjs, Gatsbyjs, HTML, CSS, Netlify
-        </p>
+        <p>Reactjs, Gatsbyjs, HTML, CSS, Netlify</p>
         <hr />
-        <h4><a href="https://www.amicimici.com" target="_blank" rel="noopener">amicimici.com</a></h4>
+        <h4>
+          <a href="https://www.amicimici.com" target="_blank" rel="noopener">
+            amicimici.com
+          </a>
+        </h4>
         <p>
           <em>2016</em>
         </p>
-        <p>
-          HTML, CSS, jQuery, WordPress, Facebook Ads, Linux
-          server, Docker
-        </p>
+        <p>HTML, CSS, jQuery, WordPress, Facebook Ads, Linux server, Docker</p>
         <hr />
-        <h4><a href="https://www.facebook.com/inostriamicimici" target="_blank" rel="noopener">Amici Mici Facebook Page</a></h4>
+        <h4>
+          <a
+            href="https://www.facebook.com/inostriamicimici"
+            target="_blank"
+            rel="noopener"
+          >
+            Amici Mici Facebook Page
+          </a>
+        </h4>
         <p>
           <em>2016</em>
         </p>
-        <p>
-          Facebook and Facebook Ads, 79.000 likes
-        </p>
+        <p>Facebook and Facebook Ads, 79.000 likes</p>
         <hr />
         <h4>okgrazie.it</h4>
         <p>
           <em>2011 - 2013</em>
         </p>
         <p>
-          HTML, CSS, jQuery, SQL Server 2008/2005, T-SQL, ASP.NET, Visual Basic.NET, C#, Windows Server
+          HTML, CSS, jQuery, SQL Server 2008/2005, T-SQL, ASP.NET, Visual
+          Basic.NET, C#, Windows Server
         </p>
         <hr />
         <h4>MCE! S.r.l.</h4>
@@ -116,7 +124,7 @@ const AboutPage = () => {
         </p>
         <p>
           HTML, CSS, jQuery, JavaScript, VB 6, ASP 3.0, Visual Basic.NET, SQL
-          Server, Windows Server
+          Server, Windows Server, Photoshop
         </p>
         <p>
           <em>More than 60 websites developed</em>
@@ -209,9 +217,15 @@ const AboutPage = () => {
         <p>
           <em>2012/2017</em>
         </p>
-        <h4><a href="https://be-wizard.com"
+        <h4>
+          <a
+            href="https://be-wizard.com"
             target="_blank"
-            rel="noopener nofollow noreferrer">BE-WIZARD</a></h4>
+            rel="noopener nofollow noreferrer"
+          >
+            BE-WIZARD
+          </a>
+        </h4>
         <p>Rimini</p>
         <hr />
         <p>
@@ -226,7 +240,6 @@ const AboutPage = () => {
         <h4>HTML, AutoCAD</h4>
         <p>Enaip Cesena</p>
         <hr />
-        
       </article>
       <br />
       <br />
@@ -238,7 +251,9 @@ const AboutPage = () => {
             rel="noopener nofollow noreferrer"
             href="https://www.titanka.com/portfolio.php"
           >
-            Portfolio of TITANKA! Web Company Spa where I work as a Senior Web Developer, I partly realized, in team with my collegues, or edited a large number of these websites
+            Portfolio of TITANKA! Web Company Spa where I work as a Senior Web
+            Developer, I partly realized, in team with my collegues, or edited a
+            large number of these websites
           </a>
         </h4>
         <p>HTML, CSS, JS</p>

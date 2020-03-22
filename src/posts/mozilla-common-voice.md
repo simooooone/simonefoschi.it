@@ -57,6 +57,6 @@ Quelle controllate sono un pelino in più, ma è vero che è anche più semplice
 
 Negli Stati Uniti arrrivano sempre alla soglia delle 2400 registrazioni giornaliere.
 
-Dai ragazzi/e diamoci da fare e aiutiamo questo progetto. È sempli0ce e non ci vogliono attitudini particolari a parte......saper leggere ;)
+Dai ragazzi/e diamoci da fare e aiutiamo questo progetto. È semplice e non ci vogliono attitudini particolari a parte......saper leggere ;)
 
 Per i commenti -> https://mastodon.uno/@simooooone/103827951105331086

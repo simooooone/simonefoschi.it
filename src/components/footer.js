@@ -18,7 +18,7 @@ const Footer = () => {
           RSS
         </a>
       </p>
-      <p>Site created by {data.site.siteMetadata.author} &copy; 2019/2020</p>
+      <p>Site created by {data.site.siteMetadata.author} &copy; 2018/2020</p>
     </footer>
   )
 }

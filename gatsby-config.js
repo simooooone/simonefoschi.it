@@ -122,8 +122,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Simone Foschi`,
-        short_name: `Simone Foschi`,
+        name: `Simo's blog`,
+        short_name: `Simo's`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#cfe180`,

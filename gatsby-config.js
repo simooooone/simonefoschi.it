@@ -125,10 +125,10 @@ module.exports = {
         name: `Simone Foschi`,
         short_name: `Simone Foschi`,
         start_url: `/`,
-        background_color: `#3a3a3a`,
-        theme_color: `#3a3a3a`,
+        background_color: `#ffffff`,
+        theme_color: `#cfe180`,
         display: `minimal-ui`,
-        icon: `src/img/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/img/favicons/android-chrome-192x192.png`, // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-offline",

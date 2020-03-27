@@ -13,6 +13,11 @@ const Footer = () => {
   `)
   return (
     <footer className="footer">
+      <p>
+        <a target="_blank" href="/rss.xml">
+          RSS
+        </a>
+      </p>
       <p>Site created by {data.site.siteMetadata.author} &copy; 2019</p>
     </footer>
   )

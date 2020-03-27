@@ -1,45 +1,56 @@
 module.exports = {
   siteMetadata: {
-    title: 'Simone Foschi',
-    description: '.',
-    author: 'Simo',
+    title: "Simone Foschi",
+    description:
+      "Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders.",
+    author: "Simo",
+    siteUrl: `https://www.simonefoschi.it/`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-remark',
-    'gatsby-plugin-sass',
+    "gatsby-plugin-feed",
+    "gatsby-plugin-react-helmet",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-sass",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'posts',
+        name: "posts",
         path: `${__dirname}/src/posts`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
+        name: "images",
         path: `${__dirname}/src/img`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
+        name: "images",
         path: `${__dirname}/src/pages`,
       },
     },
-    
+
     {
-       resolve: 'gatsby-plugin-purgecss',
-       options: {
-         printRejected: true, // Print removed selectors and processed file names
-         // develop: true, // Enable while using `gatsby develop`
-         // tailwind: true, // Enable tailwindcss support
-         whitelist: ['blockquote', 'fullWidth', 'flex-left', 'flex-right', 'flex', 'code', 'pre'], // Don't remove this selector
-         ignore: ['highlight.js/', 'react-syntax-highlighter/'], // Ignore files/folders
-         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-      }
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        // develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        whitelist: [
+          "blockquote",
+          "fullWidth",
+          "flex-left",
+          "flex-right",
+          "flex",
+          "code",
+          "pre",
+        ], // Don't remove this selector
+        ignore: ["highlight.js/", "react-syntax-highlighter/"], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+      },
     },
     {
       resolve: `gatsby-plugin-sharp`,
@@ -49,7 +60,7 @@ module.exports = {
         defaultQuality: 75,
       },
     },
-    'gatsby-transformer-sharp',
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -59,9 +70,9 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-//        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/img/simo-5.jpg`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline'
-  ]
+    "gatsby-plugin-offline",
+  ],
 }

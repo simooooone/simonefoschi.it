@@ -1,15 +1,16 @@
 const path = require("path")
-const createPaginatedPages = require('gatsby-paginate')
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-module.exports.onCreateNode = ({ node, actions }) => {
+module.exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === "MarkdownRemark") {
+    const values = createFilePath({ node, getNode })
     const slug = path.basename(node.fileAbsolutePath, ".md")
-
     createNodeField({
       node,
       name: "slug",
       value: slug,
+      values,
     })
   }
 }

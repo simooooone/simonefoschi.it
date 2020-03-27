@@ -1,8 +1,8 @@
 ---
 title: "Lista di link interessanti sul mondo informatico."
 description: "I preferiti che al momento trovo i più interessanti del mondo open source e di informatica in generale."
-date: "2/11/2019"
-update: "11/11/2019"
+date: "2019/11/2"
+update: "2020/2/20"
 author: "Simo"
 published: true
 ---
@@ -15,10 +15,10 @@ A parte i link scontati di cui tutti dovremmo essere a conoscenza, questa lista 
 
 partiamo dalle basi:
 
-[vscodium.com](https://vscodium.com/): VSCodium, versione Libre  di VSCode .
+[vscodium.com](https://vscodium.com/): VSCodium, versione Libre di VSCode .
 
 [allsync.com/](https://allsync.com/aff.php?aff=289): poca spesa, massima resa: 50 GB di spazio nextcloud (il rivale open source e sicurissmo di Dropbox) per le tue foto, documenti e qualsiasi altra cosa digitale tu voglia.
-50 Giga, 0.99 all'anno. 
+50 Giga, 0.99 all'anno.
 
 [alternativeto.net](https://alternativeto.net/): cerchi delle alternative ai tuoi software?
 
@@ -51,6 +51,6 @@ programmazione competitiva, impara le basi - e anche di più - del tuo linguaggi
 
 [Raspberry Pi](https://www.raspberrypi.org/): una scheda da poche decine di euro che è un vero e proprio computer, sul quale sviluppare i vostri progetti di conquista del mondo o quelli per riconquistare il controllo della tua casa e delle tue apparecchiature. Ad esempio ci potete fare anche un server web per il vostro sito o il vostro clud privato con NextCloud. Non è semplice, ma anche uno smanettone alle prime armi ci dovrebbe riuscire. Basta un po' di impegno.
 
-[e.foundation](https://e.foundation/): sistema operativo per cellulari rispettoso della privacy, fork di Android, unGoogled,  ovvero senza nessun servizio Google, per fare un esempio, nemmeno la sincronizzazione della data ed ora passa tramite i server di Google. Qui una bell'intervista del creatore di /e/: [https://itsfoss.com/gael-duval-interview/](https://itsfoss.com/gael-duval-interview/)
+[e.foundation](https://e.foundation/): sistema operativo per cellulari rispettoso della privacy, fork di Android, unGoogled, ovvero senza nessun servizio Google, per fare un esempio, nemmeno la sincronizzazione della data ed ora passa tramite i server di Google. Qui una bell'intervista del creatore di /e/: [https://itsfoss.com/gael-duval-interview/](https://itsfoss.com/gael-duval-interview/)
 
 -- Buona vita --

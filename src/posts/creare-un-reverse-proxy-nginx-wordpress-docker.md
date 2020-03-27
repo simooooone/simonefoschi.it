@@ -1,11 +1,12 @@
 ---
 title: "Creare un reverse proxy nginx per n siti wordpress con docker"
 description: "Come ho fatto a creare un revese proxy nginx per trasferire i miei siti wordpress da un ambiente LEMP gestito da runcloud.io ad un ambiente docker."
-date: "13/02/2020"
-update: "23/02/2020"
+date: "2020/2/13"
+update: "2020/2/23"
 author: "Simo"
 published: true
 ---
+
 ## Come ho iniziato a pensarci
 
 Era un pezzetto che seguivo delle guide su docker, se ne parla molto in giro per il web e nell'[associazione RiminiLUG](https://www.riminilug.it/) che frequento.
@@ -83,7 +84,7 @@ Per creare il docker network sotto il quale gireranno i container, bisogna dare 
 
 <pre class="language-bash"><code>$ docker network create nginx-proxy</code></pre>
 
-Da ora in poi assegneremo i container alla rete *nginx-proxy* appena creata.
+Da ora in poi assegneremo i container alla rete _nginx-proxy_ appena creata.
 
 Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle directory:
 
@@ -95,7 +96,7 @@ Successivamente bisogna creare un po' di cartelle, qui sotto l'albero delle dire
       - wp-content/
 </code></pre>
 
-Questo per creare una struttura ordinata nella quale compilare i *docker-compose.yml*, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
+Questo per creare una struttura ordinata nella quale compilare i _docker-compose.yml_, per i files della cartella wp-content di wordpress e per la cartella dei certificati ssl.
 
 > In questa maniera, qualora si volesse cambiare hosting VPS, basterà procedere ad una configurazione standard di Ubuntu esattamente come sopra, basterà caricare le cartelle e i files che creeremo e lanciare il comando "docker-compose up -d" su ogni cartella ove ci sia un docker-compose.yml e girare i dns verso il nuovo server per avere i siti funzionanti come sul vecchio VPS.
 
@@ -217,4 +218,4 @@ Finito tutto per il meglio dopo qualche mese di standby sul vecchio sistema, dom
 
 Commenti ->
 
-<blockquote class="twitter-tweet"><p lang="it" dir="ltr">Dopo alcuni mesi di travaglio sono riuscito a mettere in piedi quello che era diventato il mio pallino: usare docker in produzione. Qui il riassunto di questi mesi e il codice per implementare un nginx proxy con docker:<a href="https://t.co/YUktsbDXA5">https://t.co/YUktsbDXA5</a></p>&mdash; Simone (@simooooone) <a href="https://twitter.com/simooooone/status/1231520694946672641?ref_src=twsrc%5Etfw">February 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="it" dir="ltr">Dopo alcuni mesi di travaglio sono riuscito a mettere in piedi quello che era diventato il mio pallino: usare docker in produzione. Qui il riassunto di questi mesi e il codice per implementare un nginx proxy con docker:<a href="https://t.co/YUktsbDXA5">https://t.co/YUktsbDXA5</a></p>&mdash; Simone (@simooooone) <a href="https://twitter.com/simooooone/status/1231520694946672641?ref_src=twsrc%5Etfw">February 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

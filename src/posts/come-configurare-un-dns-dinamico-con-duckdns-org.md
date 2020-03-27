@@ -1,8 +1,8 @@
 ---
 title: "Come configurare un dns dinamico con duckdns.org"
 description: "Procedura per configurare un proprio dominio internet casalingo. Utile se avete un server in casa con servizi come ad esempio Nextcloud o un sito web ospitato in casa."
-date: "16/12/2018"
-update: "4/9/2019"
+date: "2018/12/16"
+update: "2019/9/4"
 author: "Simo"
 published: true
 ---
@@ -11,7 +11,7 @@ Tra i tanti servizi che ho trovato per configurare un dns dinamico gratuito, son
 
 ## Cos’è e a cosa serve un DNS Dinamico
 
-*A riguardo dei DNS Dinamici o DDNS o Dynamic DNS, Wikipedia a questa pagina dice:*
+_A riguardo dei DNS Dinamici o DDNS o Dynamic DNS, Wikipedia a questa pagina dice:_
 
 > I nomi DNS (ad esempio [www.kernel.org](https://www.kernel.org)) sono normalmente associati stabilmente ad indirizzi IP (ad esempio 147.75.xxx.xxx), i quali a loro volta sono stabilmente assegnati ad host (di solito computer) che hanno funzioni di server. Molti host, in particolare quelli che si collegano ad internet utilizzando i servizi di uno (o più) ISP, ricevono invece un indirizzo IP diverso ad ogni connessione. Pertanto è impossibile raggiungerli da internet, perché non si conosce il loro indirizzo IP. Ciò preclude la possibilità di amministrarli remotamente e di offrire servizi su questi host.
 
@@ -22,8 +22,6 @@ I servizi di cui parla, possono essere ad esempio siti web, server di posta, pro
 Quindi per rendere raggiungibile alcuni servizi della nostra rete dall’esterno, non avendo un IP statico, dobbiamo fare la procedura che segue.
 
 I siti che offrono Dynamic DNS gratuito, sono parecchi ad esempio [no-ip.com](https://www.no-ip.com) ed io ho scelto [duckdns.org](https://duckdns.org), iniziando per provare, poi adottato in pianta stabile vista la sua affidabilità.
-
-
 
 ## Procedura di registrazione a duckdns.org
 

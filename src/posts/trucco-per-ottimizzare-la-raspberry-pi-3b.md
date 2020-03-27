@@ -1,8 +1,8 @@
 ---
 title: "Trucco per aumentare la RAM su di un Raspberry PI 3B+ aumentando la Swap"
 description: "Raspberry PI 3B+ a volte ha bisogno di un po' più di RAM, con questo post voglio mostrarvi come fare trimite la Swap."
-date: "10/2/2019"
-update: "6/9/2019"
+date: "2019/2/10"
+update: "2019/9/6"
 author: "Simo"
 published: true
 ---
@@ -31,10 +31,9 @@ l’ho aperto con nano, ho modificato la voce CONF_SWAPSIZE da 100 a 2048 che so
 
 Un check veloce con “free -m” e adesso la mia installazione di Nexcloud è molto più responsiva.
 
->**CONTROINDICAZIONI**<br><br>
->Se lo spazio sulla vostra microSD è poco, allora questo trucco non è molto utile in quanto viene usato lo spazio di swap (che è un file delle dimensioni scelte nella configurazione di CONF_SWAPSIZE) sulla microSD per fornire la RAM.<br><br>
->Quindi se avete impostato 2048, il file occuperà 2 GB sulla microSD.<br><br>
->Inoltre la RAM così ottenuta è più lenta della normale RAM fisica.
-
+> **CONTROINDICAZIONI**<br><br>
+> Se lo spazio sulla vostra microSD è poco, allora questo trucco non è molto utile in quanto viene usato lo spazio di swap (che è un file delle dimensioni scelte nella configurazione di CONF_SWAPSIZE) sulla microSD per fornire la RAM.<br><br>
+> Quindi se avete impostato 2048, il file occuperà 2 GB sulla microSD.<br><br>
+> Inoltre la RAM così ottenuta è più lenta della normale RAM fisica.
 
 -- Buona vita--

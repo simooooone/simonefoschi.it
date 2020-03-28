@@ -253,8 +253,8 @@ const AboutPage = () => {
           >
             Portfolio of TITANKA! Web Company Spa
           </a>
-          where I work as a Senior Web Developer, I partly realized, in team
-          with my collegues, or edited a large number of these websites
+          &nbsp;where I work as a Senior Web Developer, I partly realized, in
+          team with my collegues, or edited a large number of these websites
         </h4>
         <p>HTML, CSS, JS</p>
         <hr />

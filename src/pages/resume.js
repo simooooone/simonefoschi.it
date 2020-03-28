@@ -71,7 +71,7 @@ const AboutPage = () => {
           <em>2011 - Today</em>
         </p>
         <p>
-          HTML, CSS, jQuery, JavaScript, Fireworks, Google PageSpeed
+          HTML, CSS, jQuery, JavaScript, Fireworks, Photoshop, Google PageSpeed
           Optimization, SEO, Web Marketing
         </p>
         <p>
@@ -83,7 +83,7 @@ const AboutPage = () => {
           <em>2019</em>
         </p>
 
-        <p>Reactjs, Gatsbyjs, HTML, CSS, Netlify</p>
+        <p>Reactjs, Gatsbyjs, GraphQL, HTML, CSS, Netlify</p>
         <hr />
         <h4>
           <a href="https://www.amicimici.com" target="_blank" rel="noopener">
@@ -115,7 +115,7 @@ const AboutPage = () => {
         </p>
         <p>
           HTML, CSS, jQuery, SQL Server 2008/2005, T-SQL, ASP.NET, Visual
-          Basic.NET, C#, Windows Server
+          Basic.NET, C#, Windows Server Web Server Admin
         </p>
         <hr />
         <h4>MCE! S.r.l.</h4>
@@ -251,10 +251,10 @@ const AboutPage = () => {
             rel="noopener nofollow noreferrer"
             href="https://www.titanka.com/portfolio.php"
           >
-            Portfolio of TITANKA! Web Company Spa where I work as a Senior Web
-            Developer, I partly realized, in team with my collegues, or edited a
-            large number of these websites
+            Portfolio of TITANKA! Web Company Spa
           </a>
+          where I work as a Senior Web Developer, I partly realized, in team
+          with my collegues, or edited a large number of these websites
         </h4>
         <p>HTML, CSS, JS</p>
         <hr />

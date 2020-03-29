@@ -2,12 +2,18 @@ import React from "react"
 
 import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Head from '../components/head'
+import Head from "../components/head"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { date: { ne: null }, update: { ne: null } } }
+        sort: {
+          fields: [frontmatter___update, frontmatter___date]
+          order: DESC
+        }
+      ) {
         edges {
           node {
             frontmatter {
@@ -27,23 +33,27 @@ const BlogPage = () => {
   `)
   return (
     <Layout myimg="5">
-      <Head  title="Articoli del mio blog di cultura open source" description="Tutti gli articoli su Raspberry Pi, Linux, programmazione e cultura cyberpunk del mio blog." />
+      <Head
+        title="Articoli del mio blog di cultura open source"
+        description="Tutti gli articoli su Raspberry Pi, Linux, programmazione e cultura cyberpunk del mio blog."
+      />
       <h1>### Blog</h1>
       <ol className="posts">
-        {data.allMarkdownRemark.edges.map((edge) => {
+        {data.allMarkdownRemark.edges.map(edge => {
           if (edge.node.frontmatter.published) {
             return (
               <li className="post">
                 <Link to={`/${edge.node.fields.slug}`}>
-                <h3>{edge.node.frontmatter.title}</h3>
-                <p>{edge.node.frontmatter.description}</p>
-                <p><em>{edge.node.frontmatter.date}</em></p>
+                  <h3>{edge.node.frontmatter.title}</h3>
+                  <p>{edge.node.frontmatter.description}</p>
+                  <p>
+                    <em>{edge.node.frontmatter.date}</em>
+                  </p>
                 </Link>
               </li>
             )
           }
         })}
-        
       </ol>
     </Layout>
   )

@@ -10,8 +10,8 @@ import Layout from "../components/layout"
 //hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
 //hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
-import parse, {domToReact} from 'html-react-parser';
-import PostCode from "../components/postcode";
+import parse, { domToReact } from "html-react-parser"
+import PostCode from "../components/postcode"
 
 // TODO: inserire link all'articolo su twitter
 import Head from "../components/head"
@@ -51,7 +51,9 @@ const Blog = props => {
 
       {/*<div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>*/}
-      <div>{parse(props.data.markdownRemark.html, {replace: replaceCode})}</div>
+      <div>
+        {parse(props.data.markdownRemark.html, { replace: replaceCode })}
+      </div>
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>
@@ -60,24 +62,30 @@ const Blog = props => {
 }
 
 const replaceCode = node => {
-  if (node.name === 'pre') {
-    return node.children.length > 0 && <PostCode language={getLanguage(node)}>{domToReact(getCode(node))}</PostCode>;
+  if (node.name === "pre") {
+    return (
+      node.children.length > 0 && (
+        <PostCode language={getLanguage(node)}>
+          {domToReact(getCode(node))}
+        </PostCode>
+      )
+    )
   }
-};
+}
 
 const getLanguage = node => {
   if (node.attribs.class != null) {
-    return node.attribs.class;
+    return node.attribs.class
   }
-  return null;
-};
+  return null
+}
 
 const getCode = node => {
-  if (node.children.length > 0 && node.children[0].name === 'code') {
-    return node.children[0].children;
+  if (node.children.length > 0 && node.children[0].name === "code") {
+    return node.children[0].children
   } else {
-    return node.children;
+    return node.children
   }
-};
+}
 
 export default Blog

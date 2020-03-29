@@ -38,7 +38,14 @@ const ContactPage = () => {
           </a>{" "}
           on Github
         </li>
-        <li><u className="title-color">s dot foschi at protonmail dot com</u> via mail</li>
+        <li>
+          <a
+            href="mailto:s.foschi@protonmail.com?subject=info from simonefoschi.it"
+            target="_blank"
+          >
+            via mail
+          </a>
+        </li>
       </ul>
     </Layout>
   )

@@ -1,20 +1,10 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-
 import Layout from "../components/layout"
-
-//import hljs from "highlight.js/lib/highlight";
-//import "highlight.js/styles/github.css";
-//hljs.initHighlightingOnLoad();
-//hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
-//hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
-//hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
-
 import parse, { domToReact } from "html-react-parser"
 import PostCode from "../components/postcode"
-
-// TODO: inserire link all'articolo su twitter
 import Head from "../components/head"
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -29,31 +19,30 @@ export const query = graphql`
     }
   }
 `
-const Blog = props => {
+const Blog = ({ data, pageContext }) => {
+  const { next, prev } = pageContext
   return (
     <Layout myimg="3">
       <Head
-        title={props.data.markdownRemark.frontmatter.title}
-        description={props.data.markdownRemark.frontmatter.description}
+        title={data.markdownRemark.frontmatter.title}
+        description={data.markdownRemark.frontmatter.description}
       />
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>
       <br />
-      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+      <h1>{data.markdownRemark.frontmatter.title}</h1>
       <p>
-        {props.data.markdownRemark.frontmatter.author}
-        <em>{props.data.markdownRemark.frontmatter.date}</em>
+        {data.markdownRemark.frontmatter.author}
+        <em>{data.markdownRemark.frontmatter.date}</em>
       </p>
       <p>
-        updated <em>{props.data.markdownRemark.frontmatter.update}</em>
+        updated <em>{data.markdownRemark.frontmatter.update}</em>
       </p>
 
       {/*<div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>*/}
-      <div>
-        {parse(props.data.markdownRemark.html, { replace: replaceCode })}
-      </div>
+      <div>{parse(data.markdownRemark.html, { replace: replaceCode })}</div>
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>

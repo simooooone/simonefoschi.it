@@ -1,20 +1,10 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-
 import Layout from "../components/layout"
-
-//import hljs from "highlight.js/lib/highlight";
-//import "highlight.js/styles/github.css";
-//hljs.initHighlightingOnLoad();
-//hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
-//hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
-//hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
-
 import parse, { domToReact } from "html-react-parser"
 import PostCode from "../components/postcode"
-
-// TODO: inserire link all'articolo su twitter
 import Head from "../components/head"
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

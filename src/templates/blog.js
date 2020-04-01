@@ -47,7 +47,11 @@ const Blog = props => {
       <div>{parse(post.html, { replace: replaceCode })}</div>
       <div className="blog-post-nav">
         <Link
-          to={page_context.previous == null ? "" : page_context.previous.fields.slug}
+          to={
+            page_context.previous == null
+              ? ""
+              : page_context.previous.fields.slug
+          }
           className={page_context.previous || "hideme"}
         >
           &lsaquo; prev

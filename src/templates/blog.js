@@ -35,13 +35,12 @@ const Blog = props => {
       <br />
       <h1>{post_det.title}</h1>
       <p>
-        {post_det.author}
-        <em>{post_det.date}</em>
+        {post_det.author} <em>{post_det.date}</em>
       </p>
       <p>
         updated <em>{post_det.update}</em>
       </p>
-
+      <br />
       {/*<div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>*/}
       <div>{parse(post.html, { replace: replaceCode })}</div>

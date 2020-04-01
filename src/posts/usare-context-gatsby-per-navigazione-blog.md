@@ -54,6 +54,7 @@ Nel file gatsby-node.js avevo già pronta la seguente procedura
     })
   })
 }</code></pre>
+<br>
 
 Che ho modificato in
 
@@ -94,7 +95,7 @@ Che ho modificato in
     })
   })
 }</code></pre>
-
+<br>
 ### Per riassumere
 
 Ho dato un ordinamento per data ai post in allMarkdownRemark, controllando che next e previous non vadano fuori dal numero delle pagine e aggiungendo sempre le variabili next e previous con assegnati gli oggetti node al context nella procedura createPage.
@@ -102,6 +103,8 @@ Ho dato un ordinamento per data ai post in allMarkdownRemark, controllando che n
 Nel template delle pagine del blog ho aggiunto i pulsanti html valorizzati tramite props.pageContext
 
 > ho eliminato il codice dal file './src/templates/blog.js' che non è pertinente con l'articolo
+
+<br>
 
 <pre class="language-jsx"><code>const Blog = props => {
     var page_context = props.pageContext

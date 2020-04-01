@@ -101,11 +101,7 @@ Ho dato un ordinamento per data ai post in allMarkdownRemark, controllando che n
 
 Nel template delle pagine del blog ho aggiunto i pulsanti html valorizzati tramite props.pageContext
 
-<<<<<<< HEAD
-> ho eliminato il codice de fileche non è pertinente con l'articolo
-=======
-> ho eliminato il codice che non è pertinente con l'articolo
->>>>>>> articolo-context
+> ho eliminato il codice dal file './src/templates/blog.js' che non è pertinente con l'articolo
 
 <pre class="language-jsx"><code>const Blog = props => {
     var page_context = props.pageContext

@@ -1,5 +1,4 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Head from "../components/head"
@@ -40,14 +39,16 @@ const BlogPage = () => {
       <h1>### Blog</h1>
       <ol className="posts">
         {data.allMarkdownRemark.edges.map(edge => {
-          if (edge.node.frontmatter.published) {
+          const post = edge.node.frontmatter
+
+          if (post.published) {
             return (
               <li className="post">
                 <Link to={`/${edge.node.fields.slug}`}>
-                  <h3>{edge.node.frontmatter.title}</h3>
-                  <p>{edge.node.frontmatter.description}</p>
+                  <h3>{post.title}</h3>
+                  <p>{post.description}</p>
                   <p>
-                    <em>{edge.node.frontmatter.date}</em>
+                    <em>{post.date}</em>
                   </p>
                 </Link>
               </li>

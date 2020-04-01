@@ -61,7 +61,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Simone Foschi's RSS Feed",
+            title: "Simone Foschi",
           },
         ],
       },

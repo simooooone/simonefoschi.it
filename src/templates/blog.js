@@ -20,30 +20,27 @@ export const query = graphql`
   }
 `
 const Blog = props => {
+  var post = props.data.markdownRemark
+  var post_det = props.data.markdownRemark.frontmatter
   return (
     <Layout myimg="3">
-      <Head
-        title={props.data.markdownRemark.frontmatter.title}
-        description={props.data.markdownRemark.frontmatter.description}
-      />
+      <Head title={post_det.title} description={post_det.description} />
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>
       <br />
-      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+      <h1>{post_det.title}</h1>
       <p>
-        {props.data.markdownRemark.frontmatter.author}
-        <em>{props.data.markdownRemark.frontmatter.date}</em>
+        {post_det.author}
+        <em>{post_det.date}</em>
       </p>
       <p>
-        updated <em>{props.data.markdownRemark.frontmatter.update}</em>
+        updated <em>{post_det.update}</em>
       </p>
 
       {/*<div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>*/}
-      <div>
-        {parse(props.data.markdownRemark.html, { replace: replaceCode })}
-      </div>
+      <div>{parse(post.html, { replace: replaceCode })}</div>
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>

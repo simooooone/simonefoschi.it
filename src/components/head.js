@@ -57,7 +57,7 @@ const Head = ({ title, description }) => {
       />
       <meta
         itemprop="description"
-        content="Frontend developer working on HTML, CSS and jQuery. Trying to learn open source frameworks and tools to become powerful. | Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders."
+        content="Personal blog on Sysadmin things, programming and Open Source wonders | Simone Foschi Frontend Developer."
       />
       <meta itemprop="image" content="" />
 
@@ -70,7 +70,7 @@ const Head = ({ title, description }) => {
       />
       <meta
         property="og:description"
-        content="Frontend developer working on HTML, CSS and jQuery. Trying to learn open source frameworks and tools to become powerful. | Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders."
+        content="Personal blog on Sysadmin things, programming and Open Source wonders | Simone Foschi Frontend Developer."
       />
       <meta property="og:image" content="" />
 
@@ -82,7 +82,7 @@ const Head = ({ title, description }) => {
       />
       <meta
         name="twitter:description"
-        content="Frontend developer working on HTML, CSS and jQuery. Trying to learn open source frameworks and tools to become powerful. | Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders."
+        content="Personal blog on Sysadmin things, programming and Open Source wonders | Simone Foschi Frontend Developer."
       />
       <meta name="twitter:image" content="" />
 

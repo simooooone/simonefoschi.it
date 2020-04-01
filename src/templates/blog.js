@@ -25,7 +25,6 @@ const Blog = props => {
   var post = props.data.markdownRemark
   var post_det = props.data.markdownRemark.frontmatter
   var page_context = props.pageContext
-  console.log("context", props.pageContext)
 
   return (
     <Layout myimg="3">

@@ -96,7 +96,7 @@ Che ho modificato in
   })
 }</code></pre>
 <br>
-### Per riassumere
+## Per riassumere
 
 Ho dato un ordinamento per data ai post in allMarkdownRemark, controllando che next e previous non vadano fuori dal numero delle pagine e aggiungendo sempre le variabili next e previous con assegnati gli oggetti node al context nella procedura createPage.
 

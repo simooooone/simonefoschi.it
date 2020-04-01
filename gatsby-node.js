@@ -17,7 +17,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const blogTemplate = path.resolve("./src/templates/blog.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { date: { ne: null }, update: { ne: null } } }
+        sort: {
+          fields: [frontmatter___update, frontmatter___date]
+          order: ASC
+        }
+      ) {
         edges {
           node {
             fields {

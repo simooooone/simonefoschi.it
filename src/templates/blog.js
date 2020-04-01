@@ -19,9 +19,14 @@ export const query = graphql`
     }
   }
 `
+/* , { pageContext } */
+
 const Blog = props => {
   var post = props.data.markdownRemark
   var post_det = props.data.markdownRemark.frontmatter
+  var page_context = props.pageContext
+  console.log("context", props.pageContext)
+
   return (
     <Layout myimg="3">
       <Head title={post_det.title} description={post_det.description} />
@@ -41,6 +46,20 @@ const Blog = props => {
       {/*<div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>*/}
       <div>{parse(post.html, { replace: replaceCode })}</div>
+      <div className="blog-post-nav">
+        <Link
+          to={page_context.previous == null ? "" : page_context.previous.fields.slug}
+          className={page_context.previous || "hideme"}
+        >
+          &lsaquo; prev
+        </Link>
+        <Link
+          to={page_context.next == null ? "" : page_context.next.fields.slug}
+          className={page_context.next || "hideme"}
+        >
+          next &rsaquo;
+        </Link>
+      </div>
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>
       </p>

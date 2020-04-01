@@ -94,14 +94,6 @@ h1 {
   position: relative;
   overflow: hidden;
   padding-bottom: 0.75em;
-
-  &:after {
-    content: "------------------------------------------------------";
-    color: $title-color;
-    position: absolute;
-    left: 0;
-    bottom: -15px;
-  }
 }
 
 h2 {

@@ -49,6 +49,44 @@ const Head = ({ title, description }) => {
       />
       <meta name="msapplication-TileColor" content="#2d89ef" />
       <meta name="theme-color" content="#ffffff" />
+
+      {"<!-- Google / Search Engine Tags -->"}
+      <meta
+        itemprop="name"
+        content="Simone Foschi, Frontend Developer | Simone Foschi"
+      />
+      <meta
+        itemprop="description"
+        content="Frontend developer working on HTML, CSS and jQuery. Trying to learn open source frameworks and tools to become powerful. | Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders."
+      />
+      <meta itemprop="image" content="" />
+
+      {"<!-- Facebook Meta Tags -->"}
+      <meta property="og:url" content="https://www.simonefoschi.it" />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:title"
+        content="Simone Foschi, Frontend Developer | Simone Foschi"
+      />
+      <meta
+        property="og:description"
+        content="Frontend developer working on HTML, CSS and jQuery. Trying to learn open source frameworks and tools to become powerful. | Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders."
+      />
+      <meta property="og:image" content="" />
+
+      {"<!-- Twitter Meta Tags -->"}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Simone Foschi, Frontend Developer | Simone Foschi"
+      />
+      <meta
+        name="twitter:description"
+        content="Frontend developer working on HTML, CSS and jQuery. Trying to learn open source frameworks and tools to become powerful. | Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders."
+      />
+      <meta name="twitter:image" content="" />
+
+      {"<!-- Meta Tags Generated via http://heymeta.com -->"}
     </Helmet>
   )
 }

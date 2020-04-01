@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Simone Foschi",
-    description:
-      "Simone Foschi Frontend Developer. Personal blog on Sysadmin things and Open Source wonders.",
+    description: "Simone Foschi Frontend Developer.",
     author: "Simo",
     siteUrl: `https://www.simonefoschi.it/`,
   },

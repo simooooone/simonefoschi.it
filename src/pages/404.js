@@ -16,7 +16,7 @@ const NotFound = () => {
       <p>La pagina richiesta non è stata trovata.</p>
       <br />
       <p>
-        <Link to="/">Head home / Torna alla Home</Link>
+        <Link to="/">&lsaquo; Head home / Torna alla Home</Link>
       </p>
     </Layout>
   )

@@ -13,13 +13,17 @@ Nel mio caso specifico volevo inserire i pulsanti precedente e successivo negli 
 
 ## Il context di Gatsby
 
-Gatrsbyjs ha un suo context specifico al quale è possibile accedervi tramite GraphQL.
+Gatsbyjs ha un suo context specifico al quale è possibile accedervi tramite GraphQL.
 
 Per chi non lo sapesse, il context sono delle informazioni personalizzate che un framework si porta dietro per essere usato nei vari componenti che ne hanno necessità.
 
-Nello specifico, Gatsby usa GraphQL per gestirlo e quindi bisognerà valorizzarlo da gatsby-node.js per i vari template del blog (io ne ho uno solo).
+Nello specifico, Gatsby ha un context interno, accessibile tramite le props (props.pageContext.tuocontext), che bisognerà valorizzare nella procedura onCreatePage dentro gatsby-node.js e sarà disponibile in tutte le pagine.
 
-Fate riferimento a (questa pagina)[https://www.gatsbyjs.org/docs/creating-and-modifying-pages/#pass-context-to-pages] del blog ufficiale per altri dettagli
+Fate riferimento a <a href="https://www.gatsbyjs.org/docs/creating-and-modifying-pages/#pass-context-to-pages" target="_blank" rel="noopener noreferrer">questa pagina</a> del blog ufficiale per ulteriori dettagli, che dice tra le altre cose:
+
+> Siccome il context di Gatsby è serializzato prima di essere passato alle pagine, non si potranno passare delle funzioni ai componenti.
+
+<br>
 
 ## Come ho creato un context in Gatsby per il template dei post del mio blog
 

@@ -37,10 +37,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
   posts.forEach((edge, index) => {
     const previous = index === 0 ? null : posts[index - 1].node
     const next = index === posts.length - 1 ? null : posts[index + 1].node
-    /* console.log("index", index)
-    console.log("edge", edge)
-    console.log("previous", previous)
-    console.log("next", next) */
 
     createPage({
       component: blogTemplate,

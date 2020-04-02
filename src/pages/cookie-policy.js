@@ -4,7 +4,7 @@ import Head from "../components/head"
 
 const PrivacyPolicy = () => {
   return (
-    <Layout myimg="4">
+    <Layout myimg="2">
       <Head title="Cookie Policy e Privacy Policy" description="" />
       <h1>Privacy, Cookie e GDPR</h1>
       <p>

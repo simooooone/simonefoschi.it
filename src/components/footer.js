@@ -19,6 +19,15 @@ const Footer = () => {
         </a>
       </p>
       <p>Site created by {data.site.siteMetadata.author} &copy; 2018/2020</p>
+      <p>
+        <Link
+          className="navItem"
+          activeClassName="activeNavItem"
+          to="/cookie-policy"
+        >
+          Privacy & Cookie Policy
+        </Link>
+      </p>
     </footer>
   )
 }

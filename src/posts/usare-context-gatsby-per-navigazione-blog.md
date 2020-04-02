@@ -2,7 +2,7 @@
 title: "Come usare il context di Gatsbyjs per la navigazione nel blog"
 description: "Come ho usato il context di Gatsbyjs per inserire i pulsanti precedente e successivo negli articoli di questo blog."
 date: "2020/4/1"
-update: "2020/4/1"
+update: "2020/4/2"
 author: "Simo"
 published: true
 ---

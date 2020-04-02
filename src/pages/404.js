@@ -14,6 +14,7 @@ const NotFound = () => {
       <h1>404 Page not found / Pagina non trovata :-(</h1>
       <p>The page you requested cannot be found.</p>
       <p>La pagina richiesta non è stata trovata.</p>
+      <br />
       <p>
         <Link to="/">Head home / Torna alla Home</Link>
       </p>

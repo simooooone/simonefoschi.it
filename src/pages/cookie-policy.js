@@ -9,13 +9,13 @@ const PrivacyPolicy = () => {
       <h1>Privacy, Cookie e GDPR</h1>
       <p>
         <blockquote>
-          Questo sito si serve dei cookie di Google per l'erogazione dei
-          servizi, la personalizzazione degli annunci e l'analisi del traffico.
+          Questo sito si serve dei cookie di serviti da matomo.duckdns.org per
+          l'analisi del traffico.
         </blockquote>
       </p>
       <p>
-        Le informazioni sul tuo utilizzo del sito sono condivise con Google. Se
-        prosegui la navigazione acconsenti all'utilizzo dei cookie.
+        Il software Matomo l'ho installato sui miei server e nessun dato è
+        fornito a servizi di tracciamento esterni.
       </p>
       <p>
         Ulteriori informazioni Informativa estesa ai sensi del provv. n.229/2014
@@ -30,17 +30,18 @@ const PrivacyPolicy = () => {
         navigazione.
       </p>
       <p>
-        Google Analytics è stato impostato simonefoschi.it è ospitato su
-        piattaforma netlify e utilizza cookie di terze parti di Google (Google
-        Analytics) che servono per raccogliere informazioni sugli utenti come,
-        ad esempio, quelle relative al tipo di browser utilizzato, le pagine web
-        visitate e altre informazioni utili ad analizzare i post (Google
-        Analytics).
+        Matomo è stato impostato su simonefoschi.it ed è ospitato su un mio
+        server situato in Germania e non utilizza cookie di terze parti.
       </p>
       <p>
-        Google Analytics è stato impostato con il parametro per
-        l'anonimizzazione degli IP (vedasi questo e analizzare i post (Google
-        Analytics).
+        I dati che raccolgo su tale server servono per raccogliere informazioni
+        sugli utenti come, ad esempio, quelle relative al tipo di browser
+        utilizzato, le pagine web visitate e altre informazioni utili ad
+        analizzare i post.
+      </p>
+      <p>
+        Matromo è stato impostato con il parametro per l'anonimizzazione degli
+        IP.
       </p>
       <br />
       <h3>Opt out</h3>
@@ -141,23 +142,13 @@ const PrivacyPolicy = () => {
       </p>
       <br />
       <p>
-        Maggiori informazioni sui cookie di Google all'indirizzo{" "}
+        Maggiori informazioni sulla privacy che garantisce Matomo all'indirizzo{" "}
         <a
-          href="https://www.google.com/policies/technologies/cookies/"
+          href="https://matomo.org/privacy/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          https://www.google.com/policies/technologies/cookies/
-        </a>
-      </p>
-      <p>
-        Maggiori informazioni sui cookie di Google Analytics all'indirizzo{" "}
-        <a
-          href="https://www.google.com/analytics/learn/privacy.html?hl=it"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://www.google.com/analytics/learn/privacy.html?hl=it
+          https://matomo.org/privacy/
         </a>
       </p>
       <p>

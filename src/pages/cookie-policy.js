@@ -40,8 +40,9 @@ const PrivacyPolicy = () => {
         analizzare i post.
       </p>
       <p>
-        Matromo è stato impostato con il parametro per l'anonimizzazione degli
-        IP.
+        Matromo è stato impostato con il parametro per{" "}
+        <u>l'anonimizzazione degli IP</u> e per <u>non inserire cookie</u> nella
+        cache del browser.
       </p>
       <br />
       <h3>Opt out</h3>

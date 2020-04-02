@@ -66,10 +66,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-matomo",
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-162623389-1",
+        siteId: "1",
+        matomoUrl: "https://matomo.duckdns.org",
+        siteUrl: "https://www.simonefoschi.it",
       },
     },
     "gatsby-plugin-react-helmet",

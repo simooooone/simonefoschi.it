@@ -1,8 +1,12 @@
 import React from "react"
+import Layout from "../components/layout"
+import Head from "../components/head"
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <Layout myimg="4">
+      <Head title="Cookie Policy e Privacy Policy" description="" />
+      <h1>Privacy, Cookie e GDPR</h1>
       <p>
         <blockquote>
           Questo sito si serve dei cookie di Google per l'erogazione dei
@@ -48,56 +52,56 @@ const PrivacyPolicy = () => {
         funzioni del tuo browser.
       </p>
       <p>
+        Ulteriori informazioni sulla disabilitazione dei cookie su{" "}
         <a
           href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ulteriori informazioni sulla disabilitazione dei cookie su Firefox, in
-          inglese.
+          Firefox, in inglese.
         </a>
       </p>
       <p>
+        Ulteriori informazioni sulla disabilitazione dei cookie su{" "}
         <a
           href="https://support.google.com/chrome/answer/95647?hl=en"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ulteriori informazioni sulla disabilitazione dei cookie su Chrome, in
-          inglese
+          Chrome, in inglese
         </a>
       </p>
       <p>
+        Ulteriori informazioni sulla disabilitazione dei cookie su{" "}
         <a
           href="http://windows.microsoft.com/it-it/internet-explorer/delete-manage-cookies#ie=ie-11"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ulteriori informazioni sulla disabilitazione dei cookie su Internet
-          Explorer, in inglese
+          Internet Explorer, in inglese
         </a>
       </p>
       <p>
+        Ulteriori informazioni sulla disabilitazione dei cookie su{" "}
         <a
           href="http://support.apple.com/kb/HT1677?viewlocale=it_IT&locale=it_IT"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ulteriori informazioni sulla disabilitazione dei cookie su Safari , in
-          inglese
+          Safari, in inglese
         </a>
       </p>
       <p>
+        Ulteriori informazioni sulla disabilitazione dei cookie su{" "}
         <a
           href="http://help.opera.com/Mac/12.10/it/cookies.html"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ulteriori informazioni sulla disabilitazione dei cookie su Opera, in
-          inglese.
+          Opera, in inglese.
         </a>
       </p>
-      <h3>Attiva l'opzione Do Not Track</h3>
+      <h4>Attiva l'opzione Do Not Track</h4>
       <p>
         L'opzione Do Not Track è presente nella maggior parte dei browser di
         ultima generazione.
@@ -112,7 +116,7 @@ const PrivacyPolicy = () => {
         rispettare questa opzione (discrezionale).
       </p>
       <br />
-      <h3>Attiva la modalità di "navigazione anonima"</h3>
+      <h4>Attiva la modalità di "navigazione anonima"</h4>
       <p>
         Mediante questa funzione puoi navigare senza lasciare traccia nel
         browser dei dati di navigazione. I siti non si ricorderanno di te, le
@@ -136,20 +140,8 @@ const PrivacyPolicy = () => {
         cancellazione periodica dei cookie.
       </p>
       <br />
-      <h3>Modificare le impostazioni degli annunci di Google</h3>
       <p>
-        Google offre la possibilità di modificare le preferenze relative agli
-        annunci recandovi all'indirizzo
-        <a
-          href="https://www.google.com/settings/u/0/ads?hl=it"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://www.google.com/settings/u/0/ads?hl=it
-        </a>
-      </p>
-      <p>
-        Maggiori informazioni sui cookie di Google all'indirizzo
+        Maggiori informazioni sui cookie di Google all'indirizzo{" "}
         <a
           href="https://www.google.com/policies/technologies/cookies/"
           target="_blank"
@@ -159,18 +151,7 @@ const PrivacyPolicy = () => {
         </a>
       </p>
       <p>
-        Maggiori informazioni su Paypal
-        <a
-          href="https://www.paypal.com/gb/webapps/mpp/ua/cookie-full"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://www.paypal.com/gb/webapps/mpp/ua/cookie-full
-        </a>
-      </p>
-      <br />
-      <p>
-        Maggiori informazioni sui cookie di Google Analytics all'indirizzo
+        Maggiori informazioni sui cookie di Google Analytics all'indirizzo{" "}
         <a
           href="https://www.google.com/analytics/learn/privacy.html?hl=it"
           target="_blank"
@@ -180,7 +161,7 @@ const PrivacyPolicy = () => {
         </a>
       </p>
       <p>
-        Altre informazioni sui cookie
+        Altre informazioni sui cookie{" "}
         <a
           href="https://www.cookiechoices.org/"
           target="_blank"
@@ -190,7 +171,7 @@ const PrivacyPolicy = () => {
         </a>
       </p>
       <p>
-        Pagina informativa sui cookie del Garante della Privacy
+        Pagina informativa sui cookie del Garante della Privacy{" "}
         <a
           href="http://www.garanteprivacy.it/cookie"
           target="_blank"
@@ -199,13 +180,12 @@ const PrivacyPolicy = () => {
           http://www.garanteprivacy.it/cookie
         </a>
       </p>
-      <br />
       <p>
         Per maggiori informazioni riguardanti la politica della privacy di
         questo blog potete contattarmi per email al seguente indirizzo: s.foschi
-        [chiocciola] gmail.com
+        [chiocciola] protonmail.com
       </p>
-    </div>
+    </Layout>
   )
 }
 

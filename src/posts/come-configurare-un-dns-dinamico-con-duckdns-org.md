@@ -64,3 +64,4 @@ Alla fine magari, mi sono dilungato anche troppo in spiegazioni per una procedur
 Ma tant’è, a volte può servire una mini guida per avventurarsi in un territorio sconosciuto.
 
 -- Buona vita --
+Simo

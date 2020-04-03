@@ -29,7 +29,7 @@ const Footer = () => {
         </Link>
       </p>
       <iframe
-        style="border: 0; height: 200px; width: 600px;"
+        style="border: 0; height: 200px; width: 300px;"
         src="https://matomo.duckdns.org/index.php?module=CoreAdminHome&action=optOut&language=it&backgroundColor=&fontColor=&fontSize=17px&fontFamily="
       ></iframe>
     </footer>

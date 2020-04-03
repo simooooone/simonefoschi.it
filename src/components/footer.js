@@ -28,10 +28,13 @@ const Footer = () => {
           Privacy & Cookie Policy
         </Link>
       </p>
+      {/*
       <iframe
         style="border: 0; height: 200px; width: 300px;"
+        className="iframe-cookie-policy"
         src="https://matomo.duckdns.org/index.php?module=CoreAdminHome&action=optOut&language=it&backgroundColor=&fontColor=&fontSize=17px&fontFamily="
       ></iframe>
+      */}
     </footer>
   )
 }

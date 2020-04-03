@@ -11,7 +11,7 @@ Tra i tanti servizi che ho trovato per configurare un dns dinamico gratuito, son
 
 ## Cos’è e a cosa serve un DNS Dinamico
 
-_A riguardo dei DNS Dinamici o DDNS o Dynamic DNS, Wikipedia a questa pagina dice:_
+A riguardo dei DNS Dinamici o DDNS o Dynamic DNS, Wikipedia a questa pagina dice:
 
 > I nomi DNS (ad esempio [www.kernel.org](https://www.kernel.org)) sono normalmente associati stabilmente ad indirizzi IP (ad esempio 147.75.xxx.xxx), i quali a loro volta sono stabilmente assegnati ad host (di solito computer) che hanno funzioni di server. Molti host, in particolare quelli che si collegano ad internet utilizzando i servizi di uno (o più) ISP, ricevono invece un indirizzo IP diverso ad ogni connessione. Pertanto è impossibile raggiungerli da internet, perché non si conosce il loro indirizzo IP. Ciò preclude la possibilità di amministrarli remotamente e di offrire servizi su questi host.
 

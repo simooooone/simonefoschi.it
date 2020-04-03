@@ -27,12 +27,12 @@ La via che a mio personale parere trovo più semplice è di usare Gparted.
 
 Partiamo con Gparted:
 su ogni derivata di Ubuntu e Debian in generale:
-<br><br>
+<br>
 
-`sudo get install gparted -y`
-`sudo gparted`
+<pre class="language-bash"><code>sudo get install gparted -y
+sudo gparted</code></pre>
 
-<br><br>
+<br>
 
 e vi verrà mostrata una schermata simile alla seguente:
 
@@ -52,11 +52,11 @@ Trovare il percorso del file system
 Prima di chiudere gparted segnamoci il percorso del file system della periferica, ad esempio /dev/sdc.
 
 Un altro modo per trovarlo è tramite la mitica riga di comando:
-<br><br>
+<br>
 
-`df -h`
+<pre class="language-bash"><code>df -h</code></pre>
 
-<br><br>
+<br>
 nella prima colonna sono segnati i percorsi di tutti i file system e ad occhio, tramite la dimensione in Giga, riconosciamo la nostra schedina microSD
 
 ### Creare l’immagine dulla microSD con dd
@@ -70,7 +70,7 @@ Per una guida sul comando dd fare riferimento a questo link o digitate da termin
 A questo punto se abbiamo già scaricato l’immagine dell’OS che vogliamo caricare sulla microSD, la procedura è abbastanza semplice…via terminale scrivere:
 <br><br>
 
-`dd bs=4M if=path/dell/immagine.iso of=/dev/sdX`
+<pre class="language-bash"><code>dd bs=4M if=path/dell/immagine.iso of=/dev/sdX</code></pre>
 
 <br><br>
 avendo cura di sostiutuire la X di /dev/sdX con la lettera della nostra microSD che ci siamo segnati prima e /pat/dell/immagine.iso con il path dove abbiamo salvato l’immagine disco.

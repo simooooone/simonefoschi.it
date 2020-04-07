@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import Language from "./language"
 
 const Header = props => {
   const data = useStaticQuery(graphql`
@@ -17,7 +18,7 @@ const Header = props => {
       <div className="cont-flex-top">
         <div className="myimg-top flex-1 fullWidth">
           <Link to="/">
-            <img src={require("../img/simo-"+props.myimg+'.jpg')} />
+            <img src={require("../img/simo-" + props.myimg + ".jpg")} />
           </Link>
         </div>
         <div className="myname-top flex-2">
@@ -29,37 +30,40 @@ const Header = props => {
           <h4>Frontend Developer</h4>
         </div>
       </div>
-      <nav>
-        <ul className="navList">
-          <li>
-            <Link
-              className="navItem"
-              activeClassName="activeNavItem"
-              to="/resume"
-            >
-              Resume
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navItem"
-              activeClassName="activeNavItem"
-              to="/blog"
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navItem"
-              activeClassName="activeNavItem"
-              to="/contact"
-            >
-              Contacts
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="cont-flex-menu">
+        <Language />
+        <nav>
+          <ul className="navList">
+            <li>
+              <Link
+                className="navItem"
+                activeClassName="activeNavItem"
+                to="/resume"
+              >
+                Resume
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navItem"
+                activeClassName="activeNavItem"
+                to="/blog"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navItem"
+                activeClassName="activeNavItem"
+                to="/contact"
+              >
+                Contacts
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   )
 }

@@ -43,7 +43,7 @@ const BlogPage = () => {
 
           if (post.published) {
             return (
-              <li className="post">
+              <li className="post" key={edge.node.fields.slug}>
                 <Link to={`/${edge.node.fields.slug}`}>
                   <h3>{post.title}</h3>
                   <p>{post.description}</p>

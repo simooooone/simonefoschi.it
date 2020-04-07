@@ -326,38 +326,6 @@ article {
   }
 }
 
-.navList {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-
-  li {
-    a {
-      &:link,
-      &:visited,
-      &:active {
-        color: #999;
-        font-size: 0.9rem;
-        margin-right: 1.3rem;
-        text-decoration: none;
-        box-shadow: inset 0 -3px 0 #d78516;
-        white-space: nowrap;
-      }
-
-      &:hover {
-        color: #6a6a6a;
-      }
-    }
-  }
-  @media (max-width: $screen-xs) {
-    display: block;
-    li {
-      text-align: left;
-      display: block;
-    }
-  }
-}
-
 .blog-post-nav {
   padding: 25px 0;
 
@@ -521,4 +489,80 @@ article {
   border: 0;
   height: 200px;
   width: 600px;
+}
+
+.barra-lingue {
+  padding: 0 0 25px 0;
+
+  @media (min-width: 481px) {
+    width: 50%;
+    justify-self: flex-end;
+    left: 50%;
+    position: relative;
+    text-align: right;
+    float: left;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 10px 0 0;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.cont-flex-menu {
+  @media (min-width: 481px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+}
+
+nav {
+  @media (min-width: 481px) {
+    position: relative;
+    width: 50%;
+    float: left;
+    right: 50%;
+  }
+
+  .navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      a {
+        &:link,
+        &:visited,
+        &:active {
+          color: #999;
+          font-size: 0.9rem;
+          margin-right: 1.3rem;
+          text-decoration: none;
+          box-shadow: inset 0 -3px 0 #d78516;
+          white-space: nowrap;
+        }
+
+        &:hover {
+          color: #6a6a6a;
+        }
+      }
+    }
+    @media (max-width: $screen-xs) {
+      display: block;
+      li {
+        text-align: left;
+        display: block;
+      }
+    }
+  }
 }

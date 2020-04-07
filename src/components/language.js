@@ -1,16 +1,12 @@
 import React from "react"
-//const path = require("path")
+import { Link } from "gatsby"
 
 const Language = () => {
-  //console.log(path.path(node.fileAbsolutePath))
-  /* if (path.path(node.fileAbsolutePath).dir == 'en/') {
-      
-  } */
   return (
-    <>
-      <a href="/">ITA</a>
-      <a href="/">ENG</a>
-    </>
+    <div className="barra-lingue">
+      <Link to="/">ITA</Link>
+      <Link to="/en/">ENG</Link>
+    </div>
   )
 }
 

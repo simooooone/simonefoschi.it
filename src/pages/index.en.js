@@ -6,12 +6,6 @@ import Head from "../components/head"
 // TODO localization
 
 const IndexPage = () => {
-  const path = require("path")
-  /* const url = require("url") */
-  /* let url = path.parse(window.location.href)*/
-  console.log(window.location.href)
-
-  /* console.log(url.parse()) */
   return (
     <Layout myimg="1">
       <Head

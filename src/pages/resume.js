@@ -75,7 +75,7 @@ const AboutPage = () => {
           Optimization, SEO, Web Marketing
         </p>
         <p>
-          <em>More than 300 websites developed</em>
+          <em>More than 350 websites developed</em>
         </p>
         <hr />
         <h4>simonefoschi.it</h4>

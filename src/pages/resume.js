@@ -25,8 +25,6 @@ const AboutPage = () => {
         |<br />
         | jQuery &nbsp; | &nbsp; E &nbsp; | &nbsp; &nbsp; 8y &nbsp; &nbsp; |
         <br />
-        | JS &nbsp; &nbsp; &nbsp; | &nbsp; I &nbsp; | &nbsp; &nbsp; 5y &nbsp;
-        &nbsp; |<br />
         | Linux &nbsp; &nbsp;| &nbsp; I &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp;
         |<br />
         | ASP.NET &nbsp;| &nbsp; C &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp; |
@@ -35,6 +33,8 @@ const AboutPage = () => {
         |<br />
         | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp;
         |<br />
+        | JS &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 2y &nbsp;
+        &nbsp; |<br />
         | TSQL &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 2y &nbsp; &nbsp;
         |
         <br />
@@ -83,7 +83,7 @@ const AboutPage = () => {
           <em>2019</em>
         </p>
 
-        <p>Reactjs, Gatsbyjs, GraphQL, HTML, CSS, Netlify</p>
+        <p>Reactjs, Gatsbyjs, GraphQL, JS, HTML, CSS, Netlify</p>
         <hr />
         <h4>
           <a href="https://www.amicimici.com" target="_blank" rel="noopener">
@@ -115,7 +115,7 @@ const AboutPage = () => {
         </p>
         <p>
           HTML, CSS, jQuery, SQL Server 2008/2005, T-SQL, ASP.NET, Visual
-          Basic.NET, C#, Windows Server Web Server Admin
+          Basic.NET, C#, Windows Web Server Admin
         </p>
         <hr />
         <h4>MCE! S.r.l.</h4>
@@ -124,7 +124,7 @@ const AboutPage = () => {
         </p>
         <p>
           HTML, CSS, jQuery, JavaScript, VB 6, ASP 3.0, Visual Basic.NET, SQL
-          Server, Windows Server, Photoshop
+          Server, Windows Web Server Admin, Photoshop
         </p>
         <p>
           <em>More than 60 websites developed</em>

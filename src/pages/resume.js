@@ -43,11 +43,11 @@ const AboutPage = () => {
         <br />
         | Bash &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp;
         |<br />
+        | Gatsbyjs | &nbsp; J &nbsp; | &nbsp; &nbsp; 5m &nbsp; &nbsp; |<br />
         | Reactjs &nbsp;| &nbsp; J &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; |
         <br />
-        | Nodejs &nbsp; | &nbsp; J &nbsp; | &nbsp; &nbsp; 3m &nbsp; &nbsp; |
+        | Nodejs &nbsp; | &nbsp; J &nbsp; | &nbsp; &nbsp; 2m &nbsp; &nbsp; |
         <br />
-        | Gatsbyjs | &nbsp; J &nbsp; | &nbsp; &nbsp; 3m &nbsp; &nbsp; |<br />
         +----------+-------+------------+
         <br />
         <br />

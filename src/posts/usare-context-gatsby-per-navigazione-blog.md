@@ -5,6 +5,7 @@ date: "2020/4/1"
 update: "2020/4/2"
 author: "Simo"
 published: true
+langKey: it
 ---
 
 ### Come è nata l'idea

@@ -5,6 +5,7 @@ date: "2020/2/13"
 update: "2020/2/23"
 author: "Simo"
 published: true
+langKey: it
 ---
 
 ## Come ho iniziato a pensarci
@@ -195,7 +196,7 @@ Cambiando rispettivamente "example" con il nome del mio sito, "MY-SECRET-PASSWOW
 
 Si salvano le due configurazioni e rispettivamente in ogni cartella ove abbiamo creato i file docker-compose.yml si esegue:
 
-<pre class="language-bash"><code>$ docker-compose up</code></pre>
+<pre class="language-bash"><code>docker-compose up</code></pre>
 
 > aggiungendo il parametro -d si indicherà a docker-compose di eseguire i container come demoni, quindi in fase di produzione bisognerà dare quel paramentro.
 
@@ -207,8 +208,8 @@ Dopo aver messo in produzione il tutto ho dovuto fare alcune sistemazioni, tutte
 
 Le macchine vanno che è una meraviglia ma ho notato che ad ogni aggiornamento dell'engine di docker, bisogna riavviare i container con un:
 
-<pre class="language-bash"><code>$ docker-compose stop
-$ docker-compose up -d</code></pre>
+<pre class="language-bash"><code>docker-compose stop
+docker-compose up -d</code></pre>
 
 nelle rispettive cartelle dei file docker-compose.yml
 

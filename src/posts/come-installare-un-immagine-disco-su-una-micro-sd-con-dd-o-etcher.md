@@ -5,6 +5,7 @@ date: "2018/12/16"
 update: "2019/9/6"
 author: "Simo"
 published: true
+langKey: it
 ---
 
 > Premetto che in questa guida si utilizza Linux e Raspberry PI 3 B+.

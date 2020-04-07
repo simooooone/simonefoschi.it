@@ -5,6 +5,7 @@ date: "2019/11/2"
 update: "2020/2/20"
 author: "Simo"
 published: true
+langKey: it
 ---
 
 # Link utili per sistemisti e programmatori alle prime armi

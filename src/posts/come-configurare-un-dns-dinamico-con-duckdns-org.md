@@ -5,6 +5,7 @@ date: "2018/12/16"
 update: "2019/9/4"
 author: "Simo"
 published: true
+langKey: it
 ---
 
 Tra i tanti servizi che ho trovato per configurare un dns dinamico gratuito, sono incappato in [duckdns.org](https://duckdns.org), che fino ad ora si è dimostrato affidabile e facile da configurare con la mia Rasperry Pi 3 B+.

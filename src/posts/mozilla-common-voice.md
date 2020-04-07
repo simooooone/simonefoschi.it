@@ -5,6 +5,7 @@ date: "2020/3/15"
 update: "2020/3/15"
 author: "Simo"
 published: true
+langKey: it
 ---
 
 Al RiminiLUG ci sono alcune persone che per interesse personale hanno bisogno di un sistema di riconoscimento vocale Open Source.

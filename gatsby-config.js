@@ -66,6 +66,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-i18n`,
+      options: {
+        langKeyDefault: "it",
+        langKeyForNull: "it",
+        prefixDefault: false,
+        useLangKeyLayout: false,
+        pagesPaths: ["/src/pages"],
+      },
+    },
+    {
       resolve: "gatsby-plugin-matomo",
       options: {
         siteId: "1",

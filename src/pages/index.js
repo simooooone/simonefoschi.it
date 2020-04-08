@@ -14,7 +14,7 @@ const IndexPage = () => {
       />
       <section>
         <header>
-          <h1>>### Chi sono</h1>
+          <h1>### Chi sono</h1>
         </header>
         <article>
           <p>Italo-Sammarinese</p>

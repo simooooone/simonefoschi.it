@@ -7,15 +7,16 @@ const AboutPage = () => {
   return (
     <Layout myimg="2">
       <Head
-        title="My resume, Simone Foschi Front End Developer,"
-        description="What I have done, where I worked and work, what I achieved in my developer career from 1999 now."
+        title="Il mio curriculum, Simone Foschi Front End Developer,"
+        description="Cosa ho fatto finora, dove ho lavorato e dove lavoro. Cosa ho raggiunto nella mia carriera di programmatore dal 1999 ad ora."
       />
-      <h1>### Resume</h1>
+      <h1>### Curriculum</h1>
 
       <article>
         <h2>Skills</h2>
         +----------+-------+------------+
-        <br />| <u>Skill</u> &nbsp; &nbsp;| <u>Level</u> | <u>Experience</u> |
+        <br />| <u>Tecnologia</u> &nbsp; &nbsp;| <u>Livello</u> |{" "}
+        <u>Esperienza</u> |
         <br />
         +----------+-------+------------+
         <br />
@@ -52,38 +53,40 @@ const AboutPage = () => {
         <br />
         <br />
         <h3>Legend</h3>
-        <i>E</i> Expert
+        <i>E</i> Esperto
         <br />
-        <i>I</i> Intermediate
+        <i>I</i> Intermedio
         <br />
-        <i>C</i> Certificate
+        <i>C</i> Certificato
         <br />
-        <i>J/I</i> Junior/Intermediate
+        <i>J/I</i> Junior/Intermedio
         <br />
         <i>J</i> Junior
       </article>
       <br />
       <br />
       <article>
-        <h2>Experience</h2>
+        <h2>Esperienze</h2>
         <h4>Titanka! S.p.A.</h4>
         <p>
-          <em>2011 - Today</em>
+          <em>2011 - Oggi</em>
         </p>
         <p>
-          HTML, CSS, jQuery, JavaScript, Fireworks, Photoshop, Google PageSpeed
-          Optimization, SEO, Web Marketing
+          HTML, CSS, jQuery, JavaScript, Fireworks, Photoshop, Ottimizzazione
+          per Google PageSpeed, SEO, Web Marketing
         </p>
         <p>
-          <em>More than 350 websites developed</em>
+          <em>Sviluppati più di 350 siti web</em>
         </p>
         <hr />
         <h4>simonefoschi.it</h4>
         <p>
           <em>2019</em>
         </p>
-
-        <p>Reactjs, Gatsbyjs, GraphQL, JS, HTML, CSS, Netlify</p>
+        <p>
+          Reactjs, Gatsbyjs, GraphQL, JS, HTML, CSS, Netlify, Matomo self hosted
+          analytics
+        </p>
         <hr />
         <h4>
           <a href="https://www.amicimici.com" target="_blank" rel="noopener">
@@ -93,7 +96,10 @@ const AboutPage = () => {
         <p>
           <em>2016</em>
         </p>
-        <p>HTML, CSS, jQuery, WordPress, Facebook Ads, Linux server, Docker</p>
+        <p>
+          HTML, CSS, jQuery, WordPress, Facebook Ads, Linux server, Docker,
+          Matomo self hosted analytics
+        </p>
         <hr />
         <h4>
           <a
@@ -101,13 +107,13 @@ const AboutPage = () => {
             target="_blank"
             rel="noopener"
           >
-            Amici Mici Facebook Page
+            Amici Mici, pagina Facebook
           </a>
         </h4>
         <p>
           <em>2016</em>
         </p>
-        <p>Facebook and Facebook Ads, 79.000 likes</p>
+        <p>Facebook ed annunci Facebook, 79.000 like</p>
         <hr />
         <h4>okgrazie.it</h4>
         <p>
@@ -124,10 +130,10 @@ const AboutPage = () => {
         </p>
         <p>
           HTML, CSS, jQuery, JavaScript, VB 6, ASP 3.0, Visual Basic.NET, SQL
-          Server, Windows Web Server Admin, Photoshop
+          Server, Amministrazione Windows Web Server, Photoshop
         </p>
         <p>
-          <em>More than 60 websites developed</em>
+          <em>Più di 60 siti sviluppati</em>
         </p>
         <hr />
         <h4>Ascentive S.r.l.</h4>
@@ -142,7 +148,7 @@ const AboutPage = () => {
       </article>
       <br />
       <article>
-        <h2>Certifications</h2>
+        <h2>Certificati</h2>
 
         <h4>Microsoft Certified Professional</h4>
         <p>
@@ -165,40 +171,40 @@ const AboutPage = () => {
       <br />
       <br />
       <article>
-        <h2>Exams</h2>
+        <h2>Esami</h2>
         <h4>
           Microsoft Certificated Technology Specialist Microsoft .NET Framework
           3.5, ASP.NET Applications
         </h4>
         <p>
-          <em>oct 2009</em>
+          <em>ott 2009</em>
         </p>
-        <p>Exam 070/562</p>
+        <p>Esame 070/562</p>
         <hr />
         <h4>
           Microsoft Certificated Technology Specialist Microsoft .NET Framework
           2.0 Web Applications
         </h4>
         <p>
-          <em>jan 2009</em>
+          <em>gen 2009</em>
         </p>
-        <p>Exam 070/536 + Exam 070/528</p>
+        <p>Esame 070/536 + Esame 070/528</p>
         <hr />
         <h4>Microsoft Certificated Technology Specialist Sql Server 2005</h4>
         <p>
           <em>apr 2008</em>
         </p>
-        <p>Exam 070/431</p>
+        <p>Esame 070/431</p>
         <hr />
       </article>
       <br />
       <br />
       <article>
-        <h2>Courses and conferences</h2>
+        <h2>Corsi e conferenze a cui ho partecipato</h2>
         <p>
           <em>2018/2020</em>
         </p>
-        <h2>Udemy Courses</h2>
+        <h2>Corsi Udemy</h2>
 
         <h4>Nodejs, Reactjs, Linux LPI, Docker</h4>
         <hr />
@@ -244,7 +250,7 @@ const AboutPage = () => {
       <br />
       <br />
       <article>
-        <h2>Websites I am proud of:</h2>
+        <h2>Siti web di cui sono orgoglioso:</h2>
         <h4>
           <a
             target="_blank"
@@ -253,8 +259,8 @@ const AboutPage = () => {
           >
             Portfolio of TITANKA! Web Company Spa
           </a>
-          &nbsp;where I work as a Senior Web Developer, I partly realized, in
-          team with my collegues, or edited a large number of these websites
+          &nbsp;dove lavoro come Senior Web Developer, ho realizzato in team con
+          i miei colleghi, un gran numero di questi siti web
         </h4>
         <p>HTML, CSS, JS</p>
         <hr />
@@ -339,7 +345,7 @@ const AboutPage = () => {
       <br />
       <br />
       <p>
-        <Link to="/contact">Go to contact page &rsaquo;</Link>
+        <Link to="/contact">Vai alla pagina contatti &rsaquo;</Link>
       </p>
     </Layout>
   )

@@ -5,8 +5,8 @@ const ContactPage = () => {
   return (
     <Layout myimg="4">
       <Head title="Ways to contact me" description="At your service" />
-      <h1>### Contact me</h1>
-      <p>The best way to reach me is via</p>
+      <h1>### Contattami</h1>
+      <p>I migliori modi per metterti in contatto con me sono:</p>
       <ul className="lista-v">
         <li>
           <a
@@ -16,7 +16,7 @@ const ContactPage = () => {
           >
             @simooooone
           </a>{" "}
-          on Twitter
+          su Twitter
         </li>
         <li>
           <a
@@ -26,7 +26,7 @@ const ContactPage = () => {
           >
             @simone-foschi
           </a>{" "}
-          on Linkedin
+          su Linkedin
         </li>
         <li>
           <a
@@ -36,7 +36,7 @@ const ContactPage = () => {
           >
             @simooooone
           </a>{" "}
-          on Github
+          su Github
         </li>
         <li>
           <a

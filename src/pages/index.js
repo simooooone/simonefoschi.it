@@ -14,35 +14,13 @@ const IndexPage = () => {
       />
       <section>
         <header>
-          <h1>### Who I am</h1>
+          <h1>>### Chi sono</h1>
         </header>
         <article>
-          <p>Half Italian, half Sammarinese (from Repubblic of San Marino)</p>
-
-          <p>
-            In my spare time I enjoy working on JS, React, Gatsby, GraphQL, Git,
-            Linux, home automation and Docker.
-          </p>
-
-          <p>
-            Love learning and to practice english, programming and sysadmin
-            things.
-          </p>
-
-          <p>Love Open Source and evolution in technology.</p>
-          <br />
-          <blockquote>
-            Seniority is the attitude to do things as they should and to be able
-            to explain them and the limits of the technology adopted
-          </blockquote>
-          <br />
-          <br />
-          <h2>### Chi sono</h2>
           <p>Italo-Sammarinese</p>
-
           <p>
             Nel tempo libero mi piace lavorare su JS, React, Gatsby, GraphQL,
-            Git, Linux, domotica e Docker.
+            Git, Amministrazione Linux, domotica e Docker.
           </p>
 
           <p>

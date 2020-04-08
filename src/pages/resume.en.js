@@ -10,7 +10,7 @@ const AboutPage = () => {
         title="My resume, Simone Foschi Front End Developer,"
         description="What I have done, where I worked and work, what I achieved in my developer career from 1999 now."
       />
-      <h1>### Resume English</h1>
+      <h1>### Resume</h1>
 
       <article>
         <h2>Skills</h2>
@@ -75,15 +75,17 @@ const AboutPage = () => {
           Optimization, SEO, Web Marketing
         </p>
         <p>
-          <em>More than 300 websites developed</em>
+          <em>More than 350 websites developed</em>
         </p>
         <hr />
         <h4>simonefoschi.it</h4>
         <p>
           <em>2019</em>
         </p>
-
-        <p>Reactjs, Gatsbyjs, GraphQL, JS, HTML, CSS, Netlify</p>
+        <p>
+          Reactjs, Gatsbyjs, GraphQL, JS, HTML, CSS, Netlify, Matomo self hosted
+          analytics
+        </p>
         <hr />
         <h4>
           <a href="https://www.amicimici.com" target="_blank" rel="noopener">
@@ -93,7 +95,10 @@ const AboutPage = () => {
         <p>
           <em>2016</em>
         </p>
-        <p>HTML, CSS, jQuery, WordPress, Facebook Ads, Linux server, Docker</p>
+        <p>
+          HTML, CSS, jQuery, WordPress, Facebook Ads, Linux server, Docker,
+          Matomo self hosted analytics
+        </p>
         <hr />
         <h4>
           <a
@@ -339,7 +344,7 @@ const AboutPage = () => {
       <br />
       <br />
       <p>
-        <Link to="/contact">Go to contact page &rsaquo;</Link>
+        <Link to="/en/contact">Go to contact page &rsaquo;</Link>
       </p>
     </Layout>
   )

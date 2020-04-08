@@ -13,11 +13,14 @@ const Header = props => {
     }
   `)
 
+  const url = typeof window !== "undefined" ? window.location.href : ""
+  let lang = url.includes("/en/") ? "/en" : ""
+
   return (
     <header className="header">
       <div className="cont-flex-top">
         <div className="myimg-top flex-1 fullWidth">
-          <Link to="/">
+          <Link to={lang + "/"}>
             <img src={require("../img/simo-" + props.myimg + ".jpg")} />
           </Link>
         </div>
@@ -38,7 +41,7 @@ const Header = props => {
               <Link
                 className="navItem"
                 activeClassName="activeNavItem"
-                to="/resume"
+                to={lang + "/resume"}
               >
                 Resume
               </Link>
@@ -47,7 +50,7 @@ const Header = props => {
               <Link
                 className="navItem"
                 activeClassName="activeNavItem"
-                to="/blog"
+                to={lang + "/blog"}
               >
                 Blog
               </Link>
@@ -56,7 +59,7 @@ const Header = props => {
               <Link
                 className="navItem"
                 activeClassName="activeNavItem"
-                to="/contact"
+                to={lang + "/contact"}
               >
                 Contacts
               </Link>

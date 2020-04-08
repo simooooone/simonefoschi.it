@@ -14,43 +14,54 @@ const AboutPage = () => {
 
       <article>
         <h2>Skills</h2>
-        +----------+-------+----------+
-        <br />|<u>Tecnologia</u>|<u>Livello</u>|<u>Esperienza</u>|
+        +------------+---------+------------+
+        <br />| <u>Tecnologia</u> | <u>Livello</u> | <u>Esperienza</u> |
         <br />
-        +----------+-------+----------+
+        +------------+---------+------------+
         <br />
-        | CSS &nbsp; &nbsp; &nbsp;| &nbsp; E &nbsp; |&nbsp; &nbsp;11y &nbsp;
-        &nbsp;|
+        | CSS &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; E &nbsp; &nbsp;| &nbsp;
+        &nbsp;11y &nbsp; &nbsp; |
         <br />
-        | HTML &nbsp; &nbsp; | &nbsp; E &nbsp; |&nbsp; &nbsp;11y &nbsp; &nbsp;|
+        | HTML &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; E &nbsp; &nbsp;| &nbsp;
+        &nbsp;11y &nbsp; &nbsp; |
         <br />
-        | jQuery &nbsp; | &nbsp; E &nbsp; |&nbsp; &nbsp; 8y &nbsp; &nbsp;|
+        | jQuery &nbsp; &nbsp; |&nbsp; &nbsp; E &nbsp; &nbsp;| &nbsp; &nbsp; 8y
+        &nbsp; &nbsp; |
         <br />
-        | Linux &nbsp; &nbsp;| &nbsp; I &nbsp; |&nbsp; &nbsp; 4y &nbsp; &nbsp;|
+        | Linux &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; I &nbsp; &nbsp;| &nbsp;
+        &nbsp; 4y &nbsp; &nbsp; |
         <br />
-        | ASP.NET &nbsp;| &nbsp; C &nbsp; |&nbsp; &nbsp; 4y &nbsp; &nbsp;|
+        | ASP.NET &nbsp; &nbsp;|&nbsp; &nbsp; C &nbsp; &nbsp;| &nbsp; &nbsp; 4y
+        &nbsp; &nbsp; |
         <br />
-        | .NET &nbsp; &nbsp; | &nbsp; C &nbsp; |&nbsp; &nbsp; 4y &nbsp; &nbsp;|
+        | .NET &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; C &nbsp; &nbsp;| &nbsp;
+        &nbsp; 4y &nbsp; &nbsp; |
         <br />
-        | MSSql &nbsp; &nbsp;| &nbsp; C &nbsp; |&nbsp; &nbsp; 4y &nbsp; &nbsp;|
+        | MSSql &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; C &nbsp; &nbsp;| &nbsp;
+        &nbsp; 4y &nbsp; &nbsp; |
         <br />
-        | JS &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; |&nbsp; &nbsp; 2y &nbsp;
-        &nbsp;|
+        | JS &nbsp; &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
+        &nbsp; 2y &nbsp; &nbsp; |
         <br />
-        | TSQL &nbsp; &nbsp; | &nbsp;J/I&nbsp; |&nbsp; &nbsp; 2y &nbsp; &nbsp;|
+        | TSQL &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
+        &nbsp; 2y &nbsp; &nbsp; |
         <br />
-        | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; |&nbsp; &nbsp; 1y &nbsp;
-        &nbsp;|
+        | WP &nbsp; &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
+        &nbsp; 1y &nbsp; &nbsp; |
         <br />
-        | Bash &nbsp; &nbsp; | &nbsp;J/I&nbsp; |&nbsp; &nbsp; 1y &nbsp; &nbsp;|
+        | Bash &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
+        &nbsp; 1y &nbsp; &nbsp; |
         <br />
-        | Gatsbyjs | &nbsp; J &nbsp; |&nbsp; &nbsp; 5m &nbsp; &nbsp;|
+        | Gatsbyjs &nbsp; |&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 5m
+        &nbsp; &nbsp; |
         <br />
-        | Reactjs &nbsp;| &nbsp; J &nbsp; |&nbsp; &nbsp; 4m &nbsp; &nbsp;|
+        | Reactjs &nbsp; &nbsp;|&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 4m
+        &nbsp; &nbsp; |
         <br />
-        | Nodejs &nbsp; | &nbsp; J &nbsp; |&nbsp; &nbsp; 2m &nbsp; &nbsp;|
+        | Nodejs &nbsp; &nbsp; |&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 2m
+        &nbsp; &nbsp; |
         <br />
-        +----------+-------+----------+
+        +------------+---------+------------+
         <br />
         <br />
         <h3>Legend</h3>

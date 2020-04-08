@@ -43,7 +43,7 @@ const Header = props => {
                 activeClassName="activeNavItem"
                 to={lang + "/resume"}
               >
-                Resume
+                {lang ? "Resume" : "Curriculum"}
               </Link>
             </li>
             <li>
@@ -61,7 +61,7 @@ const Header = props => {
                 activeClassName="activeNavItem"
                 to={lang + "/contact"}
               >
-                Contacts
+                {lang ? "Contacts" : "Contatti"}
               </Link>
             </li>
           </ul>

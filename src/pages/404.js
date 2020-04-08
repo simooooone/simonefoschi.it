@@ -12,11 +12,11 @@ const NotFound = () => {
         description="Sorry, the page you requested cannot be found."
       />
       <h1>404 Page not found - Pagina non trovata :-(</h1>
-      <p>The page you requested cannot be found.</p>
       <p>La pagina richiesta non è stata trovata.</p>
+      <p>The page you requested cannot be found.</p>
       <br />
       <p>
-        <Link to="/">&lsaquo; Head Home - Torna alla Home</Link>
+        <Link to="/">&lsaquo; Torna alla Home - Back to Home</Link>
       </p>
     </Layout>
   )

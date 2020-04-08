@@ -10,7 +10,7 @@ const IndexPage = () => {
     <Layout myimg="1">
       <Head
         title="Simone Foschi, Frontend Developer"
-        description="Personal blog on Sysadmin things, programming and Open Source wonders."
+        description="Il mio sito web personale con blog su amministrazione sistemistica, programmazione e le meraviglie dell'Open Source."
       />
       <section>
         <header>
@@ -34,11 +34,13 @@ const IndexPage = () => {
             L'esperienza è l'attitudine a fare cose come dovrebbero essere
             realizzate e saper spiegare la tecnologia usata ed i suoi limiti
           </blockquote>
+          <br />
+          <br />
         </article>
         <br />
         <footer>
           <p>
-            <Link to="/resume">Full resume &rsaquo;</Link>
+            <Link to="/resume">Curriculum completo &rsaquo;</Link>
           </p>
         </footer>
       </section>

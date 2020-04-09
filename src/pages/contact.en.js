@@ -4,7 +4,10 @@ import Head from "../components/head"
 const ContactPage = () => {
   return (
     <Layout myimg="4">
-      <Head title="Ways to contact me" description="At your service" />
+      <Head
+        title="Simone Foschi Frontend Developer"
+        description="Ways to contact me."
+      />
       <h1>### Contact me</h1>
       <p>The best way to reach me is via</p>
       <ul className="lista-v">

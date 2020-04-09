@@ -40,7 +40,7 @@ const BlogPage = () => {
     <Layout myimg="5">
       <Head
         title="Open source culture blog articles"
-        description="All articles about Raspberry Pi, Linux,programming e cyberpunk culture from my blog."
+        description="All articles about Raspberry Pi, Linux, programming e cyberpunk culture from my blog."
       />
       <h1>### Blog</h1>
       <ol className="posts">

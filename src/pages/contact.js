@@ -4,7 +4,10 @@ import Head from "../components/head"
 const ContactPage = () => {
   return (
     <Layout myimg="4">
-      <Head title="Ways to contact me" description="At your service" />
+      <Head
+        title="Simone Foschi Frontend Developer"
+        description="Ecco i canali sui quali metterti in contatto con me."
+      />
       <h1>### Contattami</h1>
       <p>I migliori modi per metterti in contatto con me sono:</p>
       <ul className="lista-v">

@@ -41,7 +41,9 @@ const PrivacyPolicy = () => {
       </p>
       <p>
         Matromo è stato impostato con il parametro per{" "}
-        <u>l'anonimizzazione degli IP</u>
+        <u>l'anonimizzazione degli IP</u> quindi quello che registra è un
+        indirizzo ip nella forma 192.xxx.xxx.xxx con gli ultimi tre blocchi
+        dell'indirizzo ip anonimizzati.
       </p>
       <p>Altri dati che raccoglie Matomo sono (in inglese): </p>
       <p>

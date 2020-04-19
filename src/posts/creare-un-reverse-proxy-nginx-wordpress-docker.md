@@ -41,7 +41,7 @@ Come sistema operativo ho deciso di usare Ubuntu 18.04 LTS e come sistema di pro
 
 Quindi ho configurato il server da root così:
 
-<pre class="language-bash"><code>$ adduser TUO-USERNAME
+<pre class="language-bash"><code>adduser TUO-USERNAME
 usermod -aG sudo TUO-USERNAME
 rsync --archive --chown=TUO-USERNAME:TUO-USERNAME ~/.ssh /home/TUO-USERNAME
 apt update && apt upgrade && apt dist-upgrade && apt autoremove && apt autoclean
@@ -61,7 +61,7 @@ Per quanto riguarda il login ssh avevo già generato sul mio computer con ssh-ke
 Quindi mi sono creato dei domini di test su <a href="https://duckdns.org" target="_blank" rel="noopener noreferrer">duckdns</a> ed li ho configurati tutti per puntare al mio server.
 Per ogni dominio di test ho fatto così:
 
-<pre class="language-bash"><code>$ mkdir duckdns
+<pre class="language-bash"><code>mkdir duckdns
 cd duckdns
 nano TUO-DOMINIO.sh
 # ci ho incollato dentro questa stringa

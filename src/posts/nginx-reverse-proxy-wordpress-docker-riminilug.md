@@ -10,15 +10,19 @@ langKey: it
 
 # Come creare un Reverse Proxy Nginx automatizzato con docker
 
+Era un bel po' di tempo che stavo pensando a come configurare il mio server web in maniera da rimanere su una mia VPS in sicurezza e con le tecnologie più moderne.
+
+Pensa che ti ripensa, mumble mumble, tramite le considerazioni qui sotto, sono arrivato a realizzare ad un progetto moderno e facile da gestire.
+
 ## Le considerazioni che mi hanno portato all'ideazione del sistema
 
 Un Reverse Proxy Nginx è una particolare configurazione di Nginx per permettere ad un server di rispondere tramite un solo componente alle richieste esterne, appunto Nginx.
 
-Questo garantisce che i componenti sottostanti del web server non siano interfacciati direttamente su internet e che quindi un attaccante abbia un superfice d'attacco molto minore rispetto all'interfacciarsi direttamente con il web server su internet.
+Questo garantisce che i componenti sottostanti del web server non siano interfacciati direttamente su internet e che quindi un attaccante abbia un superfice d'attacco molto minore rispetto all'interfacciarsi direttamente con il web server dei rispettivi siti su internet.
 
 Docker invece è un moderno sistema di containerizzazione che permette di creare dei servizi atomici dentro a dei container senza aver bisogno di modificare la configurazione e le librerie della macchina host.
 
-Docker è inoltre facilmente trasportabile da una macchina ad un'altra e nel caso di carichi elevati è possibile tramite kubernetes distribuire il carico aggiungendo macchine, il che si chiama scalabilità.
+Docker è inoltre facilmente trasportabile da una macchina ad un'altra e nel caso di carichi elevati è possibile tramite kubernetes distribuire il carico aggiungendo macchine, il che fa di esso un sistema scalabile in maniera abbastanza semplice.
 
 Fatte queste considerazioni ho fatto qualche ricerca su internet in maniera da trovare qualcosa che mi aiutasse a chiarire i miei dubbi e perché no, qualcosa di pronto all'uso dato che non avevo idea di come gestire il tutto.
 
@@ -34,18 +38,20 @@ Fatte queste considerazioni ho fatto qualche ricerca su internet in maniera da t
 
 Ho trovato quasi subito <a href="https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/" target="_blank" rel="noopener noreferrer">questo articolo</a> dove appunto si parla di come creare una configurazione di docker-compose per istanziare un Reverse Proxy Nginx per dei siti WordPress.
 
+La particolarità di questo sistema è che aggiungendo container con siti web, crea in automatico la configurazione e a me non rimane che istanziare con i parametri corretti un docker compose e il sistema mi crea in automatico oltre che la configuraszione, anche i certificati https.
+
 Ma nel cercare di farlo simile alla mia idea, ad un certo punto non partiva più.
 
 Quindi ho chiesto aiuto a Matteo ed una sera che ci siamo ritrovati al consueto appuntamento settimanale del martedì all'associazione, mi ha fatto procedere dall'inizio seguendo <a href="https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose" target="_blank" rel="noopener noreferrer">questa guida</a> sul wiki ufficiale di Nginx Let's Encrypt Proxy Companion.
 
 > Tra l'altro ho chiesto anche su stackoverflow ed il mio errore era quello di istanziare due volte docker-gen.<br />
-> Una istanziando direttamente il container docker-gen, l'altra istanziando il container nginx-proxy che al suo interno contiene docker-gen, quando invece dovevo istanziare l'immagine nginx:alpine, come riportato nella configurazione sottostante.
+> Una volta istanziando direttamente il container docker-gen, l'altra istanziando il container nginx-proxy che al suo interno contiene docker-gen, quando invece dovevo istanziare l'immagine nginx:alpine, come riportato nella configurazione sottostante.
 
 ## Configurare il server
 
 Come server, su consiglio di Giuseppe che l'ha scoperto e Matteo ho usato <a href="https://contabo.com" target="_blank" rel="noopener noreferrer">contabo.com</a>, che oltre ad essere economico è anche un buonissimo hosting.
 
-> Per la cifra ridicola di 3 euro e 99 al mese al momento attuale, offre un VPS con 4 Gb di RAM e 300 Gb di hard disk SSD boosted.
+> Per la cifra ridicola di 3 euro e 99 al mese -- al momento attuale --, offre un VPS con 4 Gb di RAM e 300 Gb di hard disk SSD boosted.
 
 Come sistema di base ho usato Ubuntu 18.04 LTS.
 
@@ -213,6 +219,10 @@ Quindi dentro le cartelle dove ho creato i file docker-compose.yml ho eseguito:
 > docker-compose up -d<br /><br />
 
 ## Per finire
+
+Quindi, dopo i test che tutto funzionasse a dovere, ho dovuto fare la procedura del trasferimento dei db dal vecchio MySQL al server attuale tramite un plugin WordPress che si chiama UpdraftPlus in modalità gratuita, modificare i docker-compose.yml dei due siti WordPress per inserire i domini corretti e puntare il DNS dei domini di produzione.
+
+## Ringraziamenti
 
 Grazie per l'ennesima volta al RiminiLUG per tutto il supporto che mi hanno dato i soci e per avermi fatto risparmiare molti soldi grazie al consiglio di creare un VPS su contabo.
 

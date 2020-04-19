@@ -1,7 +1,7 @@
 ---
 title: "Creare un reverse proxy nginx automatizzato per i vostri siti con docker"
 description: "Come ho creato un Reverse Proxy Nginx docker poer il mio server web passo passo."
-date: "2020/04/19"
+date: "2020/4/19"
 update: "2020/4/19"
 author: "Simo"
 published: false

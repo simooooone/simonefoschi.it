@@ -68,10 +68,7 @@ Che ho modificato in
   const blogTemplate = path.resolve("./src/templates/blog.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark(
-        filter: { frontmatter: { date: { ne: null }, update: { ne: null } } }
-        sort: { fields: [frontmatter___update, frontmatter___date], order: ASC }
-      ) {
+      allMarkdownRemark(filter: {frontmatter: {update: {ne: null}, published: {eq: true}}}, sort: {fields: [frontmatter___update, frontmatter___date], order: ASC}) {
         edges {
           node {
             fields {

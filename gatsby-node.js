@@ -18,7 +18,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const res = await graphql(`
     query {
       allMarkdownRemark(
-        filter: { frontmatter: { date: { ne: null }, update: { ne: null } } }
+        filter: {
+          frontmatter: { update: { ne: null }, published: { eq: true } }
+        }
         sort: { fields: [frontmatter___update, frontmatter___date], order: ASC }
       ) {
         edges {

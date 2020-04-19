@@ -16,18 +16,18 @@ Siccome Docker è un ottimo tool per eseguire vari servizi su una singola macchi
 
 Docker ha il pregio di sporcare minimamente la macchina sul quale si eseguono i suoi container, è facilmente trasportabile da una macchina ad un'altra ed estendibile tramite altri tool, per distribuire il carico del server su più macchine quando il carico di lavoro aumenta.
 
-Dopo una riflessione e qualche ricerca sul come creare il server con docker ho scoperto che mi sarebbe servito un reverse proxy nginx e quindi, cercando su internet, ho trovato [questo articolo](https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/) dove si parla di come eseguire un reverse proxy con docker e caricare automaticamente la configurazione di nginx.
+Dopo una riflessione e qualche ricerca sul come creare il server con docker ho scoperto che mi sarebbe servito un reverse proxy nginx e quindi, cercando su internet, ho trovato <a href="https://www.pattonwebz.com/docker/multiple-wordpress-containers-proxy/" target="_blank" rel="noopener noreferrer">questo articolo</a> dove si parla di come eseguire un reverse proxy con docker e caricare automaticamente la configurazione di nginx.
 
-Inizialmente, per via di un errore nella configurazione del file docker-compose.yml, non sono riuscito a metterlo in piedi, finché insieme a Matteo dell'associazione non ho trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in [questa guida](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose) sul wiki ufficiale.
+Inizialmente, per via di un errore nella configurazione del file docker-compose.yml, non sono riuscito a metterlo in piedi, finché insieme a Matteo dell'associazione non ho trovato una guida che mi facesse vedere l'installazione sotto un altro punto di vista in <a href="https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose" target="_blank" rel="noopener noreferrer">questa guida</a> sul wiki ufficiale.
 
 Chiara chiara, pulita ed ha funzionato subito.
 
 > Alla fine chiedendo su stackoverflow, ho scoperto che il mio sbaglio consisteva nell'aver editato il codice originale di pattonwebz e stavo eseguendo due istanze di docker-gen. Una era dentro il container nginx-proxy ed un'altra la istanziavo direttamente come container.
 > Quindi in un'installazione con tre container (nginx, docker-gen e docker-letsencrypt-nginx-proxy-companion), non va istanziato un container nginx-proxy.
 
-Eseguendo i servizi in test su un'istanza di [digitalocean](https://m.do.co/c/b8caeaf651c4) da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, richiedeva una quantità di risorse maggiore e che mi sarebbe costato troppo l'hosting presso di loro per due sitarelli come i miei.
+Eseguendo i servizi in test su un'istanza di <a href="https://m.do.co/c/b8caeaf651c4" target="_blank" rel="noopener noreferrer">digitalocean</a> da 1 GB di RAM, ho scoperto che questo tipo di sistema, eseguendo un'istanza di mariadb per ogni wordpress installato, richiedeva una quantità di risorse maggiore e che mi sarebbe costato troppo l'hosting presso di loro per due sitarelli come i miei.
 
-Matteo mi ha ricordato [contabo.com](https://contabo.com), che mi aveva consigliato precedentemente anche Giuseppe, un altro socio dell'associazione, ma al tempo, a causa di [runcloud.io](https://runcloud.io/r/7v3Yv3Jj5KVR) che funziona solo su determinati hosting, non avevo considerato l'opzione di spostare il mio server.
+Matteo mi ha ricordato <a href="https://contabo.com" target="_blank" rel="noopener noreferrer">contabo.com</a>, che mi aveva consigliato precedentemente anche Giuseppe, un altro socio dell'associazione, ma al tempo, a causa di <a href="https://runcloud.io/r/7v3Yv3Jj5KVR" target="_blank" rel="noopener noreferrer">runcloud.io</a> che funziona solo su determinati hosting, non avevo considerato l'opzione di spostare il mio server.
 
 Quindi, comprato un VPS su contabo ed ora ho 4 Gb di RAM e 300 Gb di hard disk SSD boosted per una cifra ridicola confronto a prima.
 
@@ -56,9 +56,9 @@ apt install docker-compose -y
 
 Quindi mi sono loggato col nome utente appena creato.
 
-Per quanto riguarda il login ssh avevo già generato sul mio computer di sviluppo le chiavi private e quindi con filezilla non ho fatto altro che caricarle nella cartella ~/.ssh con i permessi corretti.
+Per quanto riguarda il login ssh avevo già generato sul mio computer con ssh-keygen di lavoro le chiavi private e quindi con filezilla non ho fatto altro che caricarle nella cartella ~/.ssh con i permessi corretti.
 
-Quindi mi sono creato dei domini di test su [duckdns](https://duckdns.org) ed li ho configurati tutti per puntare al mio server.
+Quindi mi sono creato dei domini di test su <a href="https://duckdns.org" target="_blank" rel="noopener noreferrer">duckdns</a> ed li ho configurati tutti per puntare al mio server.
 Per ogni dominio di test ho fatto così:
 
 <pre class="language-bash"><code>$ mkdir duckdns
@@ -83,7 +83,7 @@ Per il server di produzione bisogna puntare i dns dei domini all'IP della macchi
 
 Per creare il docker network sotto il quale gireranno i container, bisogna dare questo comando:
 
-<pre class="language-bash"><code>$ docker network create nginx-proxy</code></pre>
+<pre class="language-bash"><code>docker network create nginx-proxy</code></pre>
 
 Da ora in poi assegneremo i container alla rete _nginx-proxy_ appena creata.
 
@@ -105,7 +105,7 @@ Questo per creare una struttura ordinata nella quale compilare i _docker-compose
 
 ## Creare i files docker-compose.yml
 
-Seguendo il wiki di [nginx-proxy-letsencrypt-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose), ho creato il three-container setup incollando dentro il docker-compose.yml creato nella directory radice (nginx-proxy):
+Seguendo il wiki di <a href="https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Docker-Compose" target="_blank" rel="noopener noreferrer">nginx-proxy-letsencrypt-companion</a>, ho creato il three-container setup incollando dentro il docker-compose.yml creato nella directory radice (nginx-proxy):
 
 <pre class="language-yaml"><code>version: '2'
 services:

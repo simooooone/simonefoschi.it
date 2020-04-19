@@ -34,7 +34,7 @@ Fatte queste considerazioni ho fatto qualche ricerca su internet in maniera da t
 > Io quindi mi sono basato su queste considerazioni per creare un sistema con base Nginx su Alpine Linux in maniera da avere una superfice d'attacco molto più ridotta rispetto ad un sistema che comprendesse distribuzioni più complesse e affette da vulnerabilità come Ubuntu o Debian.<br /><br />
 > Per chi non lo sapesse Alpine Linux è una distribuzione minimale che pesa solo 5 MB, creata tenendo ben presente il problema della sicurezza e di conseguenza riduce al minimo la superfice d'attacco avendo meno componenti di altre distribuzioni.<br /><br />
 
-<br /><br />
+<br />
 
 ## Si parte
 
@@ -49,7 +49,7 @@ Quindi ho chiesto aiuto a Matteo ed una sera che ci siamo ritrovati al consueto 
 > Tra l'altro ho chiesto anche su stackoverflow ed il mio errore era quello di istanziare due volte docker-gen.<br />
 > Una volta istanziando direttamente il container docker-gen, l'altra istanziando il container nginx-proxy che al suo interno contiene docker-gen, quando invece dovevo istanziare l'immagine nginx:alpine, come riportato nella configurazione sottostante.
 
-<br /><br />
+<br />
 
 ## Configurare il server
 
@@ -102,7 +102,7 @@ Quando ho messo in produzione i siti ho puntato i dns dei domini all'IP della ma
 
 > La configurazione sopra serve per fare i test che tutto funzioni a dovere prima di mandare in produzione i siti.
 
-<br /><br />
+<br />
 
 ## Configurare docker
 
@@ -224,7 +224,7 @@ Quindi dentro le cartelle dove ho creato i file docker-compose.yml ho eseguito:
 > e rilanciare successivamente sempre con<br /><br />
 > docker-compose up -d<br /><br />
 
-<br /><br />
+<br />
 
 ## Per finire
 

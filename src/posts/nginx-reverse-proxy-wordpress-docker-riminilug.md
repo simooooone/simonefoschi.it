@@ -1,5 +1,5 @@
 ---
-title: "Creare un reverse proxy nginx automatizzato per i vostri siti con docker"
+title: "Come creare un Reverse Proxy Nginx con configurazione automatizzata con docker"
 description: "Come ho creato un Reverse Proxy Nginx docker poer il mio server web passo passo."
 date: "2020/4/19"
 update: "2020/4/19"
@@ -7,8 +7,6 @@ author: "Simo"
 published: false
 langKey: it
 ---
-
-# Come creare un Reverse Proxy Nginx automatizzato con docker
 
 Era un bel po' di tempo che stavo pensando a come configurare il mio server web in maniera da rimanere su una mia VPS in sicurezza e con le tecnologie più moderne.
 

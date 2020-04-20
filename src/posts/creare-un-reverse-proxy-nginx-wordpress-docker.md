@@ -1,6 +1,6 @@
 ---
-title: "Creare un reverse proxy nginx per n siti wordpress con docker"
-description: "Come ho fatto a creare un revese proxy nginx per trasferire i miei siti wordpress da un ambiente LEMP gestito da runcloud.io ad un ambiente docker."
+title: "Come creare un Reverse Proxy Nginx con configurazione automatizzata dei siti web con docker"
+description: "Come ho fatto a creare un Revese Proxy Nginx per trasferire i miei siti WordPress da un ambiente LEMP gestito da runcloud.io ad un ambiente docker in VPS economica."
 date: "2020/2/13"
 update: "2020/2/23"
 author: "Simo"

@@ -19,7 +19,9 @@ export const query = graphql`
     }
   }
 `
-
+function prev() {
+  page_context.previous
+}
 const Blog = props => {
   var post = props.data.markdownRemark
   var post_det = props.data.markdownRemark.frontmatter

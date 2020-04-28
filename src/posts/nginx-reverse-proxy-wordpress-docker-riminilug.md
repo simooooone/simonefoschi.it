@@ -4,7 +4,7 @@ description: "Come ho creato un Reverse Proxy Nginx docker poer il mio server we
 date: "2020/4/19"
 update: "2020/4/19"
 author: "Simo"
-published: true
+published: false
 langKey: it
 ---
 

@@ -185,7 +185,7 @@ const AboutPage = () => {
       <article>
         <h2>Esami</h2>
         <h4>
-          Microsoft Certificated Technology Specialist Microsoft .NET Framework
+          Microsoft Certified Technology Specialist Microsoft .NET Framework
           3.5, ASP.NET Applications
         </h4>
         <p>

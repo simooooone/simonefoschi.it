@@ -163,7 +163,7 @@ const AboutPage = () => {
             Microsoft MCP Transcript
           </a>
         </p>
-        <p>UDER ID: 831302</p>
+        <p>USER ID: 831302</p>
         <p>Password: foschisimone</p>
         <hr />
       </article>

@@ -181,15 +181,15 @@ const AboutPage = () => {
         <p>Exam 070/562</p>
         <hr />
         <h4>
-          Microsoft Certificated Technology Specialist Microsoft .NET Framework
-          2.0 Web Applications
+          Microsoft Certified Technology Specialist Microsoft .NET Framework 2.0
+          Web Applications
         </h4>
         <p>
           <em>jan 2009</em>
         </p>
         <p>Exam 070/536 + Exam 070/528</p>
         <hr />
-        <h4>Microsoft Certificated Technology Specialist Sql Server 2005</h4>
+        <h4>Microsoft Certified Technology Specialist Sql Server 2005</h4>
         <p>
           <em>apr 2008</em>
         </p>

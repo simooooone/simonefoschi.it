@@ -88,7 +88,10 @@ const AboutPage = () => {
           per Google PageSpeed, SEO, Web Marketing
         </p>
         <p>
-          <em>Sviluppati più di 350 siti web</em>
+          <em>
+            Sviluppati e modificati più di 350 siti web, centinaia di migliaia
+            di visite a questi siti.
+          </em>
         </p>
         <hr />
         <h4>simonefoschi.it</h4>

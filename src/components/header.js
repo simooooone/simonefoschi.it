@@ -26,7 +26,11 @@ const Header = props => {
         </div>
         <div className="myname-top flex-2">
           <h3>
-            <Link className="title" activeClassName="activeNavItem" to="/">
+            <Link
+              className="title"
+              activeClassName="activeNavItem"
+              to={lang + "/"}
+            >
               {data.site.siteMetadata.title}
             </Link>
           </h3>

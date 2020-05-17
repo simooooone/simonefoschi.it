@@ -88,7 +88,10 @@ const AboutPage = () => {
           per Google PageSpeed, SEO, Web Marketing
         </p>
         <p>
-          <em>Sviluppati più di 350 siti web</em>
+          <em>
+            Sviluppati e modificati più di 350 siti web, centinaia di migliaia
+            di visite a questi siti.
+          </em>
         </p>
         <hr />
         <h4>simonefoschi.it</h4>
@@ -176,7 +179,7 @@ const AboutPage = () => {
             Microsoft MCP Transcript
           </a>
         </p>
-        <p>UDER ID: 831302</p>
+        <p>USER ID: 831302</p>
         <p>Password: foschisimone</p>
         <hr />
       </article>
@@ -185,7 +188,7 @@ const AboutPage = () => {
       <article>
         <h2>Esami</h2>
         <h4>
-          Microsoft Certificated Technology Specialist Microsoft .NET Framework
+          Microsoft Certified Technology Specialist Microsoft .NET Framework
           3.5, ASP.NET Applications
         </h4>
         <p>
@@ -194,15 +197,15 @@ const AboutPage = () => {
         <p>Esame 070/562</p>
         <hr />
         <h4>
-          Microsoft Certificated Technology Specialist Microsoft .NET Framework
-          2.0 Web Applications
+          Microsoft Certified Technology Specialist Microsoft .NET Framework 2.0
+          Web Applications
         </h4>
         <p>
           <em>gen 2009</em>
         </p>
         <p>Esame 070/536 + Esame 070/528</p>
         <hr />
-        <h4>Microsoft Certificated Technology Specialist Sql Server 2005</h4>
+        <h4>Microsoft Certified Technology Specialist Sql Server 2005</h4>
         <p>
           <em>apr 2008</em>
         </p>

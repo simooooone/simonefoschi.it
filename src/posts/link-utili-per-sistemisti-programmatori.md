@@ -59,4 +59,5 @@ programmazione competitiva, impara le basi - e anche di più - del tuo linguaggi
 [Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) come dice il nome, una lista dei migliori siti web per programmatori. La lista è ordinata in sezioni anche se in certi punti è particolarmente incentrata sul C++, ma ricca di moltissimi link interessanti per ogni altro linguaggio.
 
 [Web Developer Monthly](https://zerotomastery.io/blog/?tag=WDM) La lista dei link più interessanti per sviluppatori web divisa per mese.
+
 -- Buona vita --

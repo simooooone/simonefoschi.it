@@ -2,7 +2,7 @@
 title: "Lista di link interessanti sul mondo informatico."
 description: "I preferiti che al momento trovo i più interessanti del mondo open source e di informatica in generale."
 date: "2019/11/2"
-update: "2020/2/20"
+update: "2020/5/17"
 author: "Simo"
 published: true
 langKey: it
@@ -56,8 +56,8 @@ programmazione competitiva, impara le basi - e anche di più - del tuo linguaggi
 
 [zerotomastery.io](https://zerotomastery.io/courses/advanced-javascript/cheatsheet/) cheatsheet completo per conoscere le funzioni avanzate di JavaScript.
 
-[Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) come dice il nome, una lista dei migliori siti web per programmatori. La lista è ordinata in sezioni anche se in certi punti è particolarmente incentrata sul C++, ma ricca di moltissimi link interessanti per ogni altro linguaggio.
+[Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) come dice il nome, una lista dei migliori siti web per programmatori. La lista è ordinata in sezioni e anche se in certi punti è particolarmente incentrata sul C++ è ricca di moltissimi link interessanti per ogni altro linguaggio.
 
-[Web Developer Monthly](https://zerotomastery.io/blog/?tag=WDM) La lista dei link più interessanti per sviluppatori web divisa per mese.
+[Web Developer Monthly](https://zerotomastery.io/blog/?tag=WDM) La lista dei link con le novità più interessanti per sviluppatori front end divisa per mese.
 
 -- Buona vita --

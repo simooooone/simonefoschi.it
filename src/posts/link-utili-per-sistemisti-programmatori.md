@@ -54,10 +54,10 @@ programmazione competitiva, impara le basi - e anche di più - del tuo linguaggi
 
 [e.foundation](https://e.foundation/): sistema operativo per cellulari rispettoso della privacy, fork di Android, unGoogled, ovvero senza nessun servizio Google, per fare un esempio, nemmeno la sincronizzazione della data ed ora passa tramite i server di Google. Qui una bell'intervista del creatore di /e/: [https://itsfoss.com/gael-duval-interview/](https://itsfoss.com/gael-duval-interview/)
 
-[zerotomastery.io](https://zerotomastery.io/courses/advanced-javascript/cheatsheet/) cheatsheet completo per conoscere le funzioni avanzate di JavaScript.
+[Advanced javascript cheatsheet](https://zerotomastery.io/courses/advanced-javascript/cheatsheet/): cheatsheet completo per conoscere le funzioni avanzate di JavaScript.
 
-[Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) come dice il nome, una lista dei migliori siti web per programmatori. La lista è ordinata in sezioni e anche se in certi punti è particolarmente incentrata sul C++ è ricca di moltissimi link interessanti per ogni altro linguaggio.
+[Best websites a programmer should visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit): come dice il nome, una lista dei migliori siti web per programmatori. La lista è ordinata in sezioni e anche se in certi punti è particolarmente incentrata sul C++ è ricca di moltissimi link interessanti per ogni altro linguaggio.
 
-[Web Developer Monthly](https://zerotomastery.io/blog/?tag=WDM) La lista dei link con le novità più interessanti per sviluppatori front end divisa per mese.
+[Web Developer Monthly](https://zerotomastery.io/blog/?tag=WDM): una lista dei link con le novità più interessanti per sviluppatori front end divisa per mese.
 
 -- Buona vita --

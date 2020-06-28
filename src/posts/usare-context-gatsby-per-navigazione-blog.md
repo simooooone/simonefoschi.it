@@ -115,10 +115,10 @@ Nel template delle pagine del blog ho aggiunto i pulsanti html valorizzati trami
     return (
         ...
         &lt;div className="blog-post-nav"&gt;
-            &lt;Link to={page_context.previous == null ? "" : page_context.previous.fields.slug} className={page_context.previous || "hideme"}&gt;
+            &lt;Link to={`/$page_context.previous == null ? "" : page_context.previous.fields.slug}`} className={page_context.previous || "hideme"}&gt;
                 &lsaquo; prev
             &lt;/Link&gt;
-            &lt;Link to={page_context.next == null ? "" : page_context.next.fields.slug} className={page_context.next || "hideme"}&gt;
+            &lt;Link to={`/$page_context.next == null ? "" : page_context.next.fields.slug}`} className={page_context.next || "hideme"}&gt;
                 next &rsaquo;
             &lt;/Link&gt;
         &lt;/div&gt;

@@ -22,7 +22,7 @@ export const query = graphql`
 function prev() {
   page_context.previous
 }
-const Blog = props => {
+const Blog = (props) => {
   var post = props.data.markdownRemark
   var post_det = props.data.markdownRemark.frontmatter
   var page_context = props.pageContext
@@ -47,17 +47,20 @@ const Blog = props => {
       <div>{parse(post.html, { replace: replaceCode })}</div>
       <div className="blog-post-nav">
         <Link
-          to={
+          to={`/${
             page_context.previous == null
               ? ""
               : page_context.previous.fields.slug
-          }
+          }`}
           className={page_context.previous || "hideme"}
         >
           &lsaquo; prev
         </Link>
+
         <Link
-          to={page_context.next == null ? "" : page_context.next.fields.slug}
+          to={`/${
+            page_context.next == null ? "" : page_context.next.fields.slug
+          }`}
           className={page_context.next || "hideme"}
         >
           next &rsaquo;
@@ -70,7 +73,7 @@ const Blog = props => {
   )
 }
 
-const replaceCode = node => {
+const replaceCode = (node) => {
   if (node.name === "pre") {
     return (
       node.children.length > 0 && (
@@ -82,14 +85,14 @@ const replaceCode = node => {
   }
 }
 
-const getLanguage = node => {
+const getLanguage = (node) => {
   if (node.attribs.class != null) {
     return node.attribs.class
   }
   return null
 }
 
-const getCode = node => {
+const getCode = (node) => {
   if (node.children.length > 0 && node.children[0].name === "code") {
     return node.children[0].children
   } else {

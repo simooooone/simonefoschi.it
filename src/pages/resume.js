@@ -41,7 +41,7 @@ const AboutPage = () => {
         &nbsp; 4y &nbsp; &nbsp; |
         <br />
         | JS &nbsp; &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
-        &nbsp; 2y &nbsp; &nbsp; |
+        &nbsp; 3y &nbsp; &nbsp; |
         <br />
         | TSQL &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
         &nbsp; 2y &nbsp; &nbsp; |
@@ -55,7 +55,7 @@ const AboutPage = () => {
         | Gatsbyjs &nbsp; |&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 5m
         &nbsp; &nbsp; |
         <br />
-        | Reactjs &nbsp; &nbsp;|&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 4m
+        | Reactjs &nbsp; &nbsp;|&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 6m
         &nbsp; &nbsp; |
         <br />
         | Nodejs &nbsp; &nbsp; |&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 2m

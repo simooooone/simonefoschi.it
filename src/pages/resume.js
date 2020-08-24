@@ -14,65 +14,30 @@ const AboutPage = () => {
 
       <article>
         <h2>Skills</h2>
-        +------------+---------+------------+
-        <br />| <u>Tecnologia</u> | <u>Livello</u> | <u>Esperienza</u> |
+        +------------+------------+
+        <br />| <u>Tecnologia</u> | <u>Esperienza</u> |
         <br />
-        +------------+---------+------------+
+        +------------+------------+
+        <br />| CSS &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;11y &nbsp; &nbsp;
+        |
+        <br />| HTML &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp;11y &nbsp; &nbsp; |
+        <br />| jQuery &nbsp; &nbsp; | &nbsp; &nbsp; 8y &nbsp; &nbsp; |
+        <br />| Linux &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; 4y &nbsp; &nbsp; |
+        <br />| ASP.NET &nbsp; &nbsp;| &nbsp; &nbsp; 4y &nbsp; &nbsp; |
+        <br />| .NET &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 4y &nbsp; &nbsp; |
+        <br />| MSSql &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; 4y &nbsp; &nbsp; |
+        <br />| JS &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 3y &nbsp; &nbsp;
+        |
+        <br />| TSQL &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 3y &nbsp; &nbsp; |
+        <br />| WP &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 2y &nbsp; &nbsp;
+        |
+        <br />| Bash &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |
+        <br />| Gatsbyjs &nbsp; | &nbsp; &nbsp; 6m &nbsp; &nbsp; |
+        <br />| Reactjs &nbsp; &nbsp;| &nbsp; &nbsp; 6m &nbsp; &nbsp; |
+        <br />| Nodejs &nbsp; &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; |
+        <br />| Deno &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 1m &nbsp; &nbsp; |
         <br />
-        | CSS &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; E &nbsp; &nbsp;| &nbsp;
-        &nbsp;11y &nbsp; &nbsp; |
-        <br />
-        | HTML &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; E &nbsp; &nbsp;| &nbsp;
-        &nbsp;11y &nbsp; &nbsp; |
-        <br />
-        | jQuery &nbsp; &nbsp; |&nbsp; &nbsp; E &nbsp; &nbsp;| &nbsp; &nbsp; 8y
-        &nbsp; &nbsp; |
-        <br />
-        | Linux &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; I &nbsp; &nbsp;| &nbsp;
-        &nbsp; 4y &nbsp; &nbsp; |
-        <br />
-        | ASP.NET &nbsp; &nbsp;|&nbsp; &nbsp; C &nbsp; &nbsp;| &nbsp; &nbsp; 4y
-        &nbsp; &nbsp; |
-        <br />
-        | .NET &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; C &nbsp; &nbsp;| &nbsp;
-        &nbsp; 4y &nbsp; &nbsp; |
-        <br />
-        | MSSql &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; C &nbsp; &nbsp;| &nbsp;
-        &nbsp; 4y &nbsp; &nbsp; |
-        <br />
-        | JS &nbsp; &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
-        &nbsp; 3y &nbsp; &nbsp; |
-        <br />
-        | TSQL &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
-        &nbsp; 2y &nbsp; &nbsp; |
-        <br />
-        | WP &nbsp; &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
-        &nbsp; 1y &nbsp; &nbsp; |
-        <br />| Bash &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp;J/I&nbsp; &nbsp;| &nbsp;
-        &nbsp; 1y &nbsp; &nbsp; |
-        {/* <br />
-        | Gatsbyjs &nbsp; |&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 6m
-        &nbsp; &nbsp; |
-        <br />
-        | Reactjs &nbsp; &nbsp;|&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 6m
-        &nbsp; &nbsp; |
-        <br />
-        | Nodejs &nbsp; &nbsp; |&nbsp; &nbsp; J &nbsp; &nbsp;| &nbsp; &nbsp; 4m
-        &nbsp; &nbsp; | */}
-        <br />
-        +------------+---------+------------+
-        <br />
-        <br />
-        <h3>Legend</h3>
-        <i>E</i> Esperto
-        <br />
-        <i>I</i> Intermedio
-        <br />
-        <i>C</i> Certificato
-        <br />
-        <i>J/I</i> Junior/Intermedio
-        <br />
-        <i>J</i> Junior
+        +------------+------------+
       </article>
       <br />
       <br />

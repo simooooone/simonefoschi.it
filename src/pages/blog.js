@@ -45,7 +45,7 @@ const BlogPage = () => {
       <h1>### Blog</h1>
       <ol className="posts">
         {data.allMarkdownRemark.edges.length ? (
-          data.allMarkdownRemark.edges.map(edge => {
+          data.allMarkdownRemark.edges.map((edge) => {
             const post = edge.node.frontmatter
 
             if (post.published) {

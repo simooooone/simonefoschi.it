@@ -37,16 +37,15 @@ const AboutPage = () => {
         &nbsp; |<br />
         | TSQL &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 2y &nbsp; &nbsp;
         |
-        <br />
-        | WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp;
-        &nbsp; |
-        <br />
+        <br />| WP &nbsp; &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y
+        &nbsp; &nbsp; |
+        {/* <br />
         | Bash &nbsp; &nbsp; | &nbsp;J/I&nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp;
         |<br />
         | Gatsbyjs | &nbsp; J &nbsp; | &nbsp; &nbsp; 5m &nbsp; &nbsp; |<br />
-        | Reactjs &nbsp;| &nbsp; J &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; |
+        | Reactjs &nbsp;| &nbsp; J &nbsp; | &nbsp; &nbsp; 6m &nbsp; &nbsp; |
         <br />
-        | Nodejs &nbsp; | &nbsp; J &nbsp; | &nbsp; &nbsp; 2m &nbsp; &nbsp; |
+        | Nodejs &nbsp; | &nbsp; J &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; | */}
         <br />
         +----------+-------+------------+
         <br />

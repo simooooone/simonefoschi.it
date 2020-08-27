@@ -32,8 +32,8 @@ const IndexPage = () => {
           <br />
           <blockquote>
             L'esperienza è l'attitudine a fare cose come dovrebbero essere
-            realizzate e saper riconoscere i limiti della tecnologia e le sue
-            alternative
+            realizzate e saper riconoscere i limiti della tecnologia e
+            identificare le sue alternative
           </blockquote>
           <br />
           <br />

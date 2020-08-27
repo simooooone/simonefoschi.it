@@ -34,7 +34,7 @@ const AboutPage = () => {
         <br />| Bash &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |
         <br />| Gatsbyjs &nbsp; | &nbsp; &nbsp; 6m &nbsp; &nbsp; |
         <br />| Reactjs &nbsp; &nbsp;| &nbsp; &nbsp; 6m &nbsp; &nbsp; |
-        <br />| Nodejs &nbsp; &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; |
+        <br />| Node &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; |
         <br />| Deno &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 1m &nbsp; &nbsp; |
         <br />
         +------------+------------+

@@ -33,7 +33,7 @@ const IndexPage = () => {
           <br />
           <blockquote>
             Seniority is the attitude to do things as they should and to be able
-            to understand technology limits and alternatives
+            to understand technology limits and to know about alternatives
           </blockquote>
           <br />
           <br />

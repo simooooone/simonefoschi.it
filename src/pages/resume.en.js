@@ -29,8 +29,8 @@ const AboutPage = () => {
         &nbsp; | &nbsp; &nbsp; 3y &nbsp; &nbsp; |
         <br />| WP &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; 2y &nbsp; &nbsp; |
         <br />| Bash &nbsp; &nbsp; | &nbsp; &nbsp; 1y &nbsp; &nbsp; |
-        <br />| Gatsbyjs | &nbsp; &nbsp; 6m &nbsp; &nbsp; |<br />| Reactjs
-        &nbsp;| &nbsp; &nbsp; 6m &nbsp; &nbsp; |
+        <br />| Gatsbyjs | &nbsp; &nbsp; 6m &nbsp; &nbsp; |
+        <br />| Reactjs &nbsp;| &nbsp; &nbsp; 9m &nbsp; &nbsp; |
         <br />| Nodejs &nbsp; | &nbsp; &nbsp; 4m &nbsp; &nbsp; |
         <br />| Deno &nbsp; &nbsp; | &nbsp; &nbsp; 1m &nbsp; &nbsp; |
         <br />

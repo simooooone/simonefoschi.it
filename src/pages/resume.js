@@ -53,8 +53,8 @@ const AboutPage = () => {
         </p>
         <p>
           <em>
-            Sviluppati più di 350 siti web e molti di più modificati, centinaia
-            di migliaia di visite a questi siti.
+            Sviluppati più di 350 siti web di piccole/medie dimensioni e molti
+            di più modificati, centinaia di migliaia di visite a questi siti.
           </em>
         </p>
         <hr />

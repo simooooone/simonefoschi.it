@@ -50,8 +50,8 @@ const AboutPage = () => {
         </p>
         <p>
           <em>
-            More than 350 websites developed and too many modified, these
-            websites made hundred of thausands of visits
+            More than 350 small/medium sized websites developed and too many
+            modified, these websites made hundred of thausands of visits
           </em>
         </p>
         <hr />

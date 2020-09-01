@@ -50,12 +50,20 @@ const AboutPage = () => {
         </p>
         <p>
           <em>
-            More than 350 websites developed and too many modified, hundred of
-            thausands of visits to these websites
+            More than 350 websites developed and too many modified, these
+            websites made hundred of thausands of visits
           </em>
         </p>
         <hr />
-        <h4>simonefoschi.it</h4>
+        <h4>
+          <a
+            href="https://www.simonefoschi.it/en/"
+            target="_blank"
+            rel="noopener"
+          >
+            simonefoschi.it
+          </a>
+        </h4>
         <p>
           <em>2019</em>
         </p>
@@ -73,8 +81,8 @@ const AboutPage = () => {
           <em>2016</em>
         </p>
         <p>
-          HTML, CSS, jQuery, WordPress, Facebook Ads, Linux server, Docker,
-          Matomo self hosted analytics
+          HTML, CSS, jQuery, WordPress, Linux VPS admin, Docker, Matomo self
+          hosted analytics
         </p>
         <hr />
         <h4>

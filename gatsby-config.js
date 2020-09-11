@@ -81,6 +81,8 @@ module.exports = {
         siteId: "1",
         matomoUrl: "https://matomo.duckdns.org",
         siteUrl: "https://www.simonefoschi.it",
+        disableCookies: true,
+        requireConsent: true,
       },
     },
     "gatsby-plugin-react-helmet",
@@ -155,7 +157,7 @@ module.exports = {
         // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
         cookieHubId: "5e915478",
         // Optional parameter (default false) - Use new v2 API.
-        cookieHubV2Api: true,
+        cookieHubV2Api: false,
         // Categories configured with CookieHub
         categories: [
           {

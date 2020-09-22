@@ -82,7 +82,6 @@ module.exports = {
         matomoUrl: "https://matomo.duckdns.org",
         siteUrl: "https://www.simonefoschi.it",
         disableCookies: true,
-        requireConsent: true,
       },
     },
     "gatsby-plugin-react-helmet",

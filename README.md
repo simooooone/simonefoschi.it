@@ -2,6 +2,9 @@
   My personal blog
 </h1>
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/65162b19-ac57-4081-b13d-643950dfa893/deploy-status)](https://app.netlify.com/sites/stoic-yonath-8fff79/deploys)
+
 Based on Gatsby.
 Below the instructions ->
 

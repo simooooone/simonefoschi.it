@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Language from "./language"
 
-const Header = props => {
+const Header = (props) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -21,7 +21,11 @@ const Header = props => {
       <div className="cont-flex-top">
         <div className="myimg-top flex-1 fullWidth">
           <Link to={lang + "/"}>
-            <img src={require("../img/simo-" + props.myimg + ".jpg")} />
+            <img
+              src={require("../img/simo-" + props.myimg + ".jpg")}
+              width="130"
+              height="130"
+            />
           </Link>
         </div>
         <div className="myname-top flex-2">

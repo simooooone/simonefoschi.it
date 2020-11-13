@@ -2,22 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const loadGoogleFonts = (url) => {
-  let xhr = new XMLHttpRequest()
-  xhr.open("GET", url, true)
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      var css = xhr.responseText
-      css = css.replace(/}/g, "font-display: swap; }")
-      var head = document.getElementsByTagName("head")[0]
-      var style = document.createElement("style")
-      style.appendChild(document.createTextNode(css))
-      head.appendChild(style)
-    }
-  }
-  xhr.send()
-}
-
 const Head = ({ title, description }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -36,10 +20,6 @@ const Head = ({ title, description }) => {
         name="description"
         content={`${description} | ${data.site.siteMetadata.description}`}
       />
-      {/* <link
-        href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
-        rel="stylesheet"
-      /> */}
       <link
         rel="apple-touch-icon"
         sizes="120x120"

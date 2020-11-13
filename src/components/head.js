@@ -31,21 +31,27 @@ const Head = ({ title, description }) => {
         sizes="32x32"
         href={require("../img/favicons/favicon-32x32.png")}
       />
-      {(function (url) {
-        let xhr = new XMLHttpRequest()
-        xhr.open("GET", url, true)
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState == 4 && xhr.status == 200) {
-            var css = xhr.responseText
-            var head = document.getElementsByTagName("head")[0]
-            var style = document.createElement("style")
-            style.appendChild(document.createTextNode(css))
-            head.appendChild(style)
-          }
-        }
-        xhr.send()
-      })("https://fonts.googleapis.com/css?family=Inconsolata&display=swap")}
 
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function (url) {
+              let xhr = new XMLHttpRequest()
+              xhr.open("GET", url, true)
+              xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                  var css = xhr.responseText
+                  var head = document.getElementsByTagName("head")[0]
+                  var style = document.createElement("style")
+                  style.appendChild(document.createTextNode(css))
+                  head.appendChild(style)
+                }
+              }
+              xhr.send()
+            })("https://fonts.googleapis.com/css?family=Inconsolata&display=swap")
+          `,
+        }}
+      />
       <link
         rel="icon"
         type="image/png"

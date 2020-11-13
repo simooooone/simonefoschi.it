@@ -1,11 +1,11 @@
 import React from "react"
 import Footer from "./footer"
 import Header from "./header"
-import BarraBloccata from './barraBloccata'
+import BarraBloccata from "./barraBloccata"
 import "../styles/style.scss"
 import Particles from "react-particles-js"
 
-const Layout = props => {
+const Layout = (props) => {
   return (
     <div>
       <BarraBloccata myimg={props.myimg} />
@@ -84,15 +84,13 @@ const Layout = props => {
       />
       <div className="container">
         <div className="content">
-          <Header myimg={props.myimg} />
+          <Header myimg={props.myimg} alt={props.alt} />
           <div className="barra-sx"></div>
           <div className="content">{props.children}</div>
         </div>
         <Footer />
-        
       </div>
     </div>
-    
   )
 }
 

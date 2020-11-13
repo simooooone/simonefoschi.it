@@ -6,7 +6,7 @@ import Head from "../components/head"
 
 const NotFound = () => {
   return (
-    <Layout myimg="1">
+    <Layout myimg="1" alt="Sorry 404">
       <Head
         title="404 | Page not found"
         description="Sorry, the page you requested cannot be found."

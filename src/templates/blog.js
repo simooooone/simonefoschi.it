@@ -28,7 +28,7 @@ const Blog = (props) => {
   var page_context = props.pageContext
 
   return (
-    <Layout myimg="3">
+    <Layout myimg="3" alt="Il mio blog">
       <Head title={post_det.title} description={post_det.description} />
       <p>
         <Link to="/blog">&lsaquo; Back to Blog index</Link>

@@ -7,7 +7,7 @@ import Head from "../components/head"
 
 const IndexPage = () => {
   return (
-    <Layout myimg="1">
+    <Layout myimg="1" alt="Simone Foschi Frontend Developer">
       <Head
         title="Simone Foschi, Frontend Developer"
         description="Personal blog on Sysadmin things, programming and Open Source wonders."

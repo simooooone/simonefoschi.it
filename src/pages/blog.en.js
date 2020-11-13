@@ -37,7 +37,7 @@ const BlogPage = () => {
     }
   `)
   return (
-    <Layout myimg="5">
+    <Layout myimg="5" alt="Simone Foschi's blog">
       <Head
         title="Open source culture blog articles"
         description="All articles about Raspberry Pi, Linux, programming e cyberpunk culture from my blog."
@@ -45,7 +45,7 @@ const BlogPage = () => {
       <h1>### Blog</h1>
       <ol className="posts">
         {data.allMarkdownRemark.edges.length ? (
-          data.allMarkdownRemark.edges.map(edge => {
+          data.allMarkdownRemark.edges.map((edge) => {
             const post = edge.node.frontmatter
 
             if (post.published) {

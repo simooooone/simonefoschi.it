@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 const ContactPage = () => {
   return (
-    <Layout myimg="4">
+    <Layout myimg="4" alt="Contatta Simone Foschi">
       <Head
         title="Simone Foschi Frontend Developer"
         description="Ways to contact me."

@@ -25,6 +25,7 @@ const Header = (props) => {
               src={require("../img/simo-" + props.myimg + ".jpg")}
               width="130"
               height="130"
+              alt={props.alt}
             />
           </Link>
         </div>

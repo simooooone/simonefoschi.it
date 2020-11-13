@@ -5,7 +5,7 @@ import Head from "../components/head"
 
 const AboutPage = () => {
   return (
-    <Layout myimg="2">
+    <Layout myimg="2" alt="Il curriculum di Simone Foschi">
       <Head
         title="Il mio curriculum, Simone Foschi Front End Developer,"
         description="Cosa ho fatto finora, dove ho lavorato e dove lavoro. Cosa ho raggiunto nella mia carriera di programmatore dal 1999 ad ora."

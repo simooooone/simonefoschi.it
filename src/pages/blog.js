@@ -37,7 +37,7 @@ const BlogPage = () => {
     }
   `)
   return (
-    <Layout myimg="5">
+    <Layout myimg="5" alt="Il Blog di Simone Foschi">
       <Head
         title="Articoli del mio blog di cultura open source"
         description="Tutti gli articoli su Raspberry Pi, Linux, programmazione e cultura cyberpunk del mio blog."

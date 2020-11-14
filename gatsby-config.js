@@ -75,7 +75,7 @@ module.exports = {
         pagesPaths: ["/src/pages"],
       },
     },
-    {
+    /*     {
       resolve: "gatsby-plugin-matomo",
       options: {
         siteId: "1",
@@ -83,7 +83,7 @@ module.exports = {
         siteUrl: "https://www.simonefoschi.it",
         disableCookies: true,
       },
-    },
+    }, */
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     "gatsby-plugin-sass",

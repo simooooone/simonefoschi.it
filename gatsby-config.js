@@ -109,7 +109,7 @@ module.exports = {
       },
     },
 
-    {
+    /* {
       resolve: "gatsby-plugin-purgecss",
       options: {
         printRejected: true, // Print removed selectors and processed file names
@@ -127,7 +127,7 @@ module.exports = {
         ignore: ["highlight.js/", "react-syntax-highlighter/"], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
-    },
+    }, */
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -150,7 +150,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    {
+    /* {
       resolve: `gatsby-plugin-cookiehub-banner`,
       options: {
         // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
@@ -165,6 +165,6 @@ module.exports = {
           },
         ],
       },
-    },
+    }, */
   ],
 }

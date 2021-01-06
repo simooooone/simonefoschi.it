@@ -75,7 +75,7 @@ module.exports = {
         pagesPaths: ["/src/pages"],
       },
     },
-    /*     {
+    {
       resolve: "gatsby-plugin-matomo",
       options: {
         siteId: "1",
@@ -83,7 +83,7 @@ module.exports = {
         siteUrl: "https://www.simonefoschi.it",
         disableCookies: true,
       },
-    }, */
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     "gatsby-plugin-sass",
@@ -150,7 +150,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    /* {
+    {
       resolve: `gatsby-plugin-cookiehub-banner`,
       options: {
         // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
@@ -165,6 +165,6 @@ module.exports = {
           },
         ],
       },
-    }, */
+    },
   ],
 }

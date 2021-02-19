@@ -236,15 +236,33 @@ const AboutPage = () => {
       <article>
         <h2>Websites I am proud of:</h2>
         <h4>
+          Portfolio of TITANKA! Web Company Spa where I work as a Senior Web
+          Developer, I partly realized, in team with my collegues, or edited a
+          large number of{" "}
           <a
             target="_blank"
             rel="noopener nofollow noreferrer"
-            href="https://www.titanka.com/portfolio.php"
+            href="https://www.titanka.com/portfolio-turismo-hotel"
           >
-            Portfolio of TITANKA! Web Company Spa
+            these
           </a>
-          &nbsp;where I work as a Senior Web Developer, I partly realized, in
-          team with my collegues, or edited a large number of these websites
+          ,{" "}
+          <a
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            href="https://www.titanka.com/portfolio-campeggi-e-villaggi-turistici"
+          >
+            these
+          </a>{" "}
+          , and{" "}
+          <a
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            href="https://www.titanka.com/portfolio-siti-aziende"
+          >
+            these
+          </a>{" "}
+          websites
         </h4>
 
         <hr />

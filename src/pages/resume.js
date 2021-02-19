@@ -235,15 +235,33 @@ const AboutPage = () => {
       <article>
         <h2>Siti web di cui sono orgoglioso:</h2>
         <h4>
+          Portfolio of TITANKA! Web Company Spa dove lavoro come Senior Web
+          Developer, ho realizzato in team con i miei colleghi, un gran numero
+          di{" "}
           <a
             target="_blank"
             rel="noopener nofollow noreferrer"
-            href="https://www.titanka.com/portfolio.php"
+            href="https://www.titanka.com/portfolio-turismo-hotel"
           >
-            Portfolio of TITANKA! Web Company Spa
+            questi
           </a>
-          &nbsp;dove lavoro come Senior Web Developer, ho realizzato in team con
-          i miei colleghi, un gran numero di questi siti web
+          ,{" "}
+          <a
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            href="https://www.titanka.com/portfolio-campeggi-e-villaggi-turistici"
+          >
+            questi
+          </a>{" "}
+          , e{" "}
+          <a
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            href="https://www.titanka.com/portfolio-siti-aziende"
+          >
+            questi
+          </a>{" "}
+          siti web
         </h4>
         <hr />
       </article>

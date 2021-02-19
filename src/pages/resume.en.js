@@ -253,7 +253,7 @@ const AboutPage = () => {
             href="https://www.titanka.com/portfolio-campeggi-e-villaggi-turistici"
           >
             these
-          </a>{" "}
+          </a>
           , and{" "}
           <a
             target="_blank"

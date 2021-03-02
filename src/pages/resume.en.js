@@ -51,7 +51,7 @@ const AboutPage = () => {
         <p>
           <em>
             More than 350 small/medium sized websites developed and too many
-            modified, these websites made hundred of thausands of visits
+            modified. These websites made hundred of thausands of visits
           </em>
         </p>
         <hr />
@@ -262,7 +262,7 @@ const AboutPage = () => {
           >
             these
           </a>{" "}
-          websites
+          websites.
         </h4>
 
         <hr />

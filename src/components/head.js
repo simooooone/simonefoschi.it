@@ -23,13 +23,13 @@ const Head = ({ title, description }) => {
       <link
         rel="apple-touch-icon"
         sizes="120x120"
-        href={require("../img/favicons/apple-touch-icon.png")}
+        href="../favicons/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={require("../img/favicons/favicon-32x32.png")}
+        href="../favicons/favicon-32x32.png"
       />
 
       <script
@@ -56,11 +56,11 @@ const Head = ({ title, description }) => {
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={require("../img/favicons/favicon-16x16.png")}
+        href="../favicons/favicon-16x16.png"
       />
       <link
         rel="mask-icon"
-        href={require("../img/favicons/safari-pinned-tab.svg")}
+        href="../favicons/safari-pinned-tab.svg"
         color="#ffffff"
       />
       <meta name="msapplication-TileColor" content="#2d89ef" />

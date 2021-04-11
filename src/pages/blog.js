@@ -27,6 +27,7 @@ const BlogPage = () => {
               title
               description
               published
+              update
             }
             fields {
               slug
@@ -50,7 +51,10 @@ const BlogPage = () => {
 
             if (post.published) {
               return (
-                <li className="post">
+                <li
+                  className="post"
+                  key={`${post.published}+${post.update}+${post.date}`}
+                >
                   <Link to={`/${edge.node.fields.slug}`}>
                     <h3>{post.title}</h3>
                     <p>{post.description}</p>

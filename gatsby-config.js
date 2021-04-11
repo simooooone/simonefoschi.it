@@ -86,12 +86,15 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
-    "gatsby-plugin-sass",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-plugin-sass`,
       options: {
-        name: "posts",
-        path: `${__dirname}/src/posts`,
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
       },
     },
     {
@@ -104,10 +107,25 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    /* 
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/favicons`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "images",
         path: `${__dirname}/src/pages`,
       },
-    },
+    },*/
 
     /* {
       resolve: "gatsby-plugin-purgecss",
@@ -128,15 +146,9 @@ module.exports = {
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
     }, */
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        useMozJpeg: false,
-        stripMetadata: true,
-        defaultQuality: 75,
-      },
-    },
-    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -146,7 +158,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#cfe180`,
         display: `minimal-ui`,
-        icon: `src/img/favicons/android-chrome-512x512.png`, // This path is relative to the root of the site.
+        icon: `src/favicons/android-chrome-512x512.png`, // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-offline",

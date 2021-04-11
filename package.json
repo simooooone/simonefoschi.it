@@ -19,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-sass": "^4.2.0",
     "gatsby-plugin-sharp": "^3.2.1",
+    "gatsby-plugin-web-vitals": "^1.0.3",
     "gatsby-remark-images": "^4.2.0",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-filesystem": "^3.2.0",
@@ -35,7 +36,8 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-particles-js": "^3.4.1",
-    "react-syntax-highlighter": "^15.3.0"
+    "react-syntax-highlighter": "^15.3.0",
+    "web-vitals": "^1.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",

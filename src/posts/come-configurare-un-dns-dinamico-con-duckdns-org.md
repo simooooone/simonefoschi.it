@@ -1,13 +1,14 @@
 ---
-title: "Come configurare un dns dinamico con duckdns.org"
-description: "Procedura per configurare un proprio dominio internet casalingo. Utile se avete un server in casa con servizi come ad esempio Nextcloud o un sito web ospitato in casa."
-date: "2018/12/16"
-update: "2019/9/4"
-author: "Simo"
+title: Come configurare un dns dinamico con duckdns.org
+description: Procedura per configurare un proprio dominio internet casalingo.
+  Utile se avete un server in casa con servizi come ad esempio Nextcloud o un
+  sito web ospitato in casa.
+date: 2018/12/16
+update: 2019/9/4
+author: Simo
 published: true
 langKey: it
 ---
-
 Tra i tanti servizi che ho trovato per configurare un dns dinamico gratuito, sono incappato in [duckdns.org](https://duckdns.org), che fino ad ora si è dimostrato affidabile e facile da configurare con la mia Rasperry Pi 3 B+.
 
 ## Cos’è e a cosa serve un DNS Dinamico
@@ -23,6 +24,8 @@ I servizi di cui parla, possono essere ad esempio siti web, server di posta, pro
 Quindi per rendere raggiungibile alcuni servizi della nostra rete dall’esterno, non avendo un IP statico, dobbiamo fare la procedura che segue.
 
 I siti che offrono Dynamic DNS gratuito, sono parecchi ad esempio [no-ip.com](https://www.no-ip.com) ed io ho scelto [duckdns.org](https://duckdns.org), iniziando per provare, poi adottato in pianta stabile vista la sua affidabilità.
+
+![](/static/simo-1.jpg)
 
 ## Procedura di registrazione a duckdns.org
 
@@ -64,5 +67,5 @@ Alla fine magari, mi sono dilungato anche troppo in spiegazioni per una procedur
 
 Ma tant’è, a volte può servire una mini guida per avventurarsi in un territorio sconosciuto.
 
--- Buona vita --
+\-- Buona vita --
 Simo

@@ -1,12 +1,14 @@
 backend:
-  name: simonefoschi.it
+  name: github
   repo: simooooone/simonefoschi.it
-media_folder: static/posts
-public_folder: /posts
+  site_domain: https://www.simonefoschi.it/
+  branch: master
+media_folder: src/img
+public_folder: /static
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: posts
+    label: Posts
+    folder: /src/posts
     create: true
     fields:
       - { name: title, label: Title }

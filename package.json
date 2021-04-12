@@ -29,6 +29,7 @@
     "highlight.js": "^10.6.0",
     "html-react-parser": "^1.2.4",
     "i18next": "^20.2.1",
+    "netlify-cms-app": "^2.14.40",
     "node-sass": "^4.14.1",
     "particles.js": "^2.0.0",
     "popper.js": "^1.16.1",

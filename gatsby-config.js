@@ -194,5 +194,6 @@ module.exports = {
         debug: false,
       },
     },
+    "gatsby-plugin-netlify-cms",
   ],
 }

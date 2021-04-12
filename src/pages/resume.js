@@ -1,7 +1,9 @@
-import React from "react"
+import React, { lazy } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
+//const Layout = lazy(() => import("../components/layout"))
+//const Head = lazy(() => import("../components/head"))
 
 const AboutPage = () => {
   return (

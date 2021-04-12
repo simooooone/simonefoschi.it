@@ -147,18 +147,18 @@ module.exports = {
       },
     }, */
     "gatsby-plugin-sharp",
-    `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
+    "gatsby-plugin-image",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Simo's blog`,
-        short_name: `Simo's`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#cfe180`,
-        display: `minimal-ui`,
-        icon: `src/favicons/android-chrome-512x512.png`, // This path is relative to the root of the site.
+        name: "Simo's blog",
+        short_name: "Simo's",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#cfe180",
+        display: "minimal-ui",
+        icon: "src/favicons/android-chrome-512x512.png", // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-offline",

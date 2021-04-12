@@ -1,0 +1,18 @@
+backend:
+  name: simonefoschi.it
+  repo: simooooone/simonefoschi.it
+media_folder: static/posts
+public_folder: /posts
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: date, label: Date }
+      - { name: update, label: Update }
+      - { name: author, label: Author }
+      - { name: langKey, label: Lang }
+      - { name: body, label: Body, widget: markdown }

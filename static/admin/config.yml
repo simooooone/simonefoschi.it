@@ -1,7 +1,7 @@
 backend:
-  name: netlify-simonefoschi.it
+  name: github
   repo: simooooone/simonefoschi.it
-  site_domain: https://www.simonefoschi.it/
+  site_domain: simonefoschi.it
   branch: main
 media_folder: src/img
 public_folder: /static

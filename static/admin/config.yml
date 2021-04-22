@@ -1,5 +1,5 @@
 backend:
-  name: netlify
+  name: github
   repo: simooooone/simonefoschi.it
   site_domain: https://www.simonefoschi.it/
   branch: master

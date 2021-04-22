@@ -2,7 +2,7 @@ backend:
   name: github
   repo: simooooone/simonefoschi.it
   site_domain: https://www.simonefoschi.it/
-  branch: master
+  branch: main
 media_folder: src/img
 public_folder: /static
 collections:

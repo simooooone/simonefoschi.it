@@ -16,5 +16,6 @@ collections:
       - { name: date, label: Date }
       - { name: update, label: Update }
       - { name: author, label: Author }
+      - { name: published, label: Published }
       - { name: langKey, label: Lang }
       - { name: body, label: Body, widget: markdown }

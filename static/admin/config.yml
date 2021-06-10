@@ -11,11 +11,11 @@ collections:
     folder: /src/posts
     create: true
     fields:
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: date, label: Date }
-      - { name: update, label: Update }
-      - { name: author, label: Author }
-      - { name: published, label: Published }
-      - { name: langKey, label: Lang }
+      - { name: title, label: Title, widget: 'string'  }
+      - { name: description, label: Description, widget: 'string' }
+      - { name: date, label: Date, widget: 'string' }
+      - { name: update, label: Update, widget: 'string' }
+      - { name: author, label: Author, widget: 'string' }
+      - { name: published, label: Published, widget: 'string' }
+      - { name: langKey, label: Lang, widget: 'string' }
       - { name: body, label: Body, widget: markdown }

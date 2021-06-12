@@ -43,7 +43,11 @@ const Header = (props) => {
         img = img1
         break
     }
-    return <img src={img} width="130" height="130" alt={props.alt} />
+    return (
+      <picture>
+        <img src={img} width="130" height="130" alt={props.alt} />
+      </picture>
+    )
   }
 
   return (

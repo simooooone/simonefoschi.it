@@ -219,4 +219,4 @@ Finito tutto per il meglio dopo qualche mese di standby sul vecchio sistema, dom
 
 Commenti ->
 
-<blockquote class="twitter-tweet"><p lang="it" dir="ltr">Dopo alcuni mesi di travaglio sono riuscito a mettere in piedi quello che era diventato il mio pallino: usare docker in produzione. Qui il riassunto di questi mesi e il codice per implementare un nginx proxy con docker:<a href="https://t.co/YUktsbDXA5">https://t.co/YUktsbDXA5</a></p>&mdash; Simone (@simooooone) <a href="https://twitter.com/simooooone/status/1231520694946672641?ref_src=twsrc%5Etfw">February 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p>In <a target="_blank" href="https://twitter.com/simooooone/status/1231520694946672641?ref_src=twsrc%5Etfw">questo post</a> su twitter</p></blockquote>

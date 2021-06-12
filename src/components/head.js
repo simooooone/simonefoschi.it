@@ -13,8 +13,11 @@ const Head = ({ title, description }) => {
       }
     }
   `)
+  const url = typeof window !== "undefined" ? window.location.href : ""
+  let langPage = url.includes("/en/") ? "en" : "it"
+
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: langPage }}>
       <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
       <meta
         name="description"
@@ -31,7 +34,6 @@ const Head = ({ title, description }) => {
         sizes="32x32"
         href="../favicons/favicon-32x32.png"
       />
-
       <script
         dangerouslySetInnerHTML={{
           __html: `

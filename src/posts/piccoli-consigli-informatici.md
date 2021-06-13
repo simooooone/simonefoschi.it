@@ -31,7 +31,7 @@ Se questo trucco non funziona, allora bisogna cambiare la batteria del mouse.
 
 ### L'hard disk esterno non si accende?
 
-Attaccarlo ad un'altra presa usb alimentata con più energia, di solito le prese posteriori su di un desktop.
+Attaccarlo ad un'altra presa USB alimentata con più energia, di solito le prese posteriori su di un desktop.
 
 ## Extra
 

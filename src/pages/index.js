@@ -30,7 +30,7 @@ const IndexPage = () => {
           <blockquote>
             A small step for a man frequently is a small step for humanity. But
             many small steps of the humanity made the longest walk we know a
-            being can make in the universe. Dream on, we can make better.
+            being can make in the universe. Dream on, we can make even better.
           </blockquote>
           <br />
           <br />

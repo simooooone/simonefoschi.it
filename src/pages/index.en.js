@@ -17,23 +17,19 @@ const IndexPage = () => {
           <h1>### Who I am</h1>
         </header>
         <article>
-          <p>Half Italian, half Sammarinese (from Repubblic of San Marino)</p>
-
           <p>
-            In my spare time I enjoy working on JS, React, Gatsby, GraphQL, Git,
-            Linux admin, home automation and Docker.
+            Hi, I am a long time Frontend Developer with strong experience in
+            CSS and HTML and a good understanding of js and realted echosystem.
           </p>
-
-          <p>
-            Love learning and to practice english, programming and sysadmin
-            things.
-          </p>
-
+          <p>Excited about implementing and learning new things.</p>
           <p>Love Open Source and evolution in technology.</p>
           <br />
           <blockquote>
-            Seniority is the attitude to do things as they should and to be able
-            to understand technology limits and to know about alternatives
+            A small step for a man is a small step for humanity. But many small
+            steps of the humanity made the longest walk we know a being can make
+            in the universe. <br />
+            <br />
+            Dream on, we can make even better.
           </blockquote>
           <br />
           <br />

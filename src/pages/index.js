@@ -17,23 +17,20 @@ const IndexPage = () => {
           <h1>### Chi sono</h1>
         </header>
         <article>
-          <p>Italo-Sammarinese</p>
           <p>
-            Nel tempo libero mi piace lavorare su JS, React, Gatsby, GraphQL,
-            Git, Amministrazione Linux, domotica e Docker.
+            Sono uno Sviluppatore Frontend da molto tempo con molta espeerienza
+            in HTML e CSS ed una conoscenza intermedia di js e di molte cose che
+            ci girano attorno.
           </p>
 
-          <p>
-            Amo imparare e praticare l'inglese, programmazione e amministrazione
-            di sistemi.
-          </p>
+          <p>Amo imparare e praticare nuove cose.</p>
 
-          <p>Amo l'Open Source e l'evoluzione tecnologica.</p>
+          <p>Amo l'Open Source e l'evoluzione umana nella tecnologia.</p>
           <br />
           <blockquote>
-            L'esperienza è l'attitudine a fare cose come dovrebbero essere
-            realizzate e saper riconoscere i limiti della tecnologia e
-            identificare le sue alternative
+            A small step for a man frequently is a small step for humanity. But
+            many small steps of the humanity made the longest walk we know a
+            being can make in the universe. Dream on, we can make better.
           </blockquote>
           <br />
           <br />
